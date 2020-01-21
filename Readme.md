@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Александра Ларина](https://up.htmlacademy.ru/htmlcss/27/user/422049).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Власов](https://htmlacademy.ru/profile/amaringo).
 
 ---
 
