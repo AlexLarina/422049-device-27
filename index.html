@@ -20,12 +20,12 @@
         </div>
 
         <div class="header__row">
-            <nav class="header__navigation navigation">
-              <a href="#" class="navigation__item">Каталог товаров</a>
-              <a href="#" class="navigation__item">Доставка</a>
-              <a href="#" class="navigation__item">Гарантия</a>
-              <a href="#" class="navigation__item">Контакты</a>
-            </nav>
+          <nav class="header__navigation navigation">
+            <a href="#" class="navigation__item">Каталог товаров</a>
+            <a href="#" class="navigation__item">Доставка</a>
+            <a href="#" class="navigation__item">Гарантия</a>
+            <a href="#" class="navigation__item">Контакты</a>
+          </nav>
         </div>
         <div class="header__row">
           <ul class="header__catalog catalog">
@@ -45,6 +45,11 @@
     <main class="main">
       <div class="container">
         <section class="main__promo promo">
+          <div class="promo__slider">
+            <button class="promo__slide"></button>
+            <button class="promo__slide"></button>
+            <button class="promo__slide"></button>
+          </div>
           <article class="promo__item">
             <img src="#" class="promo__image" alt="Selfie-stick">
             <div class="promo__info info">
@@ -53,7 +58,6 @@
               <p class="info__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <div class="info__buttons">
                 <button class="info__more">Подробнее</button>
-                <div class="info__slider"></div>
               </div>
               <div class="info__details">
                 <table>
@@ -79,7 +83,6 @@
               <p class="info__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <div class="info__buttons">
                 <button class="info__more">Подробнее</button>
-                <div class="info__slider"></div>
               </div>
               <div class="info__details">
                 <table>
@@ -101,7 +104,6 @@
               <p class="info__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <div class="info__buttons">
                 <button class="info__more">Подробнее</button>
-                <div class="info__slider"></div>
               </div>
               <div class="info__details">
                 <table>
@@ -122,33 +124,27 @@
         </section>
         <section class="main__goods goods">
           <ul class="goods__list">
-            <li class="goods__item">
-              <img src="#" alt="Виртуальная реальность">
+            <li class="goods__item goods__item--virtual-reality">
               <span>Виртуальная реальность</span>
             </li>
 
-            <li class="goods__item">
-              <img src="#" alt="Моноподы для селфи">
+            <li class="goods__item goods__item--selfie-monopods">
               <span>Моноподы для селфи</span>
             </li>
 
-            <li class="goods__item">
-              <img src="#" alt="Экшн-камеры">
+            <li class="goods__item goods__item--action-cameras">
               <span>Экшн-камеры</span>
             </li>
 
-            <li class="goods__item">
-              <img src="#" alt="Фитнес-браслеты">
+            <li class="goods__item goods__item--fitnes-bands">
               <span>Фитнес-браслеты</span>
             </li>
 
-            <li class="goods__item">
-              <img src="#" alt="Умные часы">
+            <li class="goods__item goods__item--smart-watch">
               <span>Умные часы</span>
             </li>
 
-            <li class="goods__item">
-              <img src="#" alt="Квадрокоптеры">
+            <li class="goods__item goods__item--quadcopters">
               <span>Квадрокоптеры</span>
             </li>
           </ul>
