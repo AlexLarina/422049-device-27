@@ -12,7 +12,9 @@
           <img class="user-menu__item user-menu__item--logo" src="#" width="163" height="35" alt="Device logo">
 
           <label for="header-search"></label>
-          <input class="user-menu__item" type="search" id="header-search" name="search" placeholder="Поиск по сайту">
+          <form action="#" class="user-menu__form">
+            <input class="user-menu__item" type="search" id="header-search" name="search" placeholder="Поиск по сайту">
+          </form>
 
           <a href="#" class="user-menu__item">Войти</a>
           <a href="#" class="user-menu__item">Сравнить</a>
@@ -221,21 +223,23 @@
       </div>
 
       <div class="main__popup popup">
-        <div class="popup__container">
-          <button class="popup__button popup__button--close" type="button" title="Закрыть"></button>
-          <label for="user__name"></label>
-          <input class="popup__name" type="text" id="user__name" name="name" placeholder="Имя Фамилия">
+        <form action="#" method="post" class="popup__form">
+          <div class="popup__container">
+            <button class="popup__button popup__button--close" type="button" title="Закрыть"></button>
+            <label for="user__name"></label>
+            <input class="popup__name" type="text" id="user__name" name="name" placeholder="Имя Фамилия">
 
-          <label for="popup__name"></label>
-          <input class="popup__email" type="email" id="user__email" name="email" placeholder="email@example.com">
-          
-          <label for="user__feedback"></label>
-          <textarea class="popup__feedback" type="email" id="user__feedback" name="feedback">
-            В свободной форме
-          </textarea>
+            <label for="popup__name"></label>
+            <input class="popup__email" type="email" id="user__email" name="email" placeholder="email@example.com">
 
-          <button class="popup__button popup__button--submit" type="submit" title="Отправить">Отправить</button>
-        </div>
+            <label for="user__feedback"></label>
+            <textarea class="popup__feedback" type="email" id="user__feedback" name="feedback">
+              В свободной форме
+            </textarea>
+
+            <button class="popup__button popup__button--submit" type="submit" title="Отправить">Отправить</button>
+          </div>
+        </form>
       </div>
     </main>
 
