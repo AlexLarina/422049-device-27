@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/AlexLarina/422049-device-27#readme",
   "dependencies": {
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0"
   }
