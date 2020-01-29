@@ -9,10 +9,12 @@
     <header class="header">
       <div class="container">
         <div class="header__row user-menu">
-          <img class="user-menu__item user-menu__item--logo" src="#" width="163" height="35" alt="Device logo">
+          <img class="user-menu__item user-menu__item--logo" src="img/logo-device.svg" width="163" height="35" alt="Device logo">
 
           <label for="header-search"></label>
-          <input class="user-menu__item" type="search" id="header-search" name="search" placeholder="Поиск по сайту">
+          <form action="#" class="user-menu__form">
+            <input class="user-menu__item" type="search" id="header-search" name="search" placeholder="Поиск по сайту">
+          </form>
 
           <a href="#" class="user-menu__item">Войти</a>
           <a href="#" class="user-menu__item">Сравнить</a>
@@ -44,7 +46,9 @@
 
     <main class="main">
       <div class="container">
+        <h1 class="main__title" style="display: none;">Device, index page</h1>
         <section class="main__promo promo">
+          <h2 style="display: none;">Promo</h2>
           <div class="promo__slider">
             <button class="promo__slide"></button>
             <button class="promo__slide"></button>
@@ -54,7 +58,7 @@
             <img src="#" class="promo__image" alt="Selfie-stick">
             <div class="promo__info info">
               <div class="info__counter">01</div>
-              <h1 class="info__title">Делай селфи, как Бен Стиллер!</h1>
+              <h2 class="info__title">Делай селфи, как Бен Стиллер!</h2>
               <p class="info__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <div class="info__buttons">
                 <button class="info__more">Подробнее</button>
@@ -79,7 +83,7 @@
             <img src="#" class="promo__image" alt="Band">
             <div class="promo__info info">
               <div class="info__counter">02</div>
-              <h1 class="info__title">Худеем правильно!</h1>
+              <h2 class="info__title">Худеем правильно!</h2>
               <p class="info__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <div class="info__buttons">
                 <button class="info__more">Подробнее</button>
@@ -100,7 +104,7 @@
             <img src="#" class="promo__image" alt="Drone">
               <div class="promo__info info">
               <div class="info__counter">03</div>
-              <div class="info__title">Порхает как бабочка, жалит как пчела!</div>
+              <h2 class="info__title">Порхает как бабочка, жалит как пчела!</h2>
               <p class="info__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <div class="info__buttons">
                 <button class="info__more">Подробнее</button>
@@ -123,6 +127,7 @@
           </article>
         </section>
         <section class="main__goods goods">
+          <h2 style="display: none;">Goods</h2>
           <ul class="goods__list">
             <li class="goods__item goods__item--virtual-reality">
               <span>Виртуальная реальность</span>
@@ -150,6 +155,7 @@
           </ul>
         </section>
         <section class="main__advantages advantages">
+          <h2 style="display: none;">Advantages</h2>
           <ul class="advantages__list">
             <li class="advantages__item">Доставка</li>
             <li class="advantages__item">Гарантия</li>
@@ -176,6 +182,7 @@
           </div>
         </section>
         <section class="main__partners partners">
+          <h2 style="display: none;">Partners</h2>
           <ul class="partners__list">
             <li class="partners__item">
               <img src="#" alt="dji">
@@ -192,6 +199,7 @@
           </ul>
         </section>
         <section class="main__about-us about-us">
+          <h2 style="display: none;">About</h2>
           <div class="about-us__info info">
             <h2 class="info__title">О нас</h2>
             <p class="info__description">
@@ -213,7 +221,7 @@
               <p class="info__description">
                 Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
               </p>
-              <a href="#" class="info__map" title="Device map"><img src="#"></a>
+              <a href="#" class="info__map" title="Device map"><img src="#" alt="map"></a>
               <button class="info__button">Напишите нам</button>
             </div>
           </div>
@@ -221,28 +229,30 @@
       </div>
 
       <div class="main__popup popup">
-        <div class="popup__container">
-          <button class="popup__button popup__button--close" type="button" title="Закрыть"></button>
-          <label for="user__name"></label>
-          <input class="popup__name" type="text" id="user__name" name="name" placeholder="Имя Фамилия">
+        <form action="#" method="post" class="popup__form">
+          <div class="popup__container">
+            <button class="popup__button popup__button--close" type="button" title="Закрыть"></button>
+            <label for="user__name"></label>
+            <input class="popup__name" type="text" id="user__name" name="name" placeholder="Имя Фамилия">
 
-          <label for="popup__name"></label>
-          <input class="popup__email" type="email" id="user__email" name="email" placeholder="email@example.com">
-          
-          <label for="user__feedback"></label>
-          <textarea class="popup__feedback" type="email" id="user__feedback" name="feedback">
-            В свободной форме
-          </textarea>
+            <label for="user__email"></label>
+            <input class="popup__email" type="email" id="user__email" name="email" placeholder="email@example.com">
 
-          <button class="popup__button popup__button--submit" type="submit" title="Отправить">Отправить</button>
-        </div>
+            <label for="user__feedback"></label>
+            <textarea class="popup__feedback" id="user__feedback" name="feedback">
+              В свободной форме
+            </textarea>
+
+            <button class="popup__button popup__button--submit" type="submit" title="Отправить">Отправить</button>
+          </div>
+        </form>
       </div>
     </main>
 
     <footer class="footer">
       <div class="container">
         <div class="footer__row user-menu">
-          <img class="user-menu__item user-menu__item--logo" src="#" width="163" height="35" alt="Device logo">
+          <img class="user-menu__item user-menu__item--logo" src="img/logo-device.svg" width="163" height="35" alt="Device logo">
           <a href="#" class="user-menu__item">Войти</a>
           <a href="#" class="user-menu__item">Сравнить</a>
           <a href="#" class="user-menu__item">Корзина</a>
@@ -265,9 +275,10 @@
 
           <div class="footer__copyright">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="#" alt="HTMLAcedemy logo">
+              <img src="img/logo-html.svg" width="27" height="35" alt="HTMLAcedemy logo">
             </a>
           </div>
+        </div>
       </div>
     </footer>
   </body>
