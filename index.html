@@ -12,7 +12,7 @@
           <a href="index.html"><img class="user-menu__item user-menu__item--logo" src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина гаджетов Device"></a>
 
           <label for="header-search"></label>
-          <form action="#" class="user-menu__form">
+          <form action="https://echo.htmlacademy.ru" class="user-menu__form">
             <input class="user-menu__item" type="search" id="header-search" name="search" placeholder="Поиск по сайту">
           </form>
 
@@ -50,9 +50,9 @@
         <section class="main__promo promo">
           <h2 class="visually-hidden">Специальные предложения</h2>
           <div class="promo__slider">
-            <button class="promo__slide"></button>
-            <button class="promo__slide"></button>
-            <button class="promo__slide"></button>
+            <button class="promo__slide" title="Переключение на спецпредложение селфи-палка"></button>
+            <button class="promo__slide" title="Переключение на спецпредложение фитнес-браслет"></button>
+            <button class="promo__slide" title="Переключение на спецпредложение дрон"></button>
           </div>
           <article class="promo__item">
             <img src="files/slider-1-png.png" class="promo__image" alt="Селфи-палка">
@@ -228,8 +228,8 @@
         </section>
       </div>
 
-      <div class="main__popup popup">
-        <form action="#" method="post" class="popup__form">
+      <div class="main__popup popup popup--feedback">
+        <form action="https://echo.htmlacademy.ru" method="post" class="popup__form">
           <div class="popup__container">
             <button class="popup__button popup__button--close" type="button" title="Закрыть"></button>
             <label for="user__name"></label>
@@ -239,13 +239,15 @@
             <input class="popup__email" type="email" id="user__email" name="email" placeholder="email@example.com">
 
             <label for="user__feedback"></label>
-            <textarea class="popup__feedback" id="user__feedback" name="feedback">
-              В свободной форме
-            </textarea>
+            <textarea class="popup__feedback" id="user__feedback" name="feedback" placeholder="В свободной форме"></textarea>
 
             <button class="popup__button popup__button--submit" type="submit" title="Отправить">Отправить</button>
           </div>
         </form>
+      </div>
+
+      <div class="main__popup popup popup--map">
+        <img src="files/map-big-jpg.jpg" width="960" height="559" alt="Увеличенная карта расположения магазина Device">
       </div>
     </main>
 
@@ -264,7 +266,7 @@
             <a href="#" class="navigation__item">Гарантия</a>
             <a href="#" class="navigation__item">Контакты</a>
           </nav>
-          <span class="footer__contacts footer__contacts--phone">Тел.: +7 (495) 495-95-95</span>
+          <span class="footer__contacts footer__contacts--phone"><a href="+7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a></span>
         </div>
         <div class="footer__row">
           <div class="footer__social social">

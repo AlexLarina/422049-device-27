@@ -53,15 +53,17 @@
 
         <aside class="catalog__filters filters">
           <h2 class="filters__title">Фильтр:</h2>
-          <form сlass="filters__form" action="#" method="get">
+          <form сlass="filters__form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filters__item filter">
               <legend class="filter__title">Стоимость</legend>
               <div class="filter__range range">
-                <span class="range__item range__item--min">от
-                  <input type="number" value="0" name="range__item--min">
+                <span class="range__item range__item--min">
+                  <label for="range__item--min">от</label>
+                  <input type="number" value="0" name="range__item--min" id="range__item--min">
                 </span>
-                <span class="range__item range__item--max">до
-                  <input type="number" value="5000" name="range__item--max">
+                <span class="range__item range__item--max">
+                  <label for="range__item--max">до</label>
+                  <input type="number" value="5000" name="range__item--max" id="range__item--max">
                 </span>
               </fieldset>
             </div>
@@ -138,8 +140,10 @@
             <li class="products__item">
               <img src="files/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <div class="products__description">
-                <button class="products__button products__button--to-basket" style="display: none;">В корзину</button>
-                <button class="products__button products__button--compare" style="display: none;">Добавить к сравнению</button>
+                <div class="products__hidden-buttons hidden-buttons">
+                  <button class="hidden-buttons hidden-buttons--to-basket" style="display: none;">В корзину</button>
+                  <button class="hidden-buttons hidden-buttons--compare" style="display: none;">Добавить к сравнению</button>
+                </div>
                 <span class="products__name">Любительская селфи-палка</span>
                 <span class="products__cost">500 руб.</span>
               </div>
@@ -148,8 +152,10 @@
             <li class="products__item">
               <img src="files/item-2-jpg.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
               <div class="products__description">
-                <button class="products__button products__button--to-basket" style="display: none;">В корзину</button>
-                <button class="products__button products__button--compare" style="display: none;">Добавить к сравнению</button>
+                <div class="products__hidden-buttons hidden-buttons">
+                  <button class="hidden-buttons hidden-buttons--to-basket" style="display: none;">В корзину</button>
+                  <button class="hidden-buttons hidden-buttons--compare" style="display: none;">Добавить к сравнению</button>
+                </div>
                 <span class="products__name">Профессиональная селфи-палка</span>
                 <span class="products__cost">1500 руб.</span>
               </div>
@@ -158,8 +164,10 @@
             <li class="products__item">
               <img src="files/item-3-jpg.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
               <div class="products__description">
-                <button class="products__button products__button--to-basket" style="display: none;">В корзину</button>
-                <button class="products__button products__button--compare" style="display: none;">Добавить к сравнению</button>
+                <div class="products__hidden-buttons hidden-buttons">
+                  <button class="hidden-buttons hidden-buttons--to-basket" style="display: none;">В корзину</button>
+                  <button class="hidden-buttons hidden-buttons--compare" style="display: none;">Добавить к сравнению</button>
+                </div>
                 <span class="products__name">Непотопляемая селфи-палка</span>
                 <span class="products__cost">2500 руб.</span>
               </div>
@@ -168,8 +176,10 @@
             <li class="products__item">
               <img src="files/item-4-jpg.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
               <div class="products__description">
-                <button class="products__button products__button--to-basket" style="display: none;">В корзину</button>
-                <button class="products__button products__button--compare" style="display: none;">Добавить к сравнению</button>
+                <div class="products__hidden-buttons hidden-buttons">
+                  <button class="hidden-buttons hidden-buttons--to-basket" style="display: none;">В корзину</button>
+                  <button class="hidden-buttons hidden-buttons--compare" style="display: none;">Добавить к сравнению</button>
+                </div>
                 <span class="products__name">Селфи-палка «Следуй за мной»</span>
                 <span class="products__cost">4900 руб.</span>
               </div>
@@ -202,7 +212,7 @@
             <a href="#" class="navigation__item">Гарантия</a>
             <a href="#" class="navigation__item">Контакты</a>
           </nav>
-          <span class="footer__contacts footer__contacts--phone">Тел.: +7 (495) 495-95-95</span>
+          <span class="footer__contacts footer__contacts--phone"><a href="+7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a></span>
         </div>
         <div class="footer__row">
           <div class="footer__social social">
