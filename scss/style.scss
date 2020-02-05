@@ -3,5 +3,9 @@
 @import "_base.scss";
 @import "_typography.scss";
 
+// common components
 @import "components/_header.scss";
 @import "components/_footer.scss";
+
+// index page components
+@import "components/_about-us.scss";
