@@ -354,14 +354,14 @@ html {
 .header {
   background-color: #f0c52e; }
 
-.user-menu {
+.header .user-menu {
   font-family: "Open Sans";
   font-weight: normal;
   color: #000000;
   font-size: 15px;
   line-height: 2em; }
 
-.user-menu__item {
+.header .user-menu__item {
   color: inherit; }
 
 input[type="search"].user-menu__item {
@@ -386,17 +386,24 @@ input[type="search"].user-menu__item {
   line-height: 2.4em;
   list-style: none; }
 
+.header .log-out {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  line-height: 2em; }
+
 .footer {
   background-color: #464646; }
 
-.user-menu {
+.footer .user-menu {
   font-family: "Open Sans";
   font-weight: normal;
   color: rgba(255, 255, 255, 0.7);
   font-size: 15px;
   line-height: 2.4em; }
 
-.user-menu__item {
+.footer .user-menu__item {
   color: inherit; }
 
 .navigation {
@@ -415,6 +422,13 @@ input[type="search"].user-menu__item {
   font-family: "Open Sans";
   font-weight: normal;
   color: #ffffff;
+  font-size: 15px;
+  line-height: 2em; }
+
+.footer .log-out {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.3);
   font-size: 15px;
   line-height: 2em; }
 
@@ -446,3 +460,58 @@ input[type="search"].user-menu__item {
   font-size: 16px;
   line-height: 2.5em;
   list-style: none; }
+
+.catalog__title {
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #000000;
+  font-size: 47px;
+  line-height: 1em; }
+
+.breadcrumbs {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  line-height: 1.7em; }
+
+.breadcrumbs__item {
+  color: inherit; }
+
+legend.filter__title {
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.33em; }
+
+.filter__list {
+  list-style: none; }
+
+.filters__button {
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.33em; }
+
+.filter__item label {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: #000000;
+  font-size: 14px;
+  line-height: 2.8em; }
+
+.products__name {
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.33em; }
+
+.products__cost {
+  font-family: "Gilroy";
+  font-weight: normal;
+  color: #464646;
+  font-size: 16px;
+  line-height: 1.5em; }

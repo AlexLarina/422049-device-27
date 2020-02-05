@@ -2,12 +2,12 @@
   background-color: $bg-orange;
 }
 
-.user-menu {
+.header .user-menu {
   @include font("Open Sans", normal, $font-black);
   @include font-size(15px, 2em);
 }
 
-.user-menu__item {
+.header .user-menu__item {
   color: inherit;
 }
 
@@ -29,4 +29,9 @@ input[type="search"].user-menu__item {
   @include font("Open Sans", normal, $font-black);
   @include font-size(15px, 2.4em);
   list-style: none;
+}
+
+.header .log-out {
+  @include font("Open Sans", normal, $font-opacity-black);
+  @include font-size(15px, 2em);
 }
