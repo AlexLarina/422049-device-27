@@ -1,0 +1,28 @@
+.footer {
+  background-color: $bg-dark-grey;
+}
+
+.user-menu {
+  @include font("Open Sans", normal, $font-opacity-white);
+  @include font-size(15px, 2.4em);
+}
+
+.user-menu__item {
+  color: inherit;
+}
+
+.navigation {
+  @include font("Gilroy", bold, $font-white);
+  @include font-size(18px, 1.33em);
+  text-transform: uppercase;
+}
+
+.navigation__item {
+  color: inherit;
+}
+
+.footer__contacts,
+.footer__contacts a {
+  @include font("Open Sans", normal, $font-white);
+  @include font-size(15px, 2em);
+}

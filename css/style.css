@@ -306,6 +306,17 @@ template {
 body {
   font-family: "Gilroy", "Open Sans", sans-serif; }
 
+a {
+  text-decoration: none; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -339,3 +350,70 @@ body {
   src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
   font-weight: bold;
   font-style: normal; }
+
+.header {
+  background-color: #f0c52e; }
+
+.user-menu {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: #000000;
+  font-size: 15px;
+  line-height: 2em; }
+
+.user-menu__item {
+  color: inherit; }
+
+input[type="search"].user-menu__item {
+  color: #464646; }
+
+.navigation {
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.33em;
+  text-transform: uppercase; }
+
+.navigation__item {
+  color: inherit; }
+
+.catalog {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: #000000;
+  font-size: 15px;
+  line-height: 2.4em;
+  list-style: none; }
+
+.footer {
+  background-color: #464646; }
+
+.user-menu {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  line-height: 2.4em; }
+
+.user-menu__item {
+  color: inherit; }
+
+.navigation {
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.33em;
+  text-transform: uppercase; }
+
+.navigation__item {
+  color: inherit; }
+
+.footer__contacts,
+.footer__contacts a {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 2em; }

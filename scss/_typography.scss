@@ -29,3 +29,14 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@mixin font($family, $weight, $color) {
+  font-family: $family;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin font-size($size, $lineheight) {
+  font-size: $size;
+  line-height: $lineheight;
+}
