@@ -11,3 +11,11 @@
 .breadcrumbs__item {
   color: inherit;
 }
+
+.breadcrumbs__item:hover {
+  color: $font-black-hover;
+}
+
+.breadcrumbs__item:active {
+  color: $font-low-opacity-black;
+}

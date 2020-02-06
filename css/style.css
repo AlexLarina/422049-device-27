@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -364,10 +365,18 @@ html {
 .header .user-menu__item {
   color: inherit; }
 
-input[type="search"].user-menu__item {
+/* hover с placeholder не прокатил */
+.header .user-menu__item:hover,
+.user-menu__form input[placeholder]:hover {
+  color: rgba(0, 0, 0, 0.6); }
+
+.header .user-menu__item:active {
+  color: rgba(0, 0, 0, 0.3); }
+
+.user-menu__form input[placeholder] {
   color: #464646; }
 
-.navigation {
+.header .navigation {
   font-family: "Gilroy";
   font-weight: bold;
   color: #000000;
@@ -378,6 +387,12 @@ input[type="search"].user-menu__item {
 .navigation__item {
   color: inherit; }
 
+.navigation__item:hover {
+  color: rgba(0, 0, 0, 0.6); }
+
+.navigation__item:active {
+  color: rgba(0, 0, 0, 0.3); }
+
 .catalog {
   font-family: "Open Sans";
   font-weight: normal;
@@ -385,6 +400,15 @@ input[type="search"].user-menu__item {
   font-size: 15px;
   line-height: 2.4em;
   list-style: none; }
+
+.catalog__item {
+  cursor: pointer; }
+
+.catalog__item:hover {
+  color: rgba(0, 0, 0, 0.6); }
+
+.catalog__item:active {
+  color: rgba(0, 0, 0, 0.3); }
 
 .header .log-out {
   font-family: "Open Sans";
@@ -406,7 +430,13 @@ input[type="search"].user-menu__item {
 .footer .user-menu__item {
   color: inherit; }
 
-.navigation {
+.footer .user-menu__item:hover {
+  color: #ffffff; }
+
+.footer .user-menu__item:active {
+  color: rgba(255, 255, 255, 0.3); }
+
+.footer .navigation {
   font-family: "Gilroy";
   font-weight: bold;
   color: #ffffff;
@@ -414,8 +444,14 @@ input[type="search"].user-menu__item {
   line-height: 1.33em;
   text-transform: uppercase; }
 
-.navigation__item {
+.footer .navigation__item {
   color: inherit; }
+
+.footer .navigation__item:hover {
+  color: rgba(255, 255, 255, 0.6); }
+
+.footer .navigation__item:active {
+  color: rgba(255, 255, 255, 0.3); }
 
 .footer__contacts,
 .footer__contacts a {
@@ -478,6 +514,12 @@ input[type="search"].user-menu__item {
 .breadcrumbs__item {
   color: inherit; }
 
+.breadcrumbs__item:hover {
+  color: rgba(0, 0, 0, 0.6); }
+
+.breadcrumbs__item:active {
+  color: rgba(0, 0, 0, 0.1); }
+
 legend.filter__title {
   font-family: "Gilroy";
   font-weight: bold;
@@ -501,6 +543,10 @@ legend.filter__title {
   color: #000000;
   font-size: 14px;
   line-height: 2.8em; }
+
+/* пока легче добавить label класс disabled */
+label.disabled {
+  color: #a6a6a6; }
 
 .products__name {
   font-family: "Gilroy";

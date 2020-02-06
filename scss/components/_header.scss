@@ -11,11 +11,22 @@
   color: inherit;
 }
 
-input[type="search"].user-menu__item {
+/* hover с placeholder не прокатил */
+
+.header .user-menu__item:hover,
+.user-menu__form input[placeholder]:hover {
+  color: $font-black-hover;
+}
+
+.header .user-menu__item:active {
+  color: $font-opacity-black;
+}
+
+.user-menu__form input[placeholder] {
   color: $font-dark-grey;
 }
 
-.navigation {
+.header .navigation {
   @include font("Gilroy", bold, $font-black);
   @include font-size(18px, 1.33em);
   text-transform: uppercase;
@@ -25,10 +36,30 @@ input[type="search"].user-menu__item {
   color: inherit;
 }
 
+.navigation__item:hover {
+  color: $font-black-hover;
+}
+
+.navigation__item:active {
+  color: $font-opacity-black;
+}
+
 .catalog {
   @include font("Open Sans", normal, $font-black);
   @include font-size(15px, 2.4em);
   list-style: none;
+}
+
+.catalog__item {
+  cursor: pointer;
+}
+
+.catalog__item:hover {
+  color: $font-black-hover;
+}
+
+.catalog__item:active {
+  color: $font-opacity-black;
 }
 
 .header .log-out {

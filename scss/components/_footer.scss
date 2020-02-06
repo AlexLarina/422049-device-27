@@ -11,14 +11,30 @@
   color: inherit;
 }
 
-.navigation {
+.footer .user-menu__item:hover {
+  color: $font-white;
+}
+
+.footer .user-menu__item:active {
+  color: $font-low-opacity-white;
+}
+
+.footer .navigation {
   @include font("Gilroy", bold, $font-white);
   @include font-size(18px, 1.33em);
   text-transform: uppercase;
 }
 
-.navigation__item {
+.footer .navigation__item {
   color: inherit;
+}
+
+.footer .navigation__item:hover {
+  color: $font-white-hover;
+}
+
+.footer .navigation__item:active {
+  color: $font-low-opacity-white;
 }
 
 .footer__contacts,
