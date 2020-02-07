@@ -1,0 +1,21 @@
+.catalog__title {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(47px, 1em);
+}
+
+.breadcrumbs {
+  @include font("Open Sans", normal, $font-opacity-black);
+  @include font-size(14px, 1.7em);
+}
+
+.breadcrumbs__item {
+  color: inherit;
+}
+
+.breadcrumbs__item:hover {
+  color: $font-black-hover;
+}
+
+.breadcrumbs__item:active {
+  color: $font-low-opacity-black;
+}

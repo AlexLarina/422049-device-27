@@ -1,0 +1,24 @@
+legend.filter__title {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(18px, 1.33em);
+}
+
+.filter__list {
+  list-style: none;
+}
+
+.filters__button {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(18px, 1.33em);
+}
+
+.filter__item label {
+  @include font("Open Sans", normal, $font-black);
+  @include font-size(14px, 2.8em);
+}
+
+/* пока легче добавить label класс disabled */
+
+label.disabled {
+  color: $font-disabled;
+}

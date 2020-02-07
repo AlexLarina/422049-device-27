@@ -1,0 +1,9 @@
+.products__name {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(18px, 1.33em);
+}
+
+.products__cost {
+  @include font("Gilroy", normal, $font-dark-grey);
+  @include font-size(16px, 1.5em);
+}
