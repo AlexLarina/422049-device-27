@@ -1,6 +1,7 @@
-.header {
+// typography
+
+.header .container{
   background-color: $bg-orange;
-  opacity: 0.5;
 }
 
 .header .user-menu {
@@ -66,4 +67,34 @@
 .header .log-out {
   @include font("Open Sans", normal, $font-opacity-black);
   @include font-size(15px, 2em);
+}
+
+// layout
+
+.header .container {
+  margin-top: 40px;
+  padding-top: 1px;
+  height: 299px; /* уточнить насчет высоты */
+}
+
+.user-menu__item--logo {
+  position: absolute;
+  top: 21px;
+  left: 199px;
+}
+
+.header__row {
+  margin: 53px 60px 0px 60px;
+}
+
+.user-menu,
+.header__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* для скрытия каталога товаров */
+.header__row:last-of-type {
+  display: none;
 }
