@@ -1,0 +1,16 @@
+.goods {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(18px, 1.33em);
+}
+
+.goods__list {
+  list-style: none;
+}
+
+.goods__item {
+  cursor: pointer;
+}
+
+.goods__item:active {
+  color: $font-opacity-black;
+}
