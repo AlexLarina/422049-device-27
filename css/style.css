@@ -353,7 +353,8 @@ html {
   font-style: normal; }
 
 .header {
-  background-color: #f0c52e; }
+  background-color: #f0c52e;
+  opacity: 0.5; }
 
 .header .user-menu {
   font-family: "Open Sans";
@@ -468,6 +469,79 @@ html {
   font-size: 15px;
   line-height: 2em; }
 
+.promo__item .info__title {
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #000000;
+  font-size: 47px;
+  line-height: 1.2em; }
+
+.promo__item .info__description {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: #464646;
+  font-size: 15px;
+  line-height: 2em; }
+
+.promo__item .info__more {
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.33em; }
+
+.promo__item .details__value {
+  font-family: "Gilroy";
+  font-weight: normal;
+  color: #000000;
+  font-size: 36px;
+  line-height: 1.33em; }
+
+.promo__item .details__name {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: #464646;
+  font-size: 13px;
+  line-height: 1.5em; }
+
+.goods {
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.33em; }
+
+.goods__list {
+  list-style: none; }
+
+.goods__item {
+  cursor: pointer; }
+
+.goods__item:active {
+  color: rgba(0, 0, 0, 0.3); }
+
+.advantages__list {
+  list-style: none;
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.33em; }
+
+.advantages__details .details__title {
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #000000;
+  font-size: 47px;
+  line-height: 1.2em; }
+
+.advantages__details .details__description {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: #464646;
+  font-size: 15px;
+  line-height: 2em; }
+
 .about-us .info__title {
   font-family: "Gilroy";
   font-weight: bold;
@@ -520,6 +594,25 @@ html {
 .breadcrumbs__item:active {
   color: rgba(0, 0, 0, 0.1); }
 
+.filters {
+  background-color: #ebebeb; }
+
+.filters__title {
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.5em;
+  background-color: #d9d9d9; }
+
+.content__title {
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.5em;
+  background-color: #ebebeb; }
+
 legend.filter__title {
   font-family: "Gilroy";
   font-weight: bold;
@@ -548,6 +641,29 @@ legend.filter__title {
 label.disabled {
   color: #a6a6a6; }
 
+.content__filter {
+  list-style: none;
+  background-color: #ebebeb; }
+
+.content__filter a {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  line-height: 1.29em; }
+
+.content__filter a:hover {
+  color: rgba(0, 0, 0, 0.6); }
+
+.content__filter a:active {
+  color: #000000; }
+
+.content__filter .filter__item--active {
+  color: #000000; }
+
+.filter__item--active a {
+  color: inherit; }
+
 .products__name {
   font-family: "Gilroy";
   font-weight: bold;
@@ -561,3 +677,34 @@ label.disabled {
   color: #464646;
   font-size: 16px;
   line-height: 1.5em; }
+
+.pagination {
+  background-color: #ebebeb; }
+
+.pagination__item {
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  line-height: 1.5em;
+  text-transform: uppercase; }
+
+.pagination__item:hover {
+  color: rgba(0, 0, 0, 0.6); }
+
+.pagination__item:active {
+  color: #000000; }
+
+.pagination__item--back,
+.pagination__item--current,
+.pagination__item--forward {
+  color: #000000; }
+
+.pagination__item--back:hover,
+.pagination__item--forward:hover {
+  background-color: #d9d9d9; }
+
+.pagination__item--back:active,
+.pagination__item--forward:active {
+  background-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.3); }

@@ -8,9 +8,13 @@
 @import "components/_footer.scss";
 
 // index page components
+@import "components/_promo.scss";
+@import "components/_goods.scss";
+@import "components/_advantages.scss";
 @import "components/_about-us.scss";
 
 // catalog page components
 @import "components/_breadcrumbs.scss";
 @import "components/_filters.scss";
 @import "components/_products.scss";
+@import "components/_pagination.scss";
