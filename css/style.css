@@ -353,7 +353,8 @@ html {
   font-style: normal; }
 
 .header {
-  background-color: #f0c52e; }
+  background-color: #f0c52e;
+  opacity: 0.5; }
 
 .header .user-menu {
   font-family: "Open Sans";
@@ -519,6 +520,9 @@ html {
 
 .breadcrumbs__item:active {
   color: rgba(0, 0, 0, 0.1); }
+
+.filters {
+  background-color: #ebebeb; }
 
 legend.filter__title {
   font-family: "Gilroy";

@@ -1,3 +1,7 @@
+.filters {
+  background-color: $bg-grey;
+}
+
 legend.filter__title {
   @include font("Gilroy", bold, $font-black);
   @include font-size(18px, 1.33em);
