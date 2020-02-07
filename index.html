@@ -63,14 +63,14 @@
               <div class="info__buttons">
                 <button class="info__more">Подробнее</button>
               </div>
-              <div class="info__details">
+              <div class="info__details details">
                 <table>
-                  <tr>
+                  <tr class="details__value">
                     <td>8,5 м</td>
                     <td>5 кг</td>
                     <td>Карбон</td>
                   </tr>
-                  <tr>
+                  <tr class="details__name">
                     <td>Длина палки</td>
                     <td>Вес палки</td>
                     <td>Материал</td>
@@ -88,12 +88,12 @@
               <div class="info__buttons">
                 <button class="info__more">Подробнее</button>
               </div>
-              <div class="info__details">
+              <div class="info__details details">
                 <table>
-                  <tr>
+                  <tr class="details__value">
                     <td>48 часов</td>
                   </tr>
-                  <tr>
+                  <tr class="details__name">
                     <td>Без подзарядки</td>
                   </tr>
                 </table>
@@ -109,13 +109,13 @@
               <div class="info__buttons">
                 <button class="info__more">Подробнее</button>
               </div>
-              <div class="info__details">
+              <div class="info__details details">
                 <table>
-                  <tr>
+                  <tr class="details__value">
                     <td>800 м</td>
                     <td>50 м</td>
                   </tr>
-                  <tr>
+                  <tr class="details__name">
                     <td>Дальность полета</td>
                     <td>Радиус поражения
 
@@ -228,7 +228,7 @@
         </section>
       </div>
 
-      <div class="main__popup popup popup--feedback">
+      <div class="main__popup popup popup--feedback" style="display: none;">
         <form action="https://echo.htmlacademy.ru" method="post" class="popup__form">
           <div class="popup__container">
             <button class="popup__button popup__button--close" type="button" title="Закрыть"></button>
@@ -246,7 +246,7 @@
         </form>
       </div>
 
-      <div class="main__popup popup popup--map">
+      <div class="main__popup popup popup--map" style="display: none;">
         <button class="popup__button popup__button--close" type="button" title="Закрыть"></button>
         <img src="files/map-big-jpg.jpg" width="960" height="559" alt="Увеличенная карта расположения магазина Device">
       </div>

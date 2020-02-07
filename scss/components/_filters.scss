@@ -2,6 +2,20 @@
   background-color: $bg-grey;
 }
 
+.filters__title {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(16px, 1.5em);
+
+  background-color: $bg-filter;
+}
+
+.content__title {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(16px, 1.5em);
+
+  background-color: $bg-grey;
+}
+
 legend.filter__title {
   @include font("Gilroy", bold, $font-black);
   @include font-size(18px, 1.33em);
@@ -25,4 +39,30 @@ legend.filter__title {
 
 label.disabled {
   color: $font-disabled;
+}
+
+.content__filter {
+  list-style: none;
+  background-color: $bg-grey;
+}
+
+.content__filter a {
+  @include font("Open Sans", normal, $font-opacity-black);
+  @include font-size(14px, 1.29em);
+}
+
+.content__filter a:hover {
+  color: $font-black-hover;
+}
+
+.content__filter a:active {
+  color: $font-black;
+}
+
+.content__filter .filter__item--active {
+  color: $font-black;
+}
+
+.filter__item--active a {
+  color: inherit;
 }
