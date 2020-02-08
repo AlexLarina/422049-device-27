@@ -1,3 +1,5 @@
+// typography
+
 .about-us .info__title {
   @include font("Gilroy", bold, $font-black);
   @include font-size(47px, 1em);
@@ -17,4 +19,39 @@
   @include font("Gilroy", bold, $font-black);
   @include font-size(16px, 2.5em);
   list-style: none;
+}
+
+// layout
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 90px;
+}
+
+/* добавить в normalize */
+.about-us .info__title {
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.about-us__info::before,
+.about-us__contacts::before {
+  content: "";
+  display: inline-block;
+  margin-bottom: 50px;
+  width: 80px;
+  height: 7px;
+  background-color: $font-black;
+}
+
+.about-us .info__company-list {
+  margin: 0;
+  padding: 0;
+}
+
+.about-us .info__button {
+  margin-top: 80px;
 }

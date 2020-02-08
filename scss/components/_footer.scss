@@ -1,3 +1,5 @@
+// typography
+
 .footer {
   background-color: $bg-dark-grey;
 }
@@ -46,4 +48,44 @@
 .footer .log-out {
   @include font("Open Sans", normal, $font-low-opacity-white);
   @include font-size(15px, 2em);
+}
+
+// layout
+
+.footer {
+  padding: 65px 0px; 
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__navigation a:not(:last-child) {
+  margin-right: 38px;
+}
+
+.footer__row--contacts {
+  margin-top: 42px;
+  margin-bottom: 70px;
+}
+
+.social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.social__facebook {
+  background: url("../../img/fb.svg") no-repeat;
+}
+
+.social__instagram {
+  background: url("../../img/instagram.svg") no-repeat;
+}
+
+.social__twitter {
+  background: url("../../img/twitter.svg") no-repeat;
 }

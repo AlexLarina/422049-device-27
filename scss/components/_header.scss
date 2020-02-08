@@ -77,7 +77,7 @@
   height: 299px; /* уточнить насчет высоты */
 }
 
-.user-menu__item--logo {
+.header .user-menu__item--logo {
   position: absolute;
   top: 21px;
   left: 199px;
@@ -97,4 +97,49 @@
 /* для скрытия каталога товаров */
 .header__row:last-of-type {
   display: none;
+}
+
+.user-menu__form label {
+  margin-right: 15px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../../img/search.svg") no-repeat 0% 50%;
+}
+
+/* очень странный background у input, надо проверить */
+.user-menu__form input {
+  border: none;
+  background-color: inherit;
+}
+
+a.user-menu__item::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+.user-menu__item--log-in::before {
+  margin-right: 14px;
+  background: url("../../img/user.svg") no-repeat 0% 50%;
+}
+
+.user-menu__item--compare::before {
+  margin-right: 12px;
+  background: url("../../img/compare.svg") no-repeat 0% 50%;
+}
+
+.user-menu__item--basket::before {
+  margin-right: 10px;
+  background: url("../../img/cart.svg") no-repeat 0% 50%;
+}
+
+.navigation__item--catalog::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  background: url("../../img/plus.svg") no-repeat 100% 50%;
 }

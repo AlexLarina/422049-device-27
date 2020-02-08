@@ -427,7 +427,7 @@ html {
   height: 299px;
   /* уточнить насчет высоты */ }
 
-.user-menu__item--logo {
+.header .user-menu__item--logo {
   position: absolute;
   top: 21px;
   left: 199px; }
@@ -444,6 +444,44 @@ html {
 /* для скрытия каталога товаров */
 .header__row:last-of-type {
   display: none; }
+
+.user-menu__form label {
+  margin-right: 15px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../../img/search.svg") no-repeat 0% 50%; }
+
+/* очень странный background у input, надо проверить */
+.user-menu__form input {
+  border: none;
+  background-color: inherit; }
+
+a.user-menu__item::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px; }
+
+.user-menu__item--log-in::before {
+  margin-right: 14px;
+  background: url("../../img/user.svg") no-repeat 0% 50%; }
+
+.user-menu__item--compare::before {
+  margin-right: 12px;
+  background: url("../../img/compare.svg") no-repeat 0% 50%; }
+
+.user-menu__item--basket::before {
+  margin-right: 10px;
+  background: url("../../img/cart.svg") no-repeat 0% 50%; }
+
+.navigation__item--catalog::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  background: url("../../img/plus.svg") no-repeat 100% 50%; }
 
 .footer {
   background-color: #464646; }
@@ -495,6 +533,36 @@ html {
   color: rgba(255, 255, 255, 0.3);
   font-size: 15px;
   line-height: 2em; }
+
+.footer {
+  padding: 65px 0px; }
+
+.footer__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.footer__navigation a:not(:last-child) {
+  margin-right: 38px; }
+
+.footer__row--contacts {
+  margin-top: 42px;
+  margin-bottom: 70px; }
+
+.social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3; }
+
+.social__facebook {
+  background: url("../../img/fb.svg") no-repeat; }
+
+.social__instagram {
+  background: url("../../img/instagram.svg") no-repeat; }
+
+.social__twitter {
+  background: url("../../img/twitter.svg") no-repeat; }
 
 .promo__item .info__title {
   font-family: "Gilroy";
@@ -597,6 +665,33 @@ html {
   font-size: 16px;
   line-height: 2.5em;
   list-style: none; }
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 90px; }
+
+/* добавить в normalize */
+.about-us .info__title {
+  margin: 0;
+  margin-bottom: 60px; }
+
+.about-us__info::before,
+.about-us__contacts::before {
+  content: "";
+  display: inline-block;
+  margin-bottom: 50px;
+  width: 80px;
+  height: 7px;
+  background-color: #000000; }
+
+.about-us .info__company-list {
+  margin: 0;
+  padding: 0; }
+
+.about-us .info__button {
+  margin-top: 80px; }
 
 .catalog__title {
   font-family: "Gilroy";
