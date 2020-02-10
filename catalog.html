@@ -8,29 +8,30 @@
   <body>
     <header class="header">
       <div class="container">
+        <a href="index.html"><img class="user-menu__item user-menu__item--logo" src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина гаджетов Device"></a>
         <div class="header__row user-menu">
-          <a href="index.html"><img class="user-menu__item user-menu__item--logo" src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина гаджетов Device"></a>
+          <form action="https://echo.htmlacademy.ru" class="user-menu__form">
+            <label for="header-search"></label>
+            <input class="user-menu__item" type="search" id="header-search" name="search" placeholder="Поиск по сайту">
+          </form>
 
-          <label for="header-search"></label>
-          <input class="user-menu__item" type="search" id="header-search" name="search" placeholder="Поиск по сайту">
-
-          <a href="#" class="user-menu__item">
+          <a href="#" class="user-menu__item user-menu__item--log-in">
             <span class="log-in">Валентин Петухов</span>
             <span class="log-out">Выйти</span>
           </a>
-          <a href="#" class="user-menu__item">Сравнить</a>
-          <a href="#" class="user-menu__item">Корзина</a>
+          <a href="#" class="user-menu__item user-menu__item--compare">Сравнить</a>
+          <a href="#" class="user-menu__item user-menu__item--basket">Корзина</a>
         </div>
 
         <div class="header__row">
           <nav class="header__navigation navigation">
-            <a href="catalog.html" class="navigation__item">Каталог товаров</a>
+            <a href="catalog.html" class="navigation__item navigation__item--catalog">Каталог товаров<span class="navigation__open"></span></a>
             <a href="#" class="navigation__item">Доставка</a>
             <a href="#" class="navigation__item">Гарантия</a>
             <a href="#" class="navigation__item">Контакты</a>
           </nav>
         </div>
-        <div class="header__row">
+        <div class="header__row hidden">
           <ul class="header__catalog catalog">
             <li class="catalog__item">Виртуальная реальность</li>
             <li class="catalog__item">Фитнес-браслеты</li>
@@ -54,7 +55,8 @@
           <a href="#" class="breadcrumbs__item">Моноподы для селфи</a>
         </nav>
 
-        <aside class="catalog__filters filters">
+        <div class="catalog__wrapper">
+          <aside class="catalog__filters filters">
           <h2 class="filters__title">Фильтр:</h2>
           <form сlass="filters__form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filters__item filter">
@@ -125,7 +127,7 @@
             <button class="filters__button" type="submit">Показать</button>
           </form>
         </aside>
-        <section class="catalog__content content">
+          <section class="catalog__content content">
           <div class="content__container">
             <h2 class="content__title">Сортировка:</h2>
             <ul class="content__filter filter">
@@ -196,7 +198,7 @@
             <a href="#" class="pagination__item pagination__item--forward">Вперед</a>
           </div>
         </section>
-
+        </div>
       </div>
     </main>
 
@@ -235,5 +237,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+// typography
+
 .pagination {
   background-color: $bg-grey;
 }
@@ -6,6 +8,7 @@
   @include font("Gilroy", bold, $font-opacity-black);
   @include font-size(16px, 1.5em);
   text-transform: uppercase;
+  letter-spacing: 3.2px;
 }
 
 .pagination__item:hover {
@@ -31,4 +34,30 @@
 .pagination__item--forward:active {
   background-color: $bg-filter;
   color: $font-opacity-black;
+}
+
+// layout
+
+.pagination {
+  margin-left: 75px;
+  margin-right: 140px;
+
+  padding: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pagination__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.pagination__item--back,
+.pagination__item--forward {
+  flex-grow: 1;
+}
+
+.pagination__item--forward {
+  text-align: right;
 }

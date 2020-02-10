@@ -1,0 +1,10 @@
+.partners {
+  margin: 90px auto;
+}
+
+.partners__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

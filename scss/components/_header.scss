@@ -36,6 +36,7 @@
 
 .navigation__item {
   color: inherit;
+  letter-spacing: 3.6px;
 }
 
 .navigation__item:hover {
@@ -74,13 +75,15 @@
 .header .container {
   margin-top: 40px;
   padding-top: 1px;
-  height: 299px; /* уточнить насчет высоты */
+  padding-bottom: 55px;
+
+  position: relative;
 }
 
 .header .user-menu__item--logo {
   position: absolute;
-  top: 21px;
-  left: 199px;
+  top: -16px;
+  left: 59px;
 }
 
 .header__row {
@@ -94,17 +97,13 @@
   justify-content: space-between;
 }
 
-/* для скрытия каталога товаров */
-.header__row:last-of-type {
-  display: none;
-}
-
 .user-menu__form label {
   margin-right: 15px;
   width: 16px;
   height: 16px;
   display: inline-block;
   background: url("../../img/search.svg") no-repeat 0% 50%;
+  vertical-align: middle;
 }
 
 /* очень странный background у input, надо проверить */
@@ -135,11 +134,20 @@ a.user-menu__item::before {
   background: url("../../img/cart.svg") no-repeat 0% 50%;
 }
 
-.navigation__item--catalog::after {
-  content: "";
+.navigation__open {
   display: inline-block;
   width: 16px;
   height: 16px;
   margin-left: 16px;
   background: url("../../img/plus.svg") no-repeat 100% 50%;
+}
+
+.header__row:last-of-type {
+  position: absolute;
+  z-index: 1;
+  background-color: $bg-header-catalog;
+  margin: 0;
+  margin-top: 40px;
+  width: 100%;
+  padding: 0 60px 40px 60px;
 }

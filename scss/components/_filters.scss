@@ -1,3 +1,5 @@
+// typography
+
 .filters {
   background-color: $bg-grey;
 }
@@ -5,6 +7,8 @@
 .filters__title {
   @include font("Gilroy", bold, $font-black);
   @include font-size(16px, 1.5em);
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
 
   background-color: $bg-filter;
 }
@@ -12,6 +16,8 @@
 .content__title {
   @include font("Gilroy", bold, $font-black);
   @include font-size(16px, 1.5em);
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
 
   background-color: $bg-grey;
 }
@@ -65,4 +71,46 @@ label.disabled {
 
 .filter__item--active a {
   color: inherit;
+}
+
+
+// layout
+
+.filters {
+  width: 33%;
+}
+
+.filters__title {
+  margin: 0;
+  // padding: 30px 0 30px 200px;
+  padding-left: 200px;
+  height: 70px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.filters form {
+  padding-left: 200px;
+  padding-right: 67px;
+  margin-top: 70px;
+}
+
+.filters fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 40px;
+}
+
+.filter__title {
+  width: 100%;
+  padding-top: 15px;
+  border-top: 2px solid $font-black;
+}
+
+.content__filter .filter__item:not(:last-child) {
+  margin-right: 30px;
 }
