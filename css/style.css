@@ -573,7 +573,13 @@ a.user-menu__item::before {
   display: inline-block;
   width: 32px;
   height: 32px;
-  opacity: 0.3; }
+  filter: opacity(0.3); }
+
+.social a:hover {
+  filter: opacity(0.6); }
+
+.social a:active {
+  filter: opacity(0.1); }
 
 .social__facebook {
   background: url("../../img/fb.svg") no-repeat; }
@@ -587,6 +593,20 @@ a.user-menu__item::before {
 .footer .user-menu__item--logo,
 .footer .user-menu__item::before {
   filter: invert(71%) sepia(58%) saturate(1088%) hue-rotate(359deg) brightness(103%) contrast(106%); }
+
+.footer .user-menu__item--logo:hover,
+.footer a.user-menu__item:hover::before {
+  filter: invert(71%) sepia(58%) saturate(1088%) hue-rotate(359deg) brightness(103%) contrast(106%) opacity(0.6); }
+
+.footer .user-menu__item--logo:active,
+.footer a.user-menu__item:active::before {
+  filter: invert(71%) sepia(58%) saturate(1088%) hue-rotate(359deg) brightness(103%) contrast(106%) opacity(0.3); }
+
+.footer__copyright img:hover {
+  filter: opacity(0.6); }
+
+.footer__copyright img:active {
+  filter: opacity(0.3); }
 
 .promo__item .info__title {
   font-family: "Gilroy";
