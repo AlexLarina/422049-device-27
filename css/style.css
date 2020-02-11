@@ -456,7 +456,8 @@ html {
 /* очень странный background у input, надо проверить */
 .user-menu__form input {
   border: none;
-  background-color: inherit; }
+  background-color: inherit;
+  cursor: pointer; }
 
 a.user-menu__item::before {
   content: "";
@@ -481,7 +482,9 @@ a.user-menu__item::before {
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: url("../../img/plus.svg") no-repeat 100% 50%; }
+  background: url("../../img/plus.svg") no-repeat 100% 50%;
+  filter: opacity(0.3);
+  vertical-align: baseline; }
 
 .header__row:last-of-type {
   position: absolute;
@@ -491,6 +494,14 @@ a.user-menu__item::before {
   margin-top: 40px;
   width: 100%;
   padding: 0 60px 40px 60px; }
+
+.header .user-menu__item--logo:hover,
+.header a.user-menu__item:hover {
+  filter: opacity(0.6); }
+
+.header .user-menu__item--logo:active,
+.header a.user-menu__item:active {
+  filter: opacity(0.3); }
 
 .footer {
   background-color: #464646; }
@@ -681,33 +692,53 @@ a.user-menu__item::before {
   width: 160px;
   height: 160px; }
 
-.goods__item::before {
-  content: "";
-  display: block;
-  height: 160px;
-  background-color: rgba(240, 197, 46, 0.5);
-  margin-bottom: 40px; }
+.goods__item p {
+  margin: 0;
+  margin-top: 200px; }
 
 .goods__item:active {
   color: rgba(0, 0, 0, 0.3); }
 
 .goods__item--virtual-reality {
-  background: url("../../img/popular-1.svg") no-repeat 50% 50%; }
+  background: url("../../img/popular-1.svg") no-repeat 50% 50%;
+  background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--selfie-monopods {
-  background: url("../../img/popular-2.svg") no-repeat 50% 50%; }
+  background: url("../../img/popular-2.svg") no-repeat 50% 50%;
+  background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--action-cameras {
-  background: url("../../img/popular-3.svg") no-repeat 50% 50%; }
+  background: url("../../img/popular-3.svg") no-repeat 50% 50%;
+  background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--fitnes-bands {
-  background: url("../../img/popular-4.svg") no-repeat 50% 50%; }
+  background: url("../../img/popular-4.svg") no-repeat 50% 50%;
+  background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--smart-watch {
-  background: url("../../img/popular-5.svg") no-repeat 50% 50%; }
+  background: url("../../img/popular-5.svg") no-repeat 50% 50%;
+  background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--quadcopters {
-  background: url("../../img/popular-6.svg") no-repeat 50% 50%; }
+  background: url("../../img/popular-6.svg") no-repeat 50% 50%;
+  background-color: rgba(240, 197, 46, 0.5); }
+
+.goods__item--virtual-reality:hover,
+.goods__item--selfie-monopods:hover,
+.goods__item--action-cameras:hover,
+.goods__item--fitnes-bands:hover,
+.goods__item--smart-watch:hover,
+.goods__item--quadcopters:hover {
+  background-color: #f0c52e; }
+
+.goods__item--virtual-reality:active,
+.goods__item--selfie-monopods:active,
+.goods__item--action-cameras:active,
+.goods__item--fitnes-bands:active,
+.goods__item--smart-watch:active,
+.goods__item--quadcopters:active {
+  background-color: #f0c52e;
+  filter: opacity(0.3); }
 
 .advantages__list {
   list-style: none;

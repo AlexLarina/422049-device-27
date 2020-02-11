@@ -110,6 +110,7 @@
 .user-menu__form input {
   border: none;
   background-color: inherit;
+  cursor: pointer;
 }
 
 a.user-menu__item::before {
@@ -140,6 +141,8 @@ a.user-menu__item::before {
   height: 16px;
   margin-left: 16px;
   background: url("../../img/plus.svg") no-repeat 100% 50%;
+  filter: opacity(0.3);
+  vertical-align: baseline;
 }
 
 .header__row:last-of-type {
@@ -150,4 +153,14 @@ a.user-menu__item::before {
   margin-top: 40px;
   width: 100%;
   padding: 0 60px 40px 60px;
+}
+
+.header .user-menu__item--logo:hover,
+.header a.user-menu__item:hover {
+  filter: opacity(0.6);
+}
+
+.header .user-menu__item--logo:active,
+.header a.user-menu__item:active {
+  filter: opacity(0.3);
 }
