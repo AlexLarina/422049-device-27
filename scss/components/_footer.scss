@@ -89,3 +89,8 @@
 .social__twitter {
   background: url("../../img/twitter.svg") no-repeat;
 }
+
+.footer .user-menu__item--logo, 
+.footer .user-menu__item::before {
+  filter: invert(71%) sepia(58%) saturate(1088%) hue-rotate(359deg) brightness(103%) contrast(106%);
+}
