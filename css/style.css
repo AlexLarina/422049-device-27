@@ -866,6 +866,18 @@ button.promo__slide--current {
   flex-direction: row;
   justify-content: space-between; }
 
+.partners__item {
+  cursor: pointer; }
+
+.partners__logo-hover {
+  display: none; }
+
+.partners__item:hover .partners__logo-hover {
+  display: block; }
+
+.partners__item:hover .partners__logo {
+  display: none; }
+
 .catalog__title {
   font-family: "Gilroy";
   font-weight: bold;
