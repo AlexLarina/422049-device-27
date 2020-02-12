@@ -905,6 +905,9 @@ a.user-menu__item::before {
 .about-us .info__button {
   margin-top: 80px; }
 
+.about-us__contacts .info__map {
+  display: inline-block; }
+
 .promo__slider {
   display: inline;
   position: absolute;
@@ -948,6 +951,96 @@ button.promo__slide--current {
 
 .partners__item:hover .partners__logo {
   display: none; }
+
+.popup--feedback label {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.33em; }
+
+.popup--feedback input[placeholder],
+.popup--feedback textarea[placeholder] {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: normal;
+  color: rgba(70, 70, 70, 0.4);
+  font-size: 14px;
+  line-height: 1.3em; }
+
+.popup--feedback,
+.popup--map {
+  width: 960px;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2); }
+
+.popup--map {
+  height: 559px; }
+
+.popup__container {
+  padding: 100px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.popup__button--close {
+  width: 55px;
+  height: 55px;
+  border: none;
+  background: url("../../img/modal-close.svg") no-repeat;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  filter: opacity(0.5); }
+
+.popup__button--close:hover {
+  filter: opacity(1); }
+
+.popup__button--close:active {
+  filter: opacity(0.3);
+  outline: none; }
+
+.popup--feedback label {
+  display: block;
+  margin-bottom: 10px; }
+
+.popup__item textarea {
+  width: 100%;
+  resize: none;
+  height: 156px;
+  overflow-y: auto; }
+
+.popup__item input,
+.popup__item textarea {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 20px; }
+
+.popup__item input:hover,
+.popup__item textarea:hover {
+  background-color: #eaeaea; }
+
+.popup__item input:focus,
+.popup__item textarea:focus {
+  background-color: #ffffff;
+  outline: none;
+  border: 3px solid #f0c52e;
+  color: #464646; }
+
+.popup__item input {
+  width: 360px;
+  height: 50px; }
+
+.popup__item:last-of-type {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 50px; }
 
 .catalog__title {
   font-family: "Gilroy", "Arial", sans-serif;

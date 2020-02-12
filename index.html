@@ -238,25 +238,30 @@
         </section>
       </div>
 
-      <div class="main__popup popup popup--feedback" style="display: none;">
+      <div class="main__popup popup popup--feedback hidden">
         <form action="https://echo.htmlacademy.ru" method="post" class="popup__form">
           <div class="popup__container">
             <button class="popup__button popup__button--close" type="button" title="Закрыть"></button>
-            <label for="user__name"></label>
-            <input class="popup__name" type="text" id="user__name" name="name" placeholder="Имя Фамилия">
+            <div class="popup__item">
+              <label for="user__name">Ваше имя:</label>
+              <input class="popup__name" type="text" id="user__name" name="name" placeholder="Имя Фамилия">
+            </div>
 
-            <label for="user__email"></label>
-            <input class="popup__email" type="email" id="user__email" name="email" placeholder="email@example.com">
+            <div class="popup__item">
+              <label for="user__email">Ваш e-mail:</label>
+              <input class="popup__email" type="email" id="user__email" name="email" placeholder="email@example.com">
+            </div>
 
-            <label for="user__feedback"></label>
-            <textarea class="popup__feedback" id="user__feedback" name="feedback" placeholder="В свободной форме"></textarea>
-
+            <div class="popup__item">
+              <label for="user__feedback">Текст письма:</label>
+              <textarea class="popup__feedback" id="user__feedback" name="feedback" placeholder="В свободной форме"></textarea>
+            </div>
             <button class="popup__button popup__button--submit" type="submit" title="Отправить">Отправить</button>
           </div>
         </form>
       </div>
 
-      <div class="main__popup popup popup--map" style="display: none;">
+      <div class="main__popup popup popup--map hidden">
         <button class="popup__button popup__button--close" type="button" title="Закрыть"></button>
         <img src="files/map-big-jpg.jpg" width="960" height="559" alt="Увеличенная карта расположения магазина Device">
       </div>
