@@ -1,5 +1,5 @@
 body {
-  font-family: "Gilroy", "Open Sans", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
 }
 
 a {
@@ -32,6 +32,7 @@ html {
 }
 
 .container {
-  margin-left: 140px;
-  margin-right: 140px;
+  max-width: 1160px;
+  margin: 0 auto;
+  // padding - ?
 }
