@@ -519,6 +519,9 @@ a.user-menu__item::before {
 .navigation__item--warranty {
   margin-right: 114px; }
 
+.header .log-out {
+  margin-left: 20px; }
+
 .footer {
   background-color: #464646; }
 
@@ -623,6 +626,18 @@ a.user-menu__item::before {
 
 .footer__copyright img:active {
   filter: opacity(0.3); }
+
+.footer__row.user-menu a:first-child {
+  flex-grow: 1; }
+
+.footer .user-menu__item--log-in {
+  margin-right: 45px; }
+
+.footer .user-menu__item--compare {
+  margin-right: 40px; }
+
+.footer .log-out {
+  margin-left: 20px; }
 
 .promo__item .info__title {
   font-family: "Gilroy", "Arial", sans-serif;
