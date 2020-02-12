@@ -704,7 +704,7 @@ a.user-menu__item::before {
   padding: 0px 60px 0px 90px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .promo__item::before {
   content: "";
@@ -714,9 +714,22 @@ a.user-menu__item::before {
   height: 110px;
   background-color: #f7e296; }
 
+.promo__info {
+  position: relative; }
+
+.promo__info::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100px;
+  height: 7px;
+  background-color: #ffffff; }
+
 .promo__item .info__counter {
   position: absolute;
-  right: 60px;
+  right: 0;
   top: -15px; }
 
 .promo__item .info__title {
