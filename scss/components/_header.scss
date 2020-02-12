@@ -164,3 +164,24 @@ a.user-menu__item::before {
 .header a.user-menu__item:active {
   filter: opacity(0.3);
 }
+
+.user-menu__item--log-in {
+  margin-right: 218px;
+}
+
+.user-menu__item--compare {
+  margin-right: 41px;
+}
+
+.user-menu__form,
+.navigation__item--catalog {
+  flex-grow: 1;
+}
+
+.navigation__item--delivery {
+  margin-right: 38px;
+}
+
+.navigation__item--warranty {
+  margin-right: 114px;
+}
