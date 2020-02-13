@@ -22,9 +22,26 @@
   margin-bottom: 40px;
 
   padding-left: 75px;
-  padding-right: 140px;
+  //padding-right: 140px;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.products__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.products__name {
+  display: inline-block;
+  max-width: 70%;
+}
+
+
+.products__item:nth-of-type(2n):not(:last-of-type) {
+  margin-bottom: 50px;
 }
