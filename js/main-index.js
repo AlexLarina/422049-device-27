@@ -7,6 +7,7 @@ const mapElement = document.querySelector('.popup--map');
 const closeMapButtonElement = document.querySelector('.popup--map .popup__button--close');
 
 const promoSliderElement = document.querySelector('.promo__slider');
+const advantagesListElement = document.querySelector('.advantages__list');
 
 feedbackShowButtonElement.addEventListener('click', () => {
     popupFeedbackElement.classList.remove('hidden');
@@ -26,8 +27,6 @@ closeMapButtonElement.addEventListener('click', () => {
 });
 
 promoSliderElement.addEventListener('click', (evt) => {
-    console.log(evt.target.value);
-
     const currentPromoSlide = document.querySelector('.promo__item--current');
     const currentButton = document.querySelector('.promo__slide--current');
 
@@ -40,4 +39,19 @@ promoSliderElement.addEventListener('click', (evt) => {
 
     currentButton.classList.remove('promo__slide--current');
     evt.target.classList.add('promo__slide--current');
+});
+
+advantagesListElement.addEventListener('click', (evt) => {
+    const currentAdvantagesItem = document.querySelector('.details--current');
+    const clickedAdvantageItem =  document.querySelector('.advantages__details:nth-of-type(' + evt.target.value + ')');
+    const currentAdvantagesButton = document.querySelector('.advantages__item--active');
+
+    currentAdvantagesItem.classList.add('hidden');
+    currentAdvantagesItem.classList.remove('details--current');
+
+    clickedAdvantageItem.classList.remove('hidden');
+    clickedAdvantageItem.classList.add('details--current');
+    
+    currentAdvantagesButton.classList.remove('advantages__item--active');
+    evt.target.classList.add('advantages__item--active');
 });

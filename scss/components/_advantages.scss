@@ -47,6 +47,7 @@
 
 .advantages__item {
   padding: 15px 130px 15px 20px;
+  cursor: pointer;
 }
 
 .advantages__item:not(:last-child) {
@@ -71,6 +72,28 @@
   width: 136px;
   height: 164px;
   background: url("../../img/delivery.svg") no-repeat;
+  position: absolute;
+  right: 206px;
+  top: -15px;
+}
+
+.details--warranty::after {
+  content: "";
+  display: inline-block;
+  width: 171px;
+  height: 194px;
+  background: url("../../img/warranty.svg") no-repeat;
+  position: absolute;
+  right: 206px;
+  top: -15px;
+}
+
+.details--credit::after {
+  content: "";
+  display: inline-block;
+  width: 156px;
+  height: 186px;
+  background: url("../../img/credit.svg") no-repeat;
   position: absolute;
   right: 206px;
   top: -15px;
