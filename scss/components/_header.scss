@@ -78,6 +78,7 @@
   padding-bottom: 55px;
 
   position: relative;
+  width: 1160px;
 }
 
 .header .user-menu__item--logo {
@@ -87,7 +88,7 @@
 }
 
 .header__row {
-  margin: 53px 60px 0px 60px;
+  margin: 53px 40px 0px 40px;
 }
 
 .user-menu,
@@ -153,6 +154,7 @@ a.user-menu__item::before {
   margin-top: 40px;
   width: 100%;
   padding: 0 60px 40px 60px;
+  left: 0;
 }
 
 .header .user-menu__item--logo:hover,

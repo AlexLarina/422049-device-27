@@ -332,7 +332,8 @@ html {
   display: none; }
 
 .container {
-  max-width: 1160px;
+  width: 1200px;
+  padding: 0 20px;
   margin: 0 auto; }
 
 @font-face {
@@ -429,7 +430,8 @@ html {
   margin-top: 40px;
   padding-top: 1px;
   padding-bottom: 55px;
-  position: relative; }
+  position: relative;
+  width: 1160px; }
 
 .header .user-menu__item--logo {
   position: absolute;
@@ -437,7 +439,7 @@ html {
   left: 59px; }
 
 .header__row {
-  margin: 53px 60px 0px 60px; }
+  margin: 53px 40px 0px 40px; }
 
 .user-menu,
 .header__navigation {
@@ -493,7 +495,8 @@ a.user-menu__item::before {
   margin: 0;
   margin-top: 40px;
   width: 100%;
-  padding: 0 60px 40px 60px; }
+  padding: 0 60px 40px 60px;
+  left: 0; }
 
 .header .user-menu__item--logo:hover,
 .header a.user-menu__item:hover {
@@ -754,7 +757,8 @@ a.user-menu__item::before {
   line-height: 1.33em; }
 
 .goods {
-  margin: 80px 0px 260px 0px; }
+  margin-top: 80px;
+  margin-bottom: 260px; }
 
 .goods__list {
   list-style: none;
@@ -849,9 +853,7 @@ a.user-menu__item::before {
 
 .advantages {
   min-height: 290px;
-  width: 100vw;
   position: relative;
-  left: calc(-50vw + 50%);
   padding-left: 580px;
   background-color: #e5e5e5; }
 
