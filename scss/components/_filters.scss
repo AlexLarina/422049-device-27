@@ -50,6 +50,7 @@ label.disabled {
 .content__filter {
   list-style: none;
   background-color: $bg-grey;
+  flex-grow: 1;
 }
 
 .content__filter a {
@@ -82,9 +83,7 @@ label.disabled {
 
 .filters__title {
   margin: 0;
-  // padding: 30px 0 30px 200px;
-  padding-left: 200px;
-  height: 70px;
+  padding-left: 60px;
   height: 70px;
   display: flex;
   flex-direction: row;
@@ -92,7 +91,7 @@ label.disabled {
 }
 
 .filters form {
-  //padding-left: 200px;
+  padding-left: 60px;
   padding-right: 67px;
   margin-top: 70px;
 }

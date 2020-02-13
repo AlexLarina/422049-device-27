@@ -1142,7 +1142,7 @@ button.promo__slide--current {
   margin-bottom: 77px; }
 
 .content__title {
-  margin: 0; }
+  margin-right: 55px; }
 
 .content__container {
   height: 70px;
@@ -1211,7 +1211,8 @@ label.disabled {
 
 .content__filter {
   list-style: none;
-  background-color: #ebebeb; }
+  background-color: #ebebeb;
+  flex-grow: 1; }
 
 .content__filter a {
   font-family: "Open Sans", "Arial", sans-serif;
@@ -1237,14 +1238,14 @@ label.disabled {
 
 .filters__title {
   margin: 0;
-  padding-left: 200px;
-  height: 70px;
+  padding-left: 60px;
   height: 70px;
   display: flex;
   flex-direction: row;
   align-items: center; }
 
 .filters form {
+  padding-left: 60px;
   padding-right: 67px;
   margin-top: 70px; }
 
