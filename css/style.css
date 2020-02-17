@@ -853,18 +853,22 @@ a.user-menu__item::before {
 
 .advantages {
   min-height: 290px;
-  position: relative;
-  padding-left: 580px;
   background-color: #e5e5e5; }
+
+.advantages__container {
+  position: relative; }
 
 .advantages__list {
   padding-top: 80px;
   margin: 0;
   display: inline-block;
   position: absolute;
-  left: 140px;
+  left: 0;
   top: -100px;
   border-right: 7px solid #000000; }
+
+.advantages__details {
+  padding-left: 400px; }
 
 .advantages__item {
   padding: 15px 130px 15px 20px;
@@ -881,7 +885,7 @@ a.user-menu__item::before {
 .advantages__details .details__description {
   margin: 0;
   padding-top: 60px;
-  width: 35%; }
+  max-width: 436px; }
 
 .details--delivery::after {
   content: "";
@@ -890,7 +894,7 @@ a.user-menu__item::before {
   height: 164px;
   background: url("../../img/delivery.svg") no-repeat;
   position: absolute;
-  right: 206px;
+  right: 0;
   top: -15px; }
 
 .details--warranty::after {
@@ -900,7 +904,7 @@ a.user-menu__item::before {
   height: 194px;
   background: url("../../img/warranty.svg") no-repeat;
   position: absolute;
-  right: 206px;
+  right: 0;
   top: -15px; }
 
 .details--credit::after {
@@ -910,7 +914,7 @@ a.user-menu__item::before {
   height: 186px;
   background: url("../../img/credit.svg") no-repeat;
   position: absolute;
-  right: 206px;
+  right: 0;
   top: -15px; }
 
 .about-us .info__title {
