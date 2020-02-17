@@ -1,3 +1,5 @@
+// typography
+
 .promo__item .info__title {
   @include font("Gilroy", bold, $font-black);
   @include font-size(47px, 1.2em);
@@ -21,4 +23,72 @@
 .promo__item .details__name {
   @include font("Open Sans", normal, $font-dark-grey);
   @include font-size(13px, 1.5em);
+}
+
+.promo__item .info__counter {
+  @include font("Gilroy", bold, $font-white);
+  @include font-size(179px, 1em);
+}
+
+// layout
+.promo {
+  position: relative;
+}
+
+.promo__item {
+  position: relative;
+}
+
+.promo__wrapper {
+  padding: 0px 60px 0px 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.promo__item::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 110px;
+  background-color: #f7e296;
+}
+
+.promo__info {
+  position: relative;
+}
+.promo__info::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 40px; 
+  left: 0;
+  width: 100px;
+  height: 7px;
+  background-color: $font-white;
+}
+
+.promo__item .info__counter {
+  position: absolute;
+  right: 0;
+  top: -15px;
+}
+
+.promo__item .info__title {
+   margin: 0;
+   margin-top: 80px;
+   margin-bottom: 30px;
+}
+
+.promo__item .info__description {
+  margin: 0;
+}
+
+.promo__item .info__buttons {
+  margin: 65px 0px;
+}
+
+.promo__item table {
+  width: 100%;
 }

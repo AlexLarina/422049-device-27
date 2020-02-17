@@ -3,14 +3,81 @@
   @include font-size(18px, 1.33em);
 }
 
+.goods {
+  margin-top: 80px;
+  margin-bottom: 260px;
+}
+
 .goods__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .goods__item {
   cursor: pointer;
+  width: 160px;
+  height: 160px;
+}
+
+.goods__item p {
+  margin: 0;
+  margin-top: 200px;
 }
 
 .goods__item:active {
   color: $font-opacity-black;
+}
+
+.goods__item--virtual-reality {
+  background: url("../../img/popular-1.svg") no-repeat 50% 50%;
+  background-color: $bg-orange;
+}
+
+.goods__item--selfie-monopods {
+  background: url("../../img/popular-2.svg") no-repeat 50% 50%;
+  background-color: $bg-orange;
+}
+
+.goods__item--action-cameras {
+  background: url("../../img/popular-3.svg") no-repeat 50% 50%;
+  background-color: $bg-orange;
+}
+
+.goods__item--fitnes-bands {
+  background: url("../../img/popular-4.svg") no-repeat 50% 50%;
+  background-color: $bg-orange;
+}
+
+.goods__item--smart-watch {
+  background: url("../../img/popular-5.svg") no-repeat 50% 50%;
+  background-color: $bg-orange;
+}
+
+.goods__item--quadcopters {
+  background: url("../../img/popular-6.svg") no-repeat 50% 50%;
+  background-color: $bg-orange;
+}
+
+.goods__item--virtual-reality:hover,
+.goods__item--selfie-monopods:hover,
+.goods__item--action-cameras:hover,
+.goods__item--fitnes-bands:hover,
+.goods__item--smart-watch:hover,
+.goods__item--quadcopters:hover {
+  background-color: $bg-orange-hover;
+}
+
+.goods__item--virtual-reality:active,
+.goods__item--selfie-monopods:active,
+.goods__item--action-cameras:active,
+.goods__item--fitnes-bands:active,
+.goods__item--smart-watch:active,
+.goods__item--quadcopters:active {
+  background-color: $bg-orange-hover;
+  filter: opacity(0.3);
 }

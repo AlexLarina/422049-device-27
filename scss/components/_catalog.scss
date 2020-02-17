@@ -1,0 +1,16 @@
+.header__catalog {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 90px;
+}
+
+.catalog__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}

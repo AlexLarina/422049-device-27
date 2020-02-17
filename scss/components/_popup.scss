@@ -1,0 +1,105 @@
+// typography
+
+.popup--feedback label {
+    @include font("Gilroy", bold, $font-black);
+    @include font-size(18px, 1.33em);
+}
+
+.popup--feedback input[placeholder],
+.popup--feedback textarea[placeholder] {
+    @include font("OpenSans", normal, $font-popup-input);
+    @include font-size(14px, 1.3em);
+}
+
+// layout
+.popup--feedback,
+.popup--map {
+    width: 960px;
+    margin: 0 auto;
+
+    position: fixed;
+    z-index: 2;
+
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    background-color: $font-white;
+    box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+.popup--map {
+    height: 559px;
+}
+
+.popup__container {
+    padding: 100px;
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.popup__button--close {
+    width: 55px;
+    height: 55px;
+    border: none;
+    background: url("../../img/modal-close.svg") no-repeat;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    filter: opacity(0.5);
+}
+
+.popup__button--close:hover {
+    filter: opacity(1);
+}
+
+.popup__button--close:active {
+    filter: opacity(0.3);
+    outline: none;
+}
+
+.popup--feedback label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.popup__item textarea {
+    width: 100%;
+    resize: none;
+    height: 156px;
+    overflow-y: auto;
+}
+
+.popup__item input,
+.popup__item textarea {
+    background-color: $bg-input;
+    border: none;
+    padding: 20px;
+}
+
+.popup__item input:hover,
+.popup__item textarea:hover {
+    background-color: $bg-input-hover;
+}
+
+.popup__item input:focus,
+.popup__item textarea:focus {
+    background-color: $font-white;
+    outline: none;
+    border: 3px solid $bg-orange-hover;
+    color: $font-dark-grey;
+}
+
+.popup__item input {
+    width: 360px;
+    height: 50px;
+}
+
+.popup__item:last-of-type {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}

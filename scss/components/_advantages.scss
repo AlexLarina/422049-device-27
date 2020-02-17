@@ -13,3 +13,88 @@
   @include font("Open Sans", normal, $font-dark-grey);
   @include font-size(15px, 2em);
 }
+
+.advantages__item {
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.advantages__item--active {
+  color: $font-orange;
+  background-color: $font-black;
+}
+
+.advantages {
+  min-height: 290px;
+  //width: 100vw;
+  position: relative;
+  //left: calc(-50vw + 50%);
+  padding-left: 580px;
+  background-color: $bg-advantages;
+}
+
+.advantages__list {
+  padding-top: 80px;
+  margin: 0;
+  display: inline-block;
+
+  position: absolute;
+  left: 140px;
+  top: -100px;
+
+  border-right: 7px solid $font-black;
+}
+
+.advantages__item {
+  padding: 15px 130px 15px 20px;
+  cursor: pointer;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.advantages__details .details__title {
+  margin: 0;
+  top: -30px;
+  position: absolute;
+}
+
+.advantages__details .details__description {
+  margin: 0;
+  padding-top: 60px;
+  width: 35%;
+}
+
+.details--delivery::after {
+  content: "";
+  display: inline-block;
+  width: 136px;
+  height: 164px;
+  background: url("../../img/delivery.svg") no-repeat;
+  position: absolute;
+  right: 206px;
+  top: -15px;
+}
+
+.details--warranty::after {
+  content: "";
+  display: inline-block;
+  width: 171px;
+  height: 194px;
+  background: url("../../img/warranty.svg") no-repeat;
+  position: absolute;
+  right: 206px;
+  top: -15px;
+}
+
+.details--credit::after {
+  content: "";
+  display: inline-block;
+  width: 156px;
+  height: 186px;
+  background: url("../../img/credit.svg") no-repeat;
+  position: absolute;
+  right: 206px;
+  top: -15px;
+}

@@ -1,0 +1,41 @@
+// layout
+
+.catalog__content {
+  flex-grow: 1;
+  margin-bottom: 77px;
+  //position: relative;
+}
+
+.content__title {
+  margin-right: 55px;
+}
+
+// .content__content::after {
+//   content: "";
+//   background-color: $bg-grey;
+//   display: inline-block;
+//   height: 100%;
+//   position: absolute;
+//   right: 0;
+//   width: 100px;
+// }
+
+.content__container {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $bg-grey;
+  padding-left: 75px;
+  //position: relative;
+  
+}
+
+.content__filter {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}

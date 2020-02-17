@@ -1,5 +1,5 @@
 body {
-  font-family: "Gilroy", "Open Sans", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
 }
 
 a {
@@ -25,4 +25,14 @@ html {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
 }

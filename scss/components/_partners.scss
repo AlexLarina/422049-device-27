@@ -1,0 +1,26 @@
+.partners {
+  margin: 90px auto;
+}
+
+.partners__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.partners__item {
+  cursor: pointer;
+}
+
+.partners__logo-hover {
+  display: none;
+}
+
+.partners__item:hover .partners__logo-hover {
+  display: block;
+}
+
+.partners__item:hover .partners__logo {
+  display: none;
+}
