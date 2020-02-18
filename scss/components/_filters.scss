@@ -251,3 +251,28 @@ label.disabled {
 .filter__radio input[type="radio"]:disabled {
   color: $font-disabled;
 }
+
+.filter-direction button {
+  width: 11px;
+  height: 10px;
+  border: none;
+  filter: opacity(0.2);
+}
+
+.filter-direction button:hover {
+  filter: opacity(0.4);
+}
+
+.filter-direction button:active {
+  filter: opacity(1);
+}
+
+button.filter-direction__increase {
+  background: url("../../img/icon-up-dir.svg") no-repeat;
+}
+
+button.filter-direction__decrease {
+  background: url("../../img/icon-up-dir.svg") no-repeat;
+  transform: rotate(180deg);
+  margin-left: 20px;
+}
