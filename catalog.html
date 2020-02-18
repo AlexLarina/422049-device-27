@@ -62,14 +62,23 @@
             <fieldset class="filters__item filter">
               <legend class="filter__title">Стоимость</legend>
               <div class="filter__range range">
-                <span class="range__item range__item--min">
-                  <label for="range__item--min">от</label>
-                  <input type="number" value="0" name="range__item--min" id="range__item--min">
-                </span>
-                <span class="range__item range__item--max">
-                  <label for="range__item--max">до</label>
-                  <input type="number" value="5000" name="range__item--max" id="range__item--max">
-                </span>
+                <div class="range__controls">
+                  <div class="range__scale">
+                    <div class="range__bar"></div>
+                  </div>
+                  <div class="range__toggle range__toggle--min"></div>
+                  <div class="range__toggle range__toggle--max"></div>
+                </div>
+                <div class="range__price-controls">
+                  <span class="range__item range__item--min">
+                    <label for="range__item--min">от</label>
+                    <input type="number" value="0" name="range__item--min" id="range__item--min">
+                  </span>
+                  <span class="range__item range__item--max">
+                    <label for="range__item--max">до</label>
+                    <input type="number" value="5000" name="range__item--max" id="range__item--max">
+                  </span>
+                </div>
               </div>
             </fieldset>
             <fieldset class="filters__item filter">

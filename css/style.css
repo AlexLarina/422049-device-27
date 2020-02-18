@@ -1230,6 +1230,14 @@ legend.filter__title {
   font-size: 14px;
   line-height: 2.8em; }
 
+.range__item label,
+.range__item input[type="number"] {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  line-height: 1.33em; }
+
 /* пока легче добавить label класс disabled */
 label.disabled {
   color: #a6a6a6; }
@@ -1270,6 +1278,8 @@ label.disabled {
   align-items: center; }
 
 .filters form {
+  box-sizing: content-box;
+  width: 201px;
   padding-left: 60px;
   padding-right: 67px;
   margin-top: 70px; }
@@ -1287,6 +1297,49 @@ label.disabled {
 
 .content__filter .filter__item:not(:last-child) {
   margin-right: 30px; }
+
+.range__controls {
+  position: relative;
+  margin-top: 25px; }
+
+.range__scale {
+  height: 2px;
+  background-color: #dbdbdb; }
+
+.range__bar {
+  height: 2px;
+  background-color: #91c92f;
+  width: 52%; }
+
+.range__toggle {
+  box-sizing: content-box;
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #dbdbdb;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer; }
+
+.range__toggle:active {
+  top: -11px;
+  border: 10px solid #ffffff; }
+
+.range__toggle--min {
+  left: 0; }
+
+.range__toggle--max {
+  left: 95px; }
+
+.range__item input[type="number"] {
+  width: 55px;
+  border: none;
+  background-color: inherit; }
+
+.range__price-controls {
+  margin-top: 5px; }
 
 .products__name {
   font-family: "Gilroy", "Arial", sans-serif;
