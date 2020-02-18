@@ -1154,8 +1154,11 @@ button.promo__slide--current {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 50%;
-  height: 90px; }
+  width: 55%;
+  height: 110px; }
+
+.catalog__item:nth-last-of-type(2) {
+  height: 50px; }
 
 .catalog__wrapper {
   display: flex;
