@@ -1292,6 +1292,7 @@ label.disabled {
 
 .filter__title {
   width: 100%;
+  margin-bottom: 20px;
   padding-top: 15px;
   border-top: 2px solid #000000; }
 
@@ -1340,6 +1341,71 @@ label.disabled {
 
 .range__price-controls {
   margin-top: 5px; }
+
+.catalog__filters .filter__list {
+  padding: 0;
+  margin: 0; }
+
+.filter__checkbox,
+.filter__radio {
+  position: relative;
+  padding-left: 40px; }
+
+.filter__checkbox input[type="checkbox"] + .filter__checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  background: url("../../img/checkbox-off.svg") no-repeat; }
+
+.filter__radio input[type="radio"] + .filter__radio-indicator::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: url("../../img/radio-off.svg") no-repeat; }
+
+.filter__checkbox input[type="checkbox"]:checked + .filter__checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  background: url("../../img/checkbox-on.svg") no-repeat; }
+
+.filter__radio input[type="radio"]:checked + .filter__radio-indicator::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: url("../../img/radio-on.svg") no-repeat; }
+
+.filter__checkbox input[type="checkbox"] + .filter__checkbox-indicator:hover::before,
+.filter__radio input[type="radio"] + .filter__radio-indicator:hover::before {
+  filter: opacity(0.6); }
+
+.filter__checkbox input[type="checkbox"] + .filter__checkbox-indicator:active::before,
+.filter__radio input[type="radio"] + .filter__radio-indicator:active::before {
+  filter: opacity(1); }
+
+.filter__checkbox input[type="checkbox"]:checked:disabled + .filter__checkbox-indicator::before,
+.filter__checkbox input[type="checkbox"]:disabled + .filter__checkbox-indicator::before,
+.filter__radio input[type="radio"]:checked:disabled + .filter__radio-indicator::before,
+.filter__radio input[type="radio"]:disabled + .filter__radio-indicator::before {
+  filter: opacity(0.25); }
+
+.filter__checkbox input[type="checkbox"]:checked:disabled,
+.filter__checkbox input[type="checkbox"]:disabled,
+.filter__radio input[type="radio"]:checked:disabled,
+.filter__radio input[type="radio"]:disabled {
+  color: #a6a6a6; }
 
 .products__name {
   font-family: "Gilroy", "Arial", sans-serif;
