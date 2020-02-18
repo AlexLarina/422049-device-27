@@ -506,8 +506,11 @@ a.user-menu__item::before {
 .header a.user-menu__item:active {
   filter: opacity(0.3); }
 
-.user-menu__item--log-in {
+.user-menu__item--log-in .log-in {
   margin-right: 218px; }
+
+.user-menu__item--log-in .log-out {
+  margin-right: 59px; }
 
 .user-menu__item--compare {
   margin-right: 41px; }
@@ -633,7 +636,8 @@ a.user-menu__item::before {
 .footer__row.user-menu a:first-child {
   flex-grow: 1; }
 
-.footer .user-menu__item--log-in {
+.footer span.log-in,
+.footer span.log-out {
   margin-right: 45px; }
 
 .footer .user-menu__item--compare {

@@ -167,8 +167,12 @@ a.user-menu__item::before {
   filter: opacity(0.3);
 }
 
-.user-menu__item--log-in {
+.user-menu__item--log-in .log-in {
   margin-right: 218px;
+}
+
+.user-menu__item--log-in .log-out {
+  margin-right: 59px;
 }
 
 .user-menu__item--compare {
