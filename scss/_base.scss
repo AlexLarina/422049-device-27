@@ -36,3 +36,31 @@ html {
   padding: 0 20px;
   margin: 0 auto;
 }
+
+@mixin device-button($width) {
+  position: relative;
+  border: none;
+  background-color: inherit;
+  width: $width;
+  text-align: center;
+  vertical-align: middle;
+
+  text-transform: uppercase;
+}
+
+@mixin device-button-bg() {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 8px;
+  left: 0;
+  top: 8px;
+  border: none;
+  background-color: $bg-orange-hover;
+}
+
+@mixin device-button-bg-hover() {
+  height: 40px;
+  top: -8px;
+}

@@ -103,3 +103,7 @@
     margin-top: 40px;
     margin-bottom: 50px;
 }
+
+.popup__button--submit {
+  @include device-button(200px);
+}

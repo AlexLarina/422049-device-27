@@ -13,6 +13,7 @@
 .about-us .info__button {
   @include font("Gilroy", bold, $font-black);
   @include font-size(18px, 1.33em);
+  letter-spacing: 3.6px;
 }
 
 .about-us .info__company-list {
@@ -54,6 +55,20 @@
 
 .about-us .info__button {
   margin-top: 80px;
+  @include device-button(260px);
+}
+
+.about-us .info__button::before {
+  @include device-button-bg();
+}
+
+.about-us .info__button:hover::before,
+.about-us .info__button:active::before {
+  @include device-button-bg-hover();
+}
+
+.about-us .info__button:active {
+  color: $font-opacity-black;
 }
 
 .about-us__contacts .info__map {
