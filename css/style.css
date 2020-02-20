@@ -382,7 +382,7 @@ html {
   color: rgba(0, 0, 0, 0.3); }
 
 .user-menu__form input[placeholder] {
-  color: #464646; }
+  color: rgba(0, 0, 0, 0.3); }
 
 .header .navigation {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -426,6 +426,13 @@ html {
   font-size: 15px;
   line-height: 2em; }
 
+.user-menu__item--search-submit {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  line-height: 2em; }
+
 .header .container {
   margin-top: 40px;
   padding-top: 1px;
@@ -447,19 +454,45 @@ html {
   flex-direction: row;
   justify-content: space-between; }
 
-.user-menu__form label {
-  margin-right: 15px;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
+form.user-menu__form {
+  position: relative; }
+
+/* очень странный background у input, надо проверить */
+.user-menu__form input[type="search"] {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 20px 155px 20px 30px;
   background: url("../../img/search.svg") no-repeat 0% 50%;
   vertical-align: middle; }
 
-/* очень странный background у input, надо проверить */
-.user-menu__form input {
-  border: none;
+.user-menu__form input[type="search"]:focus {
+  outline-color: transparent;
+  border-bottom: 2px solid black;
+  margin-bottom: -2px; }
+
+.user-menu__form input[type="search"]:focus + button.user-menu__item--search-submit {
+  display: block; }
+
+.header button.user-menu__item--search-submit {
+  height: 100%;
+  padding: 0px 20px;
+  border: 2px solid #000000;
+  border-bottom: none;
+  margin-bottom: -2px;
   background-color: inherit;
-  cursor: pointer; }
+  position: absolute;
+  top: 0;
+  left: 275px;
+  display: none; }
+
+.header button.user-menu__item--search-submit:hover {
+  background-color: #000000;
+  color: #ffffff; }
+
+.header button.user-menu__item--search-submit:active {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3); }
 
 a.user-menu__item::before {
   content: "";
@@ -703,7 +736,8 @@ a.user-menu__item::before {
   line-height: 1em; }
 
 .promo {
-  position: relative; }
+  position: relative;
+  width: 1160px; }
 
 .promo__item {
   position: relative; }
@@ -714,13 +748,14 @@ a.user-menu__item::before {
   flex-direction: row;
   justify-content: space-between; }
 
-.promo__item::before {
+.main__promo::before {
   content: "";
   position: absolute;
   z-index: -1;
   width: 100%;
   height: 110px;
-  background-color: #f7e296; }
+  background-color: #f7e296;
+  left: 0; }
 
 .promo__info {
   position: relative; }
@@ -881,6 +916,7 @@ a.user-menu__item::before {
   letter-spacing: 3.6px; }
 
 .advantages {
+  min-width: 1200px;
   min-height: 290px;
   background-color: #e5e5e5; }
 
