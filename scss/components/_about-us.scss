@@ -74,3 +74,32 @@
 .about-us__contacts .info__map {
   display: inline-block;
 }
+
+.about-us .info__company-item {
+  position: relative;
+  padding-left: 30px;
+}
+
+.about-us .info__company-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-color: $bg-advantages;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.about-us .info__company-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2px;
+  background-color: #ffffff;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
