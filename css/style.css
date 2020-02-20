@@ -1377,6 +1377,41 @@ button.promo__slide--current {
   padding: 0;
   display: flex; }
 
+.catalog__decoration,
+.catalog__filters-decoration {
+  position: relative; }
+
+.catalog__decoration::before {
+  content: "";
+  position: absolute;
+  background-color: #ebebeb;
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+  z-index: -2; }
+
+.catalog__decoration::after {
+  content: "";
+  position: absolute;
+  background-color: #ebebeb;
+  display: inline-block;
+  width: 33%;
+  height: 70px;
+  z-index: -1;
+  right: 0;
+  top: 0; }
+
+.catalog__filters-decoration::before {
+  content: "";
+  position: absolute;
+  background-color: #d9d9d9;
+  display: inline-block;
+  width: 33%;
+  height: 70px;
+  z-index: -1;
+  left: 0;
+  top: 0; }
+
 .filters {
   background-color: #ebebeb; }
 
