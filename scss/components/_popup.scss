@@ -11,6 +11,12 @@
     @include font-size(14px, 1.3em);
 }
 
+.popup--feedback .popup__button--submit {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(18px, 1.33em);
+  letter-spacing: 3.6px;
+}
+
 // layout
 .popup--feedback,
 .popup--map {
@@ -106,4 +112,17 @@
 
 .popup__button--submit {
   @include device-button(200px);
+}
+
+.popup__button--submit::before {
+  @include device-button-bg();
+}
+
+.popup__button--submit:hover::before,
+.popup__button--submit:active::before {
+  @include device-button-bg-hover();
+}
+
+.popup__button--submit:active {
+  color: $font-opacity-black;
 }

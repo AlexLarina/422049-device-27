@@ -34,6 +34,7 @@ legend.filter__title {
 .filters__button {
   @include font("Gilroy", bold, $font-black);
   @include font-size(18px, 1.33em);
+  letter-spacing: 3.6px;
 }
 
 .filter__item label {
@@ -173,6 +174,24 @@ label.disabled {
 
 .range__price-controls {
   margin-top: 5px;
+}
+
+.catalog__filters .filters__button {
+  @include device-button(200px);
+  z-index: 2;
+}
+
+.catalog__filters .filters__button::before {
+  @include device-button-bg();
+}
+
+.catalog__filters .filters__button:hover::before,
+.catalog__filters .filters__button:active::before {
+  @include device-button-bg-hover();
+}
+
+.catalog__filters .filters__button:active {
+  color: $font-opacity-black;
 }
 
 .catalog__filters .filter__list {
