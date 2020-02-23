@@ -23,6 +23,16 @@
   @include font-size(13px, 2.77em);
 }
 
+.hidden-buttons--compare:hover {
+  @include font("Open Sans", normal, $font-black);
+  @include font-size(13px, 2.77em);
+}
+
+.hidden-buttons--compare:active {
+  @include font("Open Sans", normal, $font-black-new);
+  @include font-size(13px, 2.77em);
+}
+
 // layout
 
 .content__products {
@@ -35,7 +45,6 @@
   margin-bottom: 40px;
 
   padding-left: 75px;
-  //padding-right: 140px;
 
   display: flex;
   flex-wrap: wrap;
@@ -66,7 +75,7 @@ button.hidden-buttons {
   cursor: pointer;
 }
 
-.products__item img:hover {
+.products__item:hover img {
   background-color: $bg-product-hover;
   opacity: 0.7;
 }
