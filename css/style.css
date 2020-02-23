@@ -1861,17 +1861,21 @@ button.hidden-buttons {
 
 .pagination {
   margin-left: 75px;
-  padding: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .pagination__item:not(:last-child) {
   margin-right: 30px; }
 
 .pagination__item--back,
 .pagination__item--forward {
-  flex-grow: 1; }
+  padding: 30px; }
+
+.pagination__item--back {
+  margin-right: auto; }
 
 .pagination__item--forward {
+  margin-left: auto;
   text-align: right; }
