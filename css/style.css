@@ -778,7 +778,8 @@ a.user-menu__item::before {
 .promo__item .info__title {
   margin: 0;
   margin-top: 80px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  white-space: nowrap; }
 
 .promo__item .info__description {
   margin: 0; }
@@ -1132,11 +1133,13 @@ li.advantages__item--active {
   border-radius: 50%; }
 
 .promo__slider {
-  display: inline;
   position: absolute;
   z-index: 1;
   top: 350px;
-  right: 80px; }
+  right: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; }
 
 button.promo__slide {
   background: url("../../img/slider-button-empty.svg") no-repeat;
@@ -1148,7 +1151,10 @@ button.promo__slide {
   cursor: pointer; }
 
 button.promo__slide:not(:last-child) {
-  margin-right: 20px; }
+  padding-right: 33px; }
+
+button.promo__slide:active {
+  outline: none; }
 
 button.promo__slide--current {
   background: url("../../img/slider-button.svg") no-repeat;
@@ -1261,7 +1267,7 @@ button.promo__slide--current {
 .popup__item textarea:focus {
   background-color: #ffffff;
   outline: none;
-  border: 3px solid #f0c52e;
+  outline: 3px solid #f0c52e;
   color: #464646; }
 
 .popup__item input {
@@ -1535,7 +1541,7 @@ label.disabled {
 
 .range__scale {
   height: 2px;
-  background-color: #dbdbdb; }
+  background-color: #ababab; }
 
 .range__bar {
   height: 2px;
@@ -1548,7 +1554,7 @@ label.disabled {
   top: -9px;
   width: 4px;
   height: 4px;
-  background: #dbdbdb;
+  background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
