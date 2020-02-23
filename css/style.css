@@ -455,14 +455,16 @@ html {
   justify-content: space-between; }
 
 form.user-menu__form {
-  position: relative; }
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end; }
 
 /* очень странный background у input, надо проверить */
 .user-menu__form input[type="search"] {
   border: none;
   background-color: inherit;
   cursor: pointer;
-  padding: 20px 155px 20px 30px;
+  padding: 20px 125px 20px 30px;
   background: url("../../img/search.svg") no-repeat 0% 50%;
   vertical-align: middle; }
 
@@ -471,19 +473,19 @@ form.user-menu__form {
   border-bottom: 2px solid black;
   margin-bottom: -2px; }
 
-.user-menu__form input[type="search"]:focus + button.user-menu__item--search-submit {
+.user-menu__form input[type="search"]:focus + button.user-menu__item--search-submit,
+.user-menu__form button.user-menu__item--search-submit:hover,
+.user-menu__form button.user-menu__item--search-submit:active,
+.user-menu__form button.user-menu__item--search-submit:focus {
   display: block; }
 
 .header button.user-menu__item--search-submit {
   height: 100%;
   padding: 0px 20px;
   border: 2px solid #000000;
-  border-bottom: none;
   margin-bottom: -2px;
   background-color: inherit;
-  position: absolute;
-  top: 0;
-  left: 275px;
+  cursor: pointer;
   display: none; }
 
 .header button.user-menu__item--search-submit:hover {
