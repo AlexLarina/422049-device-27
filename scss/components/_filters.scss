@@ -202,6 +202,11 @@ label.disabled {
   color: $font-opacity-black;
 }
 
+.catalog__filters .filters__button--disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
 .catalog__filters .filter__list {
   padding: 0;
   margin: 0;

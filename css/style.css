@@ -1617,6 +1617,10 @@ label.disabled {
 .catalog__filters .filters__button:active {
   color: rgba(0, 0, 0, 0.3); }
 
+.catalog__filters .filters__button--disabled {
+  opacity: 0.25;
+  pointer-events: none; }
+
 .catalog__filters .filter__list {
   padding: 0;
   margin: 0; }
