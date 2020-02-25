@@ -10,12 +10,15 @@
       <div class="container">
         <a href="index.html"><img class="user-menu__item user-menu__item--logo" src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина гаджетов Device"></a>
         <div class="header__row user-menu">
-          <form action="https://echo.htmlacademy.ru" class="user-menu__form">
+          <form action="https://echo.htmlacademy.ru" class="user-menu__form" autocomplete="off">
             <label for="header-search"></label>
             <input class="user-menu__item" type="search" id="header-search" name="search" placeholder="Поиск по сайту">
+            <button class="user-menu__item user-menu__item--search-submit" type="submit">Найти</button>
           </form>
 
-          <a href="#" class="user-menu__item user-menu__item--log-in">Войти</a>
+          <a href="#" class="user-menu__item user-menu__item--log-in">
+            <span class="log-in">Войти</span>
+          </a>
           <a href="#" class="user-menu__item user-menu__item--compare">Сравнить</a>
           <a href="#" class="user-menu__item user-menu__item--basket">Корзина</a>
         </div>
@@ -31,13 +34,13 @@
         <div class="header__row hidden">
           <ul class="header__catalog catalog">
             <li class="catalog__item">Виртуальная реальность</li>
-            <li class="catalog__item">Фитнес-браслеты</li>
-            <li class="catalog__item">Квадрокоптеры</li>
-
             <li class="catalog__item">Моноподы для селфи</li>
+            <li class="catalog__item">Экшн-камеры</li>
+
+            <li class="catalog__item">Фитнес-браслеты</li>
             <li class="catalog__item">Умные часы</li>
 
-            <li class="catalog__item">Экшн-камеры</li>
+            <li class="catalog__item">Квадрокоптеры</li>
           </ul>
         </div>
       </div>
@@ -271,7 +274,9 @@
       <div class="container">
         <div class="footer__row user-menu">
           <a href="index.html"><img class="user-menu__item user-menu__item--logo" src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина гаджетов Device"></a>
-          <a href="#" class="user-menu__item user-menu__item--log-in">Войти</a>
+          <a href="#" class="user-menu__item user-menu__item--log-in">
+            <span class="log-in">Войти</span>
+          </a>
           <a href="#" class="user-menu__item user-menu__item--compare">Сравнить</a>
           <a href="#" class="user-menu__item user-menu__item--basket">Корзина</a>
         </div>

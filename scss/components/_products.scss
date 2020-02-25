@@ -14,11 +14,22 @@
   @include font("Gilroy", bold, $font-black);
   @include font-size(18px, 1.33em);
   text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
 
 
 .hidden-buttons--compare {
   @include font("Open Sans", normal, $font-button-opacity-black);
+  @include font-size(13px, 2.77em);
+}
+
+.hidden-buttons--compare:hover {
+  @include font("Open Sans", normal, $font-black);
+  @include font-size(13px, 2.77em);
+}
+
+.hidden-buttons--compare:active {
+  @include font("Open Sans", normal, $font-black-new);
   @include font-size(13px, 2.77em);
 }
 
@@ -34,7 +45,6 @@
   margin-bottom: 40px;
 
   padding-left: 75px;
-  //padding-right: 140px;
 
   display: flex;
   flex-wrap: wrap;
@@ -52,6 +62,7 @@
 
 button.hidden-buttons {
   width: 100%;
+  cursor: pointer;
 }
 
 .hidden-buttons--compare {
@@ -64,12 +75,12 @@ button.hidden-buttons {
   cursor: pointer;
 }
 
-.products__item img:hover {
+.products__item:hover img {
   background-color: $bg-product-hover;
   opacity: 0.7;
 }
 
-.products__item img:hover ~ .products__hidden-buttons {
+.products__item:hover .products__hidden-buttons {
   display: block;
 }
 
@@ -112,4 +123,26 @@ button.hidden-buttons {
   border-radius: 50%;
   text-align: center;
   line-height: 57px;
+}
+
+.products__item--new:hover::before,
+.products__item--new:hover::after {
+  opacity: 0.7;
+}
+
+.hidden-buttons--to-basket {
+  @include device-button(200px);
+}
+
+.hidden-buttons--to-basket::before {
+  @include device-button-bg();
+}
+
+.hidden-buttons--to-basket:hover::before,
+.hidden-buttons--to-basket:active::before {
+  @include device-button-bg-hover();
+}
+
+.hidden-buttons--to-basket:active {
+  color: $font-opacity-black;
 }

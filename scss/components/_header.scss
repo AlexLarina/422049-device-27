@@ -25,7 +25,7 @@
 }
 
 .user-menu__form input[placeholder] {
-  color: $font-dark-grey;
+  color: $font-opacity-black;
 }
 
 .header .navigation {
@@ -70,6 +70,11 @@
   @include font-size(15px, 2em);
 }
 
+.user-menu__item--search-submit {
+  @include font("Open Sans", normal, $font-opacity-black);
+  @include font-size(15px, 2em);
+}
+
 // layout
 
 .header .container {
@@ -98,20 +103,55 @@
   justify-content: space-between;
 }
 
-.user-menu__form label {
-  margin-right: 15px;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
+form.user-menu__form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+/* очень странный background у input, надо проверить */
+.user-menu__form input[type="search"] {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 20px 125px 20px 30px;
+
   background: url("../../img/search.svg") no-repeat 0% 50%;
   vertical-align: middle;
 }
 
-/* очень странный background у input, надо проверить */
-.user-menu__form input {
-  border: none;
+.user-menu__form input[type="search"]:focus {
+  outline-color: transparent;
+  border-bottom: 2px solid black;
+  margin-bottom: -2px;
+}
+
+.user-menu__form input[type="search"]:focus + button.user-menu__item--search-submit,
+.user-menu__form button.user-menu__item--search-submit:hover,
+.user-menu__form button.user-menu__item--search-submit:active,
+.user-menu__form button.user-menu__item--search-submit:focus {
+  display: block;
+}
+
+.header button.user-menu__item--search-submit {
+  height: 100%;
+  padding: 0px 20px;
+  border: 2px solid $font-black;
+  margin-bottom: -2px;
   background-color: inherit;
   cursor: pointer;
+  display: none;
+}
+
+
+.header button.user-menu__item--search-submit:hover {
+  background-color: $font-black;
+  color: $font-white;
+}
+
+.header button.user-menu__item--search-submit:active {
+  background-color: $font-black;
+  color: $font-low-opacity-white;
 }
 
 a.user-menu__item::before {
@@ -167,8 +207,12 @@ a.user-menu__item::before {
   filter: opacity(0.3);
 }
 
-.user-menu__item--log-in {
+.user-menu__item--log-in .log-in {
   margin-right: 218px;
+}
+
+.user-menu__item--log-in .log-out {
+  margin-right: 59px;
 }
 
 .user-menu__item--compare {

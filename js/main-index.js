@@ -30,6 +30,7 @@ promoSliderElement.addEventListener('click', (evt) => {
     const currentPromoSlide = document.querySelector('.promo__item--current');
     const currentButton = document.querySelector('.promo__slide--current');
 
+    console.log(evt);
     const clickedSlide = document.querySelector('.' + evt.target.value);
     currentPromoSlide.classList.remove('promo__item--current');
     currentPromoSlide.classList.add('hidden');

@@ -34,11 +34,18 @@ legend.filter__title {
 .filters__button {
   @include font("Gilroy", bold, $font-black);
   @include font-size(18px, 1.33em);
+  letter-spacing: 3.6px;
 }
 
 .filter__item label {
   @include font("Open Sans", normal, $font-black);
   @include font-size(14px, 2.8em);
+}
+
+.range__item label,
+.range__item input[type="number"] {
+  @include font("Gilroy", normal, $font-black-new);
+  @include font-size(14px, 1.33em);
 }
 
 /* пока легче добавить label класс disabled */
@@ -91,6 +98,8 @@ label.disabled {
 }
 
 .filters form {
+  box-sizing: content-box;
+  width: 201px;
   padding-left: 60px;
   padding-right: 67px;
   margin-top: 70px;
@@ -106,10 +115,181 @@ label.disabled {
 
 .filter__title {
   width: 100%;
+  margin-bottom: 20px;
   padding-top: 15px;
   border-top: 2px solid $font-black;
 }
 
 .content__filter .filter__item:not(:last-child) {
   margin-right: 30px;
+}
+
+.range__controls {
+  position: relative;
+  margin-top: 25px;
+}
+
+.range__scale {
+  height: 2px;
+  background-color: $bg-range;
+}
+
+.range__bar {
+  height: 2px;
+  background-color: $bg-scale-bar;
+  width: 52%;
+}
+
+.range__toggle {
+  box-sizing: content-box;
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: $bg-range;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range__toggle:active {
+  top: -11px;
+  border: 10px solid #ffffff;
+}
+
+.range__toggle--min {
+  left: 0;
+}
+
+.range__toggle--max {
+  left: 95px;
+}
+
+.range__item input[type="number"] {
+  width: 55px;
+  border: none;
+  background-color: inherit;
+}
+
+.range__price-controls {
+  margin-top: 5px;
+}
+
+.catalog__filters .filters__button {
+  @include device-button(200px);
+  z-index: 2;
+}
+
+.catalog__filters .filters__button::before {
+  @include device-button-bg();
+}
+
+.catalog__filters .filters__button:hover::before,
+.catalog__filters .filters__button:active::before {
+  @include device-button-bg-hover();
+}
+
+.catalog__filters .filters__button:active {
+  color: $font-opacity-black;
+}
+
+.catalog__filters .filter__list {
+  padding: 0;
+  margin: 0;
+}
+
+.filter__checkbox,
+.filter__radio {
+  position: relative;
+  padding-left: 40px;
+}
+
+label.filter__checkbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  background: url("../../img/checkbox-off.svg") no-repeat;
+}
+
+.filter__item input[type="checkbox"]:checked + label.filter__checkbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  background: url("../../img/checkbox-on.svg") no-repeat;
+}
+
+label.filter__radio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: url("../../img/radio-off.svg") no-repeat;
+}
+
+.filter__item input[type="radio"]:checked + label.filter__radio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: url("../../img/radio-on.svg") no-repeat;
+}
+
+label.filter__checkbox:hover::before,
+label.filter__radio:hover::before {
+  filter: opacity(0.6);
+}
+
+label.filter__checkbox:active::before,
+label.filter__radio:active::before  {
+  filter: opacity(1);
+}
+
+.filter__item input[type="checkbox"]:disabled + label.filter__checkbox::before, 
+.filter__item input[type="radio"]:disabled + label.filter__radio::before,
+.filter__item input[type="checkbox"]:checked:disabled + label.filter__checkbox::before, 
+.filter__item input[type="radio"]:checked:disabled + label.filter__radio::before {
+  filter: opacity(0.25);
+}
+
+.filter__item input[type="checkbox"]:disabled + label.filter__checkbox, 
+.filter__item input[type="radio"]:disabled + label.filter__radio,
+.filter__item input[type="checkbox"]:checked:disabled + label.filter__checkbox, 
+.filter__item input[type="radio"]:checked:disabled + label.filter__radio {
+  color: $font-disabled;
+}
+
+.filter-direction button {
+  width: 11px;
+  height: 10px;
+  border: none;
+  filter: opacity(0.2);
+}
+
+.filter-direction button:hover {
+  filter: opacity(0.4);
+}
+
+.filter-direction button:active {
+  filter: opacity(1);
+}
+
+button.filter-direction__increase {
+  background: url("../../img/icon-up-dir.svg") no-repeat;
+}
+
+button.filter-direction__decrease {
+  background: url("../../img/icon-up-dir.svg") no-repeat;
+  transform: rotate(180deg);
+  margin-left: 20px;
 }

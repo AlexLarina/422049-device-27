@@ -1,11 +1,14 @@
 .promo__slider {
-  display: inline;
   position: absolute;
   z-index: 1;
 
   // fix it
   top: 350px;
   right: 80px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
 }
 button.promo__slide {
   background: url("../../img/slider-button-empty.svg") no-repeat;
@@ -18,7 +21,11 @@ button.promo__slide {
 }
 
 button.promo__slide:not(:last-child) {
-  margin-right: 20px;
+  padding-right: 33px;
+}
+
+button.promo__slide:active {
+  outline: none;
 }
 
 button.promo__slide--current {

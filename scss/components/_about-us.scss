@@ -13,6 +13,7 @@
 .about-us .info__button {
   @include font("Gilroy", bold, $font-black);
   @include font-size(18px, 1.33em);
+  letter-spacing: 3.6px;
 }
 
 .about-us .info__company-list {
@@ -54,8 +55,51 @@
 
 .about-us .info__button {
   margin-top: 80px;
+  @include device-button(260px);
+}
+
+.about-us .info__button::before {
+  @include device-button-bg();
+}
+
+.about-us .info__button:hover::before,
+.about-us .info__button:active::before {
+  @include device-button-bg-hover();
+}
+
+.about-us .info__button:active {
+  color: $font-opacity-black;
 }
 
 .about-us__contacts .info__map {
   display: inline-block;
+}
+
+.about-us .info__company-item {
+  position: relative;
+  padding-left: 30px;
+}
+
+.about-us .info__company-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-color: $bg-advantages;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.about-us .info__company-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2px;
+  background-color: #ffffff;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
 }
