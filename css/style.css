@@ -950,7 +950,9 @@ a.user-menu__item::before {
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  z-index: 2; }
+  z-index: 2;
+  box-sizing: content-box;
+  line-height: 40px; }
 
 .advantages__item:not(.advantages__item--active)::before {
   content: "";
@@ -961,19 +963,19 @@ a.user-menu__item::before {
   left: 0;
   top: 8px;
   border: none;
-  background-color: #f0c52e; }
+  background-color: #f0c52e;
+  top: 16px; }
 
 .advantages__item:not(.advantages__item--active):hover::before {
   height: 40px;
-  top: -8px; }
+  top: -8px;
+  top: 0; }
 
 li.advantages__item--active {
   color: #f7e184;
   background-color: #000000;
-  padding: 8px 130px 8px 20px;
-  height: 23px;
+  padding-right: 117px;
   z-index: 2;
-  width: 278px;
   height: 40px; }
 
 .advantages__item--active:hover {
