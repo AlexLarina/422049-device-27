@@ -1571,8 +1571,14 @@ label.disabled {
 .range__toggle--min {
   left: 0; }
 
+.range__toggle--min:active {
+  left: -2px; }
+
 .range__toggle--max {
   left: 95px; }
+
+.range__toggle--max:active {
+  left: 93px; }
 
 .range__item input[type="number"] {
   width: 55px;
