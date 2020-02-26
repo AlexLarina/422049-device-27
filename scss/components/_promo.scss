@@ -42,10 +42,18 @@
 }
 
 .promo__wrapper {
-  padding: 0px 60px 0px 90px;
+  padding: 0px 60px 0px 0px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  position: relative;
+}
+
+img.promo__image--1,
+img.promo__image--2 {
+  margin-left: 60px;
 }
 
 .main__promo::before {
@@ -60,14 +68,15 @@
 }
 
 .promo__info {
-  position: relative;
+  min-width: 490px;
 }
+
 .promo__info::after {
   content: "";
   display: inline-block;
   position: absolute;
   top: 40px;
-  left: 0;
+  //left: 0;
   width: 100px;
   height: 7px;
   background-color: $font-white;
@@ -75,8 +84,10 @@
 
 .promo__item .info__counter {
   position: absolute;
-  right: 0;
+  //right: 0;
   top: -15px;
+  right: 30px;
+  z-index: -1;
 }
 
 .promo__item .info__title {
