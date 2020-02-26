@@ -1782,7 +1782,7 @@ button.hidden-buttons {
 
 .products__item:hover img {
   background-color: #eeeeee;
-  opacity: 0.7; }
+  opacity: 0.3; }
 
 .products__item:hover .products__hidden-buttons {
   display: block; }
