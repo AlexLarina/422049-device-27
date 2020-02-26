@@ -28,8 +28,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
 
   margin-bottom: 90px;
+}
+
+.about-us__info,
+.about-us__contacts {
+  position: relative;
 }
 
 /* добавить в normalize */
@@ -50,11 +56,16 @@
 
 .about-us .info__company-list {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 }
 
+.about-us .info__button-wrapper {
+  position: absolute;
+  bottom: 0;
+}
+
 .about-us .info__button {
-  margin-top: 80px;
   @include device-button(260px);
 }
 
@@ -73,6 +84,7 @@
 
 .about-us__contacts .info__map {
   display: inline-block;
+  margin-bottom: 80px;
 }
 
 .about-us .info__company-item {
