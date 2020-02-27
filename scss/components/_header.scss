@@ -86,7 +86,7 @@
   width: 1160px;
 }
 
-.header .user-menu__item--logo {
+.header__logo {
   position: absolute;
   top: -16px;
   left: 59px;
@@ -197,12 +197,12 @@ a.user-menu__item::before {
   left: 0;
 }
 
-.header .user-menu__item--logo:hover,
+.header__logo:hover,
 .header a.user-menu__item:hover {
   filter: opacity(0.6);
 }
 
-.header .user-menu__item--logo:active,
+.header__logo:active,
 .header a.user-menu__item:active {
   filter: opacity(0.3);
 }
