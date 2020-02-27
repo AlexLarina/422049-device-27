@@ -19,7 +19,7 @@
 
 
 .hidden-buttons--compare {
-  @include font("Open Sans", normal, $font-button-opacity-black);
+  @include font("Open Sans", normal, $font-black-opacity-05);
   @include font-size(13px, 2.77em);
 }
 
@@ -29,7 +29,7 @@
 }
 
 .hidden-buttons--compare:active {
-  @include font("Open Sans", normal, $font-black-new);
+  @include font("Open Sans", normal, $font-black-opacity-02);
   @include font-size(13px, 2.77em);
 }
 
@@ -105,7 +105,7 @@ button.hidden-buttons {
   position: absolute;
   top: 28px;
   right: 28px;
-  background-color: $font-black-new;
+  background-color: $font-black-opacity-02;
   width: 61px;
   height: 61px;
   border-radius: 50%;
@@ -113,7 +113,7 @@ button.hidden-buttons {
 
 .products__item--new::after {
   content: "NEW";
-  color: $font-black-new;
+  color: $font-black-opacity-02;
   position: absolute;
   top: 30px;
   right: 30px;
@@ -144,5 +144,5 @@ button.hidden-buttons {
 }
 
 .hidden-buttons--to-basket:active {
-  color: $font-opacity-black;
+  color: $font-black-opacity-03;
 }

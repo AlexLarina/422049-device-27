@@ -5,7 +5,7 @@
 }
 
 .footer .user-menu {
-  @include font("Open Sans", normal, $font-opacity-white);
+  @include font("Open Sans", normal, $font-white-opacity-07);
   @include font-size(15px, 2.4em);
 }
 
@@ -18,7 +18,7 @@
 }
 
 .footer .user-menu__item:active {
-  color: $font-low-opacity-white;
+  color: $font-white-opacity-03;
 }
 
 .footer .navigation {
@@ -32,11 +32,11 @@
 }
 
 .footer .navigation__item:hover {
-  color: $font-white-hover;
+  color: $font-white-opacity-07;
 }
 
 .footer .navigation__item:active {
-  color: $font-low-opacity-white;
+  color: $font-white-opacity-03;
 }
 
 .footer__contacts,
@@ -46,7 +46,7 @@
 }
 
 .footer .log-out {
-  @include font("Open Sans", normal, $font-low-opacity-white);
+  @include font("Open Sans", normal, $font-white-opacity-03);
   @include font-size(15px, 2em);
 }
 

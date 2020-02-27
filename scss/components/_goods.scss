@@ -30,7 +30,7 @@
 }
 
 .goods__item:active {
-  color: $font-opacity-black;
+  color: $font-black-opacity-03;
 }
 
 .goods__item--virtual-reality {
@@ -78,6 +78,6 @@
 .goods__item--fitnes-bands:active,
 .goods__item--smart-watch:active,
 .goods__item--quadcopters:active {
-  background-color: $bg-orange-hover;
+  background-color: $bg-orange;
   filter: opacity(0.3);
 }

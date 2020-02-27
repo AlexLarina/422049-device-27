@@ -17,15 +17,15 @@
 
 .header .user-menu__item:hover,
 .user-menu__form input[placeholder]:hover {
-  color: $font-black-hover;
+  color: $font-black-opacity-06;
 }
 
 .header .user-menu__item:active {
-  color: $font-opacity-black;
+  color: $font-black-opacity-03;
 }
 
 .user-menu__form input[placeholder] {
-  color: $font-opacity-black;
+  color: $font-black-opacity-03;
 }
 
 .header .navigation {
@@ -40,11 +40,11 @@
 }
 
 .navigation__item:hover {
-  color: $font-black-hover;
+  color: $font-black-opacity-06;
 }
 
 .navigation__item:active {
-  color: $font-opacity-black;
+  color: $font-black-opacity-03;
 }
 
 .catalog {
@@ -58,20 +58,20 @@
 }
 
 .catalog__item:hover {
-  color: $font-black-hover;
+  color: $font-black-opacity-06;
 }
 
 .catalog__item:active {
-  color: $font-opacity-black;
+  color: $font-black-opacity-03;
 }
 
 .header .log-out {
-  @include font("Open Sans", normal, $font-opacity-black);
+  @include font("Open Sans", normal, $font-black-opacity-03);
   @include font-size(15px, 2em);
 }
 
 .user-menu__item--search-submit {
-  @include font("Open Sans", normal, $font-opacity-black);
+  @include font("Open Sans", normal, $font-black-opacity-03);
   @include font-size(15px, 2em);
 }
 
@@ -151,7 +151,7 @@ form.user-menu__form {
 
 .header button.user-menu__item--search-submit:active {
   background-color: $font-black;
-  color: $font-low-opacity-white;
+  color: $font-white-opacity-03;
 }
 
 a.user-menu__item::before {

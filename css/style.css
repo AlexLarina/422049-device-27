@@ -594,7 +594,7 @@ a.user-menu__item::before {
   color: inherit; }
 
 .footer .navigation__item:hover {
-  color: rgba(255, 255, 255, 0.6); }
+  color: rgba(255, 255, 255, 0.7); }
 
 .footer .navigation__item:active {
   color: rgba(255, 255, 255, 0.3); }
@@ -815,7 +815,7 @@ img.promo__image--2 {
   left: 0;
   top: 8px;
   border: none;
-  background-color: #f0c52e; }
+  background-color: rgba(240, 197, 46, 0.5); }
 
 .promo .info__more:hover::before,
 .promo .info__more:active::before {
@@ -894,7 +894,7 @@ img.promo__image--2 {
 .goods__item--fitnes-bands:active,
 .goods__item--smart-watch:active,
 .goods__item--quadcopters:active {
-  background-color: #f0c52e;
+  background-color: rgba(240, 197, 46, 0.5);
   filter: opacity(0.3); }
 
 .advantages__list {
@@ -968,7 +968,7 @@ img.promo__image--2 {
   left: 0;
   top: 8px;
   border: none;
-  background-color: #f0c52e;
+  background-color: rgba(240, 197, 46, 0.5);
   top: 16px; }
 
 .advantages__item:not(.advantages__item--active):hover::before {
@@ -1111,7 +1111,7 @@ li.advantages__item--active {
   left: 0;
   top: 8px;
   border: none;
-  background-color: #f0c52e; }
+  background-color: rgba(240, 197, 46, 0.5); }
 
 .about-us .info__button:hover::before,
 .about-us .info__button:active::before {
@@ -1212,7 +1212,7 @@ button.promo__slide--current {
 .popup--feedback textarea[placeholder] {
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: normal;
-  color: rgba(70, 70, 70, 0.4);
+  color: #464646;
   font-size: 14px;
   line-height: 1.3em; }
 
@@ -1287,7 +1287,7 @@ button.promo__slide--current {
 .popup__item textarea:focus {
   background-color: #ffffff;
   outline: none;
-  outline: 3px solid #f0c52e;
+  outline: 3px solid rgba(240, 197, 46, 0.5);
   color: #464646; }
 
 .popup__item input {
@@ -1317,7 +1317,7 @@ button.promo__slide--current {
   left: 0;
   top: 8px;
   border: none;
-  background-color: #f0c52e; }
+  background-color: rgba(240, 197, 46, 0.5); }
 
 .popup__button--submit:hover::before,
 .popup__button--submit:active::before {
@@ -1623,7 +1623,7 @@ label.disabled {
   left: 0;
   top: 8px;
   border: none;
-  background-color: #f0c52e; }
+  background-color: rgba(240, 197, 46, 0.5); }
 
 .catalog__filters .filters__button:hover::before,
 .catalog__filters .filters__button:active::before {
@@ -1861,7 +1861,7 @@ button.hidden-buttons {
   left: 0;
   top: 8px;
   border: none;
-  background-color: #f0c52e; }
+  background-color: rgba(240, 197, 46, 0.5); }
 
 .hidden-buttons--to-basket:hover::before,
 .hidden-buttons--to-basket:active::before {
