@@ -162,8 +162,16 @@ label.disabled {
   left: 0;
 }
 
+.range__toggle--min:active {
+  left: -2px;
+}
+
 .range__toggle--max {
   left: 95px;
+}
+
+.range__toggle--max:active {
+  left: 93px;
 }
 
 .range__item input[type="number"] {
@@ -192,6 +200,11 @@ label.disabled {
 
 .catalog__filters .filters__button:active {
   color: $font-opacity-black;
+}
+
+.catalog__filters .filters__button--disabled {
+  opacity: 0.25;
+  pointer-events: none;
 }
 
 .catalog__filters .filter__list {
@@ -255,16 +268,16 @@ label.filter__radio:active::before  {
   filter: opacity(1);
 }
 
-.filter__item input[type="checkbox"]:disabled + label.filter__checkbox::before, 
+.filter__item input[type="checkbox"]:disabled + label.filter__checkbox::before,
 .filter__item input[type="radio"]:disabled + label.filter__radio::before,
-.filter__item input[type="checkbox"]:checked:disabled + label.filter__checkbox::before, 
+.filter__item input[type="checkbox"]:checked:disabled + label.filter__checkbox::before,
 .filter__item input[type="radio"]:checked:disabled + label.filter__radio::before {
   filter: opacity(0.25);
 }
 
-.filter__item input[type="checkbox"]:disabled + label.filter__checkbox, 
+.filter__item input[type="checkbox"]:disabled + label.filter__checkbox,
 .filter__item input[type="radio"]:disabled + label.filter__radio,
-.filter__item input[type="checkbox"]:checked:disabled + label.filter__checkbox, 
+.filter__item input[type="checkbox"]:checked:disabled + label.filter__checkbox,
 .filter__item input[type="radio"]:checked:disabled + label.filter__radio {
   color: $font-disabled;
 }

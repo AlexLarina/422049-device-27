@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <a href="index.html"><img class="user-menu__item user-menu__item--logo" src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина гаджетов Device"></a>
+        <a href="index.html"><img class="header__logo" src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина гаджетов Device"></a>
         <div class="header__row user-menu">
           <form action="https://echo.htmlacademy.ru" class="user-menu__form" autocomplete="off">
             <label for="header-search"></label>
@@ -57,7 +59,7 @@
         </div>
         <article class="promo__item promo__item--1 promo__item--current">
           <div class="promo__wrapper">
-            <img src="files/slider-1-png.png" width="384" height="486" class="promo__image" alt="Селфи-палка">
+            <img src="files/slider-1-png.png" width="384" height="486" class="promo__image promo__image--1" alt="Селфи-палка">
             <div class="promo__info info">
             <span class="info__counter">01</span>
             <h3 class="info__title">Делай селфи,<br> как Бен Стиллер!</h3>
@@ -85,7 +87,7 @@
         </article>
         <article class="promo__item promo__item--2 hidden">
           <div class="promo__wrapper">
-            <img src="files/slider-2-png.png" width="345" height="485" class="promo__image" alt="Фитнес браслет">
+            <img src="files/slider-2-png.png" width="345" height="485" class="promo__image promo__image--2" alt="Фитнес браслет">
             <div class="promo__info info">
               <span class="info__counter">02</span>
               <h3 class="info__title">Худеем<br> правильно!</h3>
@@ -108,7 +110,7 @@
         </article>
         <article class="promo__item promo__item--3 hidden">
           <div class="promo__wrapper">
-            <img src="files/slider-3-png.png" width="526" height="334" class="promo__image" alt="Дрон">
+            <img src="files/slider-3-png.png" width="526" height="334" class="promo__image promo__image--3" alt="Дрон">
               <div class="promo__info info">
               <span class="info__counter">03</span>
               <h3 class="info__title">Порхает как бабочка,<br> жалит как пчела!</h3>
@@ -166,9 +168,9 @@
         <div class="advantages__container container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages__list">
-            <li class="advantages__item advantages__item--active" value="1">Доставка</li>
-            <li class="advantages__item" value="2">Гарантия</li>
-            <li class="advantages__item" value="3">Кредит</li>
+            <li class="advantages__item advantages__item--delivery advantages__item--active">Доставка</li>
+            <li class="advantages__item advantages__item--warranty">Гарантия</li>
+            <li class="advantages__item advantages__item--credit">Кредит</li>
           </ul>
 
           <div class="advantages__details details details--delivery details--current">
@@ -227,7 +229,9 @@
             <li class="info__company-item">Автотрейдинг</li>
             <li class="info__company-item">ЖелДорЭкспедиция</li>
           </ul>
-          <button class="info__button">Подробнее о нас</button>
+          <div class="info__button-wrapper">
+            <button class="info__button">Подробнее о нас</button>
+          </div>
         </div>
         <div class="about-us__contacts contacts">
           <div class="contacts__info info">
@@ -236,7 +240,9 @@
               Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
             </p>
             <a href="#" class="info__map" title=""><img src="files/map-jpg.jpg" alt="Карта, как к нам добраться" width="560" height="222"></a>
-            <button class="info__button">Напишите нам</button>
+            <div class="info__button-wrapper">
+              <button class="info__button">Напишите нам</button>
+            </div>
           </div>
         </div>
       </section>
