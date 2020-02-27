@@ -7,7 +7,7 @@
 
 .popup--feedback input[placeholder],
 .popup--feedback textarea[placeholder] {
-    @include font("OpenSans", normal, $font-popup-input);
+    @include font("OpenSans", normal, $font-dark-grey);
     @include font-size(14px, 1.3em);
 }
 
@@ -95,7 +95,7 @@
 .popup__item textarea:focus {
     background-color: $font-white;
     outline: none;
-    outline: 3px solid $bg-orange-hover;
+    outline: 3px solid $bg-orange;
     color: $font-dark-grey;
 }
 
@@ -124,5 +124,5 @@
 }
 
 .popup__button--submit:active {
-  color: $font-opacity-black;
+  color: $font-black-opacity-03;
 }
