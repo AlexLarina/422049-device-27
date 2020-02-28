@@ -1,10 +1,11 @@
 .goods {
   @include font("Gilroy", bold, $font-black);
   @include font-size(18px, 1.33em);
+  letter-spacing: 0.18px;
 }
 
 .goods {
-  margin-top: 80px;
+  margin-top: 105px;
   margin-bottom: 260px;
 }
 
@@ -26,7 +27,7 @@
 
 .goods__item p {
   margin: 0;
-  margin-top: 200px;
+  margin-top: 196px;
 }
 
 .goods__item:active {
@@ -39,27 +40,27 @@
 }
 
 .goods__item--selfie-monopods {
-  background: url("../../img/popular-2.svg") no-repeat 50% 50%;
+  background: url("../../img/popular-2.svg") no-repeat 50% 100%;
   background-color: $bg-orange;
 }
 
 .goods__item--action-cameras {
-  background: url("../../img/popular-3.svg") no-repeat 50% 50%;
+  background: url("../../img/popular-3.svg") no-repeat calc(50% + 5px) calc(50% + 3px);
   background-color: $bg-orange;
 }
 
 .goods__item--fitnes-bands {
-  background: url("../../img/popular-4.svg") no-repeat 50% 50%;
+  background: url("../../img/popular-4.svg") no-repeat calc(50% + 2px) calc(50% + 5px);
   background-color: $bg-orange;
 }
 
 .goods__item--smart-watch {
-  background: url("../../img/popular-5.svg") no-repeat 50% 50%;
+  background: url("../../img/popular-5.svg") no-repeat calc(50% + 3px) calc(50% + 3px);
   background-color: $bg-orange;
 }
 
 .goods__item--quadcopters {
-  background: url("../../img/popular-6.svg") no-repeat 50% 50%;
+  background: url("../../img/popular-6.svg") no-repeat 50% calc(50% + 5px);
   background-color: $bg-orange;
 }
 

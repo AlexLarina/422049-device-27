@@ -24,7 +24,7 @@
   color: $font-black-opacity-03;
 }
 
-.user-menu__form input[placeholder] {
+.user-menu__form input::placeholder {
   color: $font-black-opacity-03;
 }
 
@@ -80,7 +80,7 @@
 .header .container {
   margin-top: 40px;
   padding-top: 1px;
-  padding-bottom: 55px;
+  padding-bottom: 50px;
 
   position: relative;
   width: 1160px;
@@ -88,12 +88,16 @@
 
 .header__logo {
   position: absolute;
-  top: -16px;
-  left: 59px;
+  top: -20px;
+  left: 60px;
 }
 
 .header__row {
-  margin: 53px 40px 0px 40px;
+  margin: 27px 36px 0px 40px;
+}
+
+.user-menu {
+  margin-right: 39px;
 }
 
 .user-menu,
@@ -101,6 +105,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 form.user-menu__form {
@@ -114,9 +119,9 @@ form.user-menu__form {
   border: none;
   background-color: inherit;
   cursor: pointer;
-  padding: 20px 125px 20px 30px;
+  padding: 21px 125px 20px 37px;
 
-  background: url("../../img/search.svg") no-repeat 0% 50%;
+  background: url("../../img/search.svg") no-repeat 4px 50%;
   vertical-align: middle;
 }
 
@@ -162,17 +167,17 @@ a.user-menu__item::before {
 }
 
 .user-menu__item--log-in::before {
-  margin-right: 14px;
+  margin-right: 8px;
   background: url("../../img/user.svg") no-repeat 0% 50%;
 }
 
 .user-menu__item--compare::before {
-  margin-right: 12px;
+  margin-right: 8px;
   background: url("../../img/compare.svg") no-repeat 0% 50%;
 }
 
 .user-menu__item--basket::before {
-  margin-right: 10px;
+  margin-right: 8px;
   background: url("../../img/cart.svg") no-repeat 0% 50%;
 }
 
@@ -180,7 +185,7 @@ a.user-menu__item::before {
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin-left: 16px;
+  margin-left: 12px;
   background: url("../../img/plus.svg") no-repeat 100% 50%;
   filter: opacity(0.3);
   vertical-align: baseline;
@@ -208,7 +213,7 @@ a.user-menu__item::before {
 }
 
 .user-menu__item--log-in .log-in {
-  margin-right: 218px;
+  margin-right: 217px;
 }
 
 .user-menu__item--log-in .log-out {
@@ -225,11 +230,11 @@ a.user-menu__item::before {
 }
 
 .navigation__item--delivery {
-  margin-right: 38px;
+  margin-right: 34px;
 }
 
 .navigation__item--warranty {
-  margin-right: 114px;
+  margin-right: 108px;
 }
 
 .header .log-out {

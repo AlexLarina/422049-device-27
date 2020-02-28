@@ -33,20 +33,19 @@
 }
 
 .advantages__list {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 0px 70px 20px;
   margin: 0;
   display: inline-block;
 
   position: absolute;
   left: 0;
-  top: -100px;
+  top: -95px;
 
   border-right: 7px solid $font-black;
 }
 
 .advantages__details {
-  padding-left: 400px;
+  padding-left: 402px;
 }
 
 .advantages__item {
@@ -85,18 +84,18 @@ li.advantages__item--active {
 }
 
 .advantages__item:not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .advantages__details .details__title {
   margin: 0;
-  top: -30px;
+  top: -26px;
   position: absolute;
 }
 
 .advantages__details .details__description {
   margin: 0;
-  padding-top: 60px;
+  padding-top: 58px;
   max-width: 436px;
 }
 
@@ -107,8 +106,8 @@ li.advantages__item--active {
   height: 164px;
   background: url("../../img/delivery.svg") no-repeat;
   position: absolute;
-  right: 0;
-  top: -15px;
+  right: 85px;
+  top: -10px;
 }
 
 .details--warranty::after {
