@@ -16,7 +16,7 @@
 /* hover с placeholder не прокатил */
 
 .header .user-menu__item:hover,
-.user-menu__form input[placeholder]:hover {
+.header__row.user-menu input[placeholder]:hover {
   color: $font-black-opacity-06;
 }
 
@@ -24,7 +24,7 @@
   color: $font-black-opacity-03;
 }
 
-.user-menu__form input::placeholder {
+.header__row.user-menu input::placeholder {
   color: $font-black-opacity-03;
 }
 
@@ -108,14 +108,14 @@
   align-items: center;
 }
 
-form.user-menu__form {
+.header__row.user-menu form {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
 }
 
 /* очень странный background у input, надо проверить */
-.user-menu__form input[type="search"] {
+.header__row.user-menu input[type="search"] {
   border: none;
   background-color: inherit;
   cursor: pointer;
@@ -125,22 +125,22 @@ form.user-menu__form {
   vertical-align: middle;
 }
 
-.user-menu__form input[type="search"]:focus {
+.header__row.user-menu input[type="search"]:focus {
   outline-color: transparent;
   border-bottom: 2px solid black;
   margin-bottom: -2px;
 }
 
-.user-menu__form input[type="search"]:focus + button.user-menu__item--search-submit,
-.user-menu__form button.user-menu__item--search-submit:hover,
-.user-menu__form button.user-menu__item--search-submit:active,
-.user-menu__form button.user-menu__item--search-submit:focus {
+.header__row.user-menu input[type="search"]:focus + button.user-menu__item--search-submit,
+.header__row.user-menu button.user-menu__item--search-submit:hover,
+.header__row.user-menu button.user-menu__item--search-submit:active,
+.header__row.user-menu button.user-menu__item--search-submit:focus {
   display: block;
 }
 
 .header button.user-menu__item--search-submit {
   height: 100%;
-  padding: 0px 20px;
+  padding: 10px 20px;
   border: 2px solid $font-black;
   margin-bottom: -2px;
   background-color: inherit;
@@ -224,7 +224,7 @@ a.user-menu__item::before {
   margin-right: 41px;
 }
 
-.user-menu__form,
+.header__row.user-menu form,
 .navigation__item--catalog {
   flex-grow: 1;
 }

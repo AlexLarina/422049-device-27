@@ -90,7 +90,7 @@ label.disabled {
 
 .filters__title {
   margin: 0;
-  padding-left: 60px;
+  padding-left: 63px;
   height: 70px;
   display: flex;
   flex-direction: row;
@@ -110,13 +110,13 @@ label.disabled {
   margin: 0;
   padding: 0;
 
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 .filter__title {
   width: 100%;
-  margin-bottom: 20px;
-  padding-top: 15px;
+  margin-bottom: 10px;
+  padding-top: 12px;
   border-top: 2px solid $font-black;
 }
 
@@ -159,29 +159,29 @@ label.disabled {
 }
 
 .range__toggle--min {
-  left: 0;
+  left: -5px;
 }
 
 .range__toggle--min:active {
-  left: -2px;
+  left: -7px;
 }
 
 .range__toggle--max {
-  left: 95px;
+  left: 108px;
 }
 
 .range__toggle--max:active {
-  left: 93px;
+  left: 106px;
 }
 
 .range__item input[type="number"] {
-  width: 55px;
+  width: 70px;
   border: none;
   background-color: inherit;
 }
 
 .range__price-controls {
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .catalog__filters .filters__button {
@@ -210,6 +210,8 @@ label.disabled {
 .catalog__filters .filter__list {
   padding: 0;
   margin: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .filter__checkbox,

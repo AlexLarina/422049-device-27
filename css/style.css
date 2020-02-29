@@ -375,13 +375,13 @@ html {
 
 /* hover с placeholder не прокатил */
 .header .user-menu__item:hover,
-.user-menu__form input[placeholder]:hover {
+.header__row.user-menu input[placeholder]:hover {
   color: rgba(0, 0, 0, 0.6); }
 
 .header .user-menu__item:active {
   color: rgba(0, 0, 0, 0.3); }
 
-.user-menu__form input::placeholder {
+.header__row.user-menu input::placeholder {
   color: rgba(0, 0, 0, 0.3); }
 
 .header .navigation {
@@ -458,13 +458,13 @@ html {
   justify-content: space-between;
   align-items: center; }
 
-form.user-menu__form {
+.header__row.user-menu form {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end; }
 
 /* очень странный background у input, надо проверить */
-.user-menu__form input[type="search"] {
+.header__row.user-menu input[type="search"] {
   border: none;
   background-color: inherit;
   cursor: pointer;
@@ -472,20 +472,20 @@ form.user-menu__form {
   background: url("../../img/search.svg") no-repeat 4px 50%;
   vertical-align: middle; }
 
-.user-menu__form input[type="search"]:focus {
+.header__row.user-menu input[type="search"]:focus {
   outline-color: transparent;
   border-bottom: 2px solid black;
   margin-bottom: -2px; }
 
-.user-menu__form input[type="search"]:focus + button.user-menu__item--search-submit,
-.user-menu__form button.user-menu__item--search-submit:hover,
-.user-menu__form button.user-menu__item--search-submit:active,
-.user-menu__form button.user-menu__item--search-submit:focus {
+.header__row.user-menu input[type="search"]:focus + button.user-menu__item--search-submit,
+.header__row.user-menu button.user-menu__item--search-submit:hover,
+.header__row.user-menu button.user-menu__item--search-submit:active,
+.header__row.user-menu button.user-menu__item--search-submit:focus {
   display: block; }
 
 .header button.user-menu__item--search-submit {
   height: 100%;
-  padding: 0px 20px;
+  padding: 10px 20px;
   border: 2px solid #000000;
   margin-bottom: -2px;
   background-color: inherit;
@@ -554,7 +554,7 @@ a.user-menu__item::before {
 .user-menu__item--compare {
   margin-right: 41px; }
 
-.user-menu__form,
+.header__row.user-menu form,
 .navigation__item--catalog {
   flex-grow: 1; }
 
@@ -1377,7 +1377,8 @@ button.promo__slide--current {
   font-weight: bold;
   color: #000000;
   font-size: 47px;
-  line-height: 1em; }
+  line-height: 1em;
+  letter-spacing: 0.47px; }
 
 .breadcrumbs {
   font-family: "Open Sans", "Arial", sans-serif;
@@ -1396,11 +1397,11 @@ button.promo__slide--current {
   color: rgba(0, 0, 0, 0.1); }
 
 .catalog__title {
-  margin: 44px 0px 30px 60px; }
+  margin: 39px 0px 24px 60px; }
 
 .breadcrumbs {
   margin-left: 60px;
-  margin-bottom: 50px; }
+  margin-bottom: 45px; }
 
 .breadcrumbs__item:not(:last-child)::after {
   content: "";
@@ -1408,7 +1409,7 @@ button.promo__slide--current {
   width: 4px;
   height: 7px;
   background: url("../../img/nav-arrow.svg") no-repeat 0% 50%;
-  margin: 0px 16px; }
+  margin: 0px 16px 0px 14px; }
 
 .header__catalog {
   margin: 0;
@@ -1429,7 +1430,7 @@ button.promo__slide--current {
 
 .catalog__content {
   flex-grow: 1;
-  margin-bottom: 77px; }
+  margin-bottom: 78px; }
 
 .content__title {
   margin-right: 55px; }
@@ -1572,7 +1573,7 @@ label.disabled {
 
 .filters__title {
   margin: 0;
-  padding-left: 60px;
+  padding-left: 63px;
   height: 70px;
   display: flex;
   flex-direction: row;
@@ -1589,12 +1590,12 @@ label.disabled {
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px; }
+  margin-bottom: 28px; }
 
 .filter__title {
   width: 100%;
-  margin-bottom: 20px;
-  padding-top: 15px;
+  margin-bottom: 10px;
+  padding-top: 12px;
   border-top: 2px solid #000000; }
 
 .content__filter .filter__item:not(:last-child) {
@@ -1630,24 +1631,24 @@ label.disabled {
   border: 10px solid #ffffff; }
 
 .range__toggle--min {
-  left: 0; }
+  left: -5px; }
 
 .range__toggle--min:active {
-  left: -2px; }
+  left: -7px; }
 
 .range__toggle--max {
-  left: 95px; }
+  left: 108px; }
 
 .range__toggle--max:active {
-  left: 93px; }
+  left: 106px; }
 
 .range__item input[type="number"] {
-  width: 55px;
+  width: 70px;
   border: none;
   background-color: inherit; }
 
 .range__price-controls {
-  margin-top: 5px; }
+  margin-top: 2px; }
 
 .catalog__filters .filters__button {
   position: relative;
@@ -1684,7 +1685,9 @@ label.disabled {
 
 .catalog__filters .filter__list {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 10px; }
 
 .filter__checkbox,
 .filter__radio {
@@ -1816,7 +1819,7 @@ button.filter-direction__decrease {
   margin: 0;
   padding: 0;
   margin-top: 70px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   padding-left: 75px;
   display: flex;
   flex-wrap: wrap;
@@ -1852,7 +1855,8 @@ button.hidden-buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin-top: 20px; }
 
 .products__name {
   display: inline-block;
@@ -1955,12 +1959,12 @@ button.hidden-buttons {
   justify-content: space-between;
   align-items: center; }
 
-.pagination__item:not(:last-child) {
+.pagination__item:not(:last-child):not(.pagination__item--back):not(.pagination__item--forward) {
   margin-right: 30px; }
 
 .pagination__item--back,
 .pagination__item--forward {
-  padding: 30px; }
+  padding: 25px 30px 20px 30px; }
 
 .pagination__item--back {
   margin-right: auto; }
