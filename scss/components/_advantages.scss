@@ -24,7 +24,7 @@
 
 .advantages {
   min-width: 1200px;
-  min-height: 290px;
+  min-height: 288px;
   background-color: $bg-advantages;
 }
 
@@ -39,7 +39,7 @@
 
   position: absolute;
   left: 0;
-  top: -95px;
+  top: -100px;
 
   border-right: 7px solid $font-black;
 }
@@ -89,13 +89,13 @@ li.advantages__item--active {
 
 .advantages__details .details__title {
   margin: 0;
-  top: -26px;
+  top: -30px;
   position: absolute;
 }
 
 .advantages__details .details__description {
   margin: 0;
-  padding-top: 58px;
+  padding-top: 52px;
   max-width: 436px;
 }
 
@@ -107,7 +107,7 @@ li.advantages__item--active {
   background: url("../../img/delivery.svg") no-repeat;
   position: absolute;
   right: 85px;
-  top: -10px;
+  top: -15px;
 }
 
 .details--warranty::after {

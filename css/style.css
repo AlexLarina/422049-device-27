@@ -448,7 +448,7 @@ html {
 .header__row {
   margin: 27px 36px 0px 40px; }
 
-.user-menu {
+.header .user-menu {
   margin-right: 39px; }
 
 .user-menu,
@@ -619,25 +619,45 @@ a.user-menu__item::before {
   line-height: 2em; }
 
 .footer {
-  padding: 65px 0px; }
+  padding: 60px 0px 65px 0px; }
 
 .footer__row {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
 
+.footer .user-menu {
+  align-items: flex-start; }
+
+.footer .user-menu__item--logo {
+  margin-top: 5px; }
+
 .footer__navigation a:not(:last-child) {
   margin-right: 38px; }
 
 .footer__row--contacts {
-  margin-top: 42px;
-  margin-bottom: 70px; }
+  margin-top: 19px;
+  margin-bottom: 61px;
+  justify-content: unset;
+  align-items: flex-end; }
+
+.footer__navigation {
+  margin: 0 auto; }
+
+.footer__contacts--phone {
+  text-align: right; }
 
 .social a {
   display: inline-block;
   width: 32px;
   height: 32px;
   filter: opacity(0.3); }
+
+.footer__social {
+  margin-right: 42px; }
+
+.footer__social a:not(:last-child) {
+  margin-right: 20px; }
 
 .social a:hover {
   filter: opacity(0.6); }
@@ -844,8 +864,8 @@ img.promo__image--2 {
   letter-spacing: 0.18px; }
 
 .goods {
-  margin-top: 105px;
-  margin-bottom: 260px; }
+  margin-top: 107px;
+  margin-bottom: 263px; }
 
 .goods__list {
   list-style: none;
@@ -862,7 +882,7 @@ img.promo__image--2 {
 
 .goods__item p {
   margin: 0;
-  margin-top: 196px; }
+  margin-top: 195px; }
 
 .goods__item:active {
   color: rgba(0, 0, 0, 0.3); }
@@ -872,7 +892,7 @@ img.promo__image--2 {
   background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--selfie-monopods {
-  background: url("../../img/popular-2.svg") no-repeat 50% 100%;
+  background: url("../../img/popular-2.svg") no-repeat 50% calc(100% - 2px);
   background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--action-cameras {
@@ -880,7 +900,7 @@ img.promo__image--2 {
   background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--fitnes-bands {
-  background: url("../../img/popular-4.svg") no-repeat calc(50% + 2px) calc(50% + 5px);
+  background: url("../../img/popular-4.svg") no-repeat 50% calc(50% + 3px);
   background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--smart-watch {
@@ -888,7 +908,7 @@ img.promo__image--2 {
   background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--quadcopters {
-  background: url("../../img/popular-6.svg") no-repeat 50% calc(50% + 5px);
+  background: url("../../img/popular-6.svg") no-repeat 50% calc(50% + 4px);
   background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--virtual-reality:hover,
@@ -936,7 +956,7 @@ img.promo__image--2 {
 
 .advantages {
   min-width: 1200px;
-  min-height: 290px;
+  min-height: 288px;
   background-color: #e5e5e5; }
 
 .advantages__container {
@@ -948,7 +968,7 @@ img.promo__image--2 {
   display: inline-block;
   position: absolute;
   left: 0;
-  top: -95px;
+  top: -100px;
   border-right: 7px solid #000000; }
 
 .advantages__details {
@@ -1001,12 +1021,12 @@ li.advantages__item--active {
 
 .advantages__details .details__title {
   margin: 0;
-  top: -26px;
+  top: -30px;
   position: absolute; }
 
 .advantages__details .details__description {
   margin: 0;
-  padding-top: 58px;
+  padding-top: 52px;
   max-width: 436px; }
 
 .details--delivery::after {
@@ -1017,7 +1037,7 @@ li.advantages__item--active {
   background: url("../../img/delivery.svg") no-repeat;
   position: absolute;
   right: 85px;
-  top: -10px; }
+  top: -15px; }
 
 .details--warranty::after {
   content: "";
@@ -1074,22 +1094,35 @@ li.advantages__item--active {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  margin-bottom: 90px; }
+  margin-bottom: 88px; }
+
+.about-us__info {
+  margin-right: 65px; }
 
 .about-us__info,
 .about-us__contacts {
-  position: relative; }
+  position: relative;
+  padding-bottom: 20px; }
+
+.about-us__contacts {
+  margin-left: 41px; }
+
+.about-us__info .info__description {
+  margin: 30px auto; }
+
+.about-us__contacts .info__description {
+  margin: 30px auto 40px auto; }
 
 /* добавить в normalize */
 .about-us .info__title {
   margin: 0;
-  margin-bottom: 60px; }
+  margin-bottom: 42px; }
 
 .about-us__info::before,
 .about-us__contacts::before {
   content: "";
   display: inline-block;
-  margin-bottom: 50px;
+  margin-bottom: 42px;
   width: 80px;
   height: 7px;
   background-color: #000000; }
@@ -1097,7 +1130,8 @@ li.advantages__item--active {
 .about-us .info__company-list {
   margin: 0;
   margin-bottom: 30px;
-  padding: 0; }
+  padding: 0;
+  padding-top: 37px; }
 
 .about-us .info__button-wrapper {
   position: absolute;
@@ -1137,7 +1171,7 @@ li.advantages__item--active {
 
 .about-us .info__company-item {
   position: relative;
-  padding-left: 30px; }
+  padding-left: 35px; }
 
 .about-us .info__company-item::before {
   content: "";
@@ -1191,13 +1225,14 @@ button.promo__slide--current {
   background-size: 12px 12px; }
 
 .partners {
-  margin: 90px auto; }
+  margin: 95px auto 90px auto; }
 
 .partners__list {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 0; }
 
 .partners__item {
   cursor: pointer; }

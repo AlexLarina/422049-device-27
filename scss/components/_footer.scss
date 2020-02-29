@@ -53,7 +53,7 @@
 // layout
 
 .footer {
-  padding: 65px 0px;
+  padding: 60px 0px 65px 0px;
 }
 
 .footer__row {
@@ -62,13 +62,31 @@
   justify-content: space-between;
 }
 
+.footer .user-menu {
+  align-items: flex-start;
+}
+
+.footer .user-menu__item--logo {
+  margin-top: 5px;
+}
+
 .footer__navigation a:not(:last-child) {
   margin-right: 38px;
 }
 
 .footer__row--contacts {
-  margin-top: 42px;
-  margin-bottom: 70px;
+  margin-top: 19px;
+  margin-bottom: 61px;
+  justify-content: unset;
+  align-items: flex-end;
+}
+
+.footer__navigation {
+  margin: 0 auto;
+}
+
+.footer__contacts--phone {
+  text-align: right;
 }
 
 .social a {
@@ -76,6 +94,14 @@
   width: 32px;
   height: 32px;
   filter: opacity(0.3);
+}
+
+.footer__social {
+  margin-right: 42px;
+}
+
+.footer__social a:not(:last-child) {
+  margin-right: 20px;
 }
 
 .social a:hover {
