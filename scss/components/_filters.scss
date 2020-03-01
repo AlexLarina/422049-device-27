@@ -210,8 +210,12 @@ label.disabled {
 .catalog__filters .filter__list {
   padding: 0;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 3px;
   margin-bottom: 10px;
+}
+
+.catalog__filters .filter__list--checkbox {
+  margin-top: 8px;
 }
 
 .filter__checkbox,
@@ -284,6 +288,13 @@ label.filter__radio:active::before  {
   color: $font-light-grey;
 }
 
+.content__filter-direction {
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .filter-direction button {
   width: 11px;
   height: 10px;
@@ -306,5 +317,5 @@ button.filter-direction__increase {
 button.filter-direction__decrease {
   background: url("../../img/icon-up-dir.svg") no-repeat;
   transform: rotate(180deg);
-  margin-left: 20px;
+  filter: opacity(1);
 }

@@ -633,19 +633,23 @@ a.user-menu__item::before {
   margin-top: 5px; }
 
 .footer__navigation a:not(:last-child) {
-  margin-right: 38px; }
+  margin-right: 30px; }
 
 .footer__row--contacts {
   margin-top: 19px;
-  margin-bottom: 61px;
+  margin-bottom: 60px;
   justify-content: unset;
   align-items: flex-end; }
 
-.footer__navigation {
-  margin: 0 auto; }
+.footer__contacts--address {
+  display: inline-block;
+  margin-right: 155px; }
 
 .footer__contacts--phone {
   text-align: right; }
+
+.footer__navigation {
+  margin-right: auto; }
 
 .social a {
   display: inline-block;
@@ -654,7 +658,8 @@ a.user-menu__item::before {
   filter: opacity(0.3); }
 
 .footer__social {
-  margin-right: 42px; }
+  margin-right: 55px;
+  margin-top: 3px; }
 
 .footer__social a:not(:last-child) {
   margin-right: 20px; }
@@ -703,7 +708,7 @@ a.user-menu__item::before {
   margin-right: 40px; }
 
 .footer .log-out {
-  margin-left: 20px; }
+  margin-left: 10px; }
 
 .footer__social,
 .footer__copyright {
@@ -786,7 +791,7 @@ img.promo__image--2 {
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 110px;
+  height: 113px;
   background-color: #f7e296;
   left: 0; }
 
@@ -841,7 +846,7 @@ img.promo__image--2 {
   left: 0;
   top: 8px;
   border: none;
-  background-color: rgba(240, 197, 46, 0.5); }
+  background-color: #f0c52e; }
 
 .promo .info__more:hover::before,
 .promo .info__more:active::before {
@@ -851,9 +856,19 @@ img.promo__image--2 {
 .promo .info__more:active {
   color: rgba(0, 0, 0, 0.3); }
 
-.details__value td,
-.details__name td {
+.details__value td {
   padding-top: 5px; }
+
+.details__name td {
+  padding-top: 8px; }
+
+.details__value td:first-child,
+.details__name td:first-child {
+  width: 155px; }
+
+.details__value td:nth-child(2),
+.details__name td:nth-child(2) {
+  width: 135px; }
 
 .goods {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -893,7 +908,8 @@ img.promo__image--2 {
 
 .goods__item--selfie-monopods {
   background: url("../../img/popular-2.svg") no-repeat 50% calc(100% - 2px);
-  background-color: rgba(240, 197, 46, 0.5); }
+  background-color: rgba(240, 197, 46, 0.5);
+  padding-right: 50px; }
 
 .goods__item--action-cameras {
   background: url("../../img/popular-3.svg") no-repeat calc(50% + 5px) calc(50% + 3px);
@@ -998,7 +1014,7 @@ img.promo__image--2 {
   left: 0;
   top: 8px;
   border: none;
-  background-color: rgba(240, 197, 46, 0.5);
+  background-color: #f0c52e;
   top: 16px; }
 
 .advantages__item:not(.advantages__item--active):hover::before {
@@ -1155,7 +1171,7 @@ li.advantages__item--active {
   left: 0;
   top: 8px;
   border: none;
-  background-color: rgba(240, 197, 46, 0.5); }
+  background-color: #f0c52e; }
 
 .about-us .info__button:hover::before,
 .about-us .info__button:active::before {
@@ -1225,7 +1241,7 @@ button.promo__slide--current {
   background-size: 12px 12px; }
 
 .partners {
-  margin: 95px auto 90px auto; }
+  margin: 95px auto 89px auto; }
 
 .partners__list {
   list-style: none;
@@ -1362,7 +1378,7 @@ button.promo__slide--current {
   left: 0;
   top: 8px;
   border: none;
-  background-color: rgba(240, 197, 46, 0.5); }
+  background-color: #f0c52e; }
 
 .popup__button--submit:hover::before,
 .popup__button--submit:active::before {
@@ -1669,7 +1685,7 @@ label.disabled {
   left: 0;
   top: 8px;
   border: none;
-  background-color: rgba(240, 197, 46, 0.5); }
+  background-color: #f0c52e; }
 
 .catalog__filters .filters__button:hover::before,
 .catalog__filters .filters__button:active::before {
@@ -1686,8 +1702,11 @@ label.disabled {
 .catalog__filters .filter__list {
   padding: 0;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 3px;
   margin-bottom: 10px; }
+
+.catalog__filters .filter__list--checkbox {
+  margin-top: 8px; }
 
 .filter__checkbox,
 .filter__radio {
@@ -1750,6 +1769,12 @@ label.filter__radio:active::before {
 .filter__item input[type="radio"]:checked:disabled + label.filter__radio {
   color: #a6a6a6; }
 
+.content__filter-direction {
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
 .filter-direction button {
   width: 11px;
   height: 10px;
@@ -1768,7 +1793,7 @@ button.filter-direction__increase {
 button.filter-direction__decrease {
   background: url("../../img/icon-up-dir.svg") no-repeat;
   transform: rotate(180deg);
-  margin-left: 20px; }
+  filter: opacity(1); }
 
 .products__name {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -1910,7 +1935,7 @@ button.hidden-buttons {
   left: 0;
   top: 8px;
   border: none;
-  background-color: rgba(240, 197, 46, 0.5); }
+  background-color: #f0c52e; }
 
 .hidden-buttons--to-basket:hover::before,
 .hidden-buttons--to-basket:active::before {

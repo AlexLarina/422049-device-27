@@ -63,7 +63,7 @@ img.promo__image--2 {
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 110px;
+  height: 113px;
   background-color: $bg-header-catalog;
 
   left: 0;
@@ -127,7 +127,20 @@ img.promo__image--2 {
   color: $font-black-opacity-03;
 }
 
-.details__value td,
-.details__name td {
+.details__value td {
   padding-top: 5px;
+}
+
+.details__name td {
+  padding-top: 8px;
+}
+
+.details__value td:first-child,
+.details__name td:first-child {
+  width: 155px;
+}
+
+.details__value td:nth-child(2),
+.details__name td:nth-child(2) {
+  width: 135px;
 }
