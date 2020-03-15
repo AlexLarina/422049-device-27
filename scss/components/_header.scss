@@ -229,6 +229,12 @@ a.user-menu__item::before {
   flex-grow: 1;
 }
 
+.navigation__item--catalog {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .navigation__item--delivery {
   margin-right: 34px;
 }

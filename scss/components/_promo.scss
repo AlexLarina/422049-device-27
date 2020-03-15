@@ -37,10 +37,15 @@
 .promo {
   position: relative;
   width: 1160px;
+  min-height: 486px;
 }
 
 .promo__item {
   position: relative;
+}
+
+.promo__item--3 table {
+  max-width: 275px;
 }
 
 .promo__wrapper {

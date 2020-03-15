@@ -305,7 +305,8 @@ template {
   display: none; }
 
 body {
-  font-family: "Gilroy", "Arial", sans-serif; }
+  font-family: "Gilroy", "Arial", sans-serif;
+  min-width: 1200px; }
 
 a {
   text-decoration: none; }
@@ -558,6 +559,11 @@ a.user-menu__item::before {
 .navigation__item--catalog {
   flex-grow: 1; }
 
+.navigation__item--catalog {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
 .navigation__item--delivery {
   margin-right: 34px; }
 
@@ -770,10 +776,14 @@ a.user-menu__item::before {
 
 .promo {
   position: relative;
-  width: 1160px; }
+  width: 1160px;
+  min-height: 486px; }
 
 .promo__item {
   position: relative; }
+
+.promo__item--3 table {
+  max-width: 275px; }
 
 .promo__wrapper {
   padding: 0px 50px 0px 0px;
@@ -1476,7 +1486,12 @@ button.promo__slide--current {
   display: inline-block;
   width: 33%;
   height: 100%;
-  z-index: -2; }
+  z-index: -2;
+  top: 0;
+  left: 0; }
+  @media (max-width: 1485px) {
+    .catalog__decoration::before {
+      width: 347px; } }
 
 .catalog__decoration::after {
   content: "";
@@ -1721,6 +1736,9 @@ label.filter__checkbox::before {
   width: 27px;
   height: 23px;
   background: url("../../img/checkbox-off.svg") no-repeat; }
+
+.filter__item input:focus + label::before {
+  box-shadow: 0 0 1pt 1pt #4D90FE; }
 
 .filter__item input[type="checkbox"]:checked + label.filter__checkbox::before {
   content: "";
