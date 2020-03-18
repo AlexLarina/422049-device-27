@@ -80,7 +80,8 @@ button.hidden-buttons {
   opacity: 0.3;
 }
 
-.products__item:hover .products__hidden-buttons {
+.products__item:hover .products__hidden-buttons,
+.products__item a:focus-within .products__hidden-buttons {
   display: block;
 }
 

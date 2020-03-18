@@ -30,6 +30,10 @@
   margin-top: 195px;
 }
 
+.goods__item a {
+  color: inherit;
+}
+
 .goods__item:active {
   color: $font-black-opacity-03;
 }

@@ -10,7 +10,9 @@
   <body>
     <header class="header">
       <div class="container">
-        <a href="index.html"><img class="header__logo" src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина гаджетов Device"></a>
+        <a href="index.html" class="header__logo">
+          <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина гаджетов Device">
+        </a>
         <div class="header__row user-menu">
           <form action="https://echo.htmlacademy.ru" class="user-menu__form" autocomplete="off">
             <label for="header-search"></label>
@@ -28,8 +30,10 @@
         <div class="header__row">
           <nav class="header__navigation navigation">
             <a href="catalog.html" class="navigation__item navigation__item--catalog">
-              Каталог товаров<span class="navigation__open"></span>
-
+              Каталог товаров
+              
+              <span class="navigation__open"></span>
+              
               <div class="header__catalog-wrapper">
                 <ul class="header__catalog catalog">
                   <li class="catalog__item">Виртуальная реальность</li>
@@ -143,27 +147,27 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="goods__list">
           <li class="goods__item goods__item--virtual-reality">
-            <p>Виртуальная реальность</p>
+            <p><a href="#">Виртуальная реальность</a></p>
           </li>
 
           <li class="goods__item goods__item--selfie-monopods">
-            <p>Моноподы для селфи</p>
+            <p><a href="#">Моноподы для селфи</a></p>
           </li>
 
           <li class="goods__item goods__item--action-cameras">
-            <p>Экшн-камеры</p>
+            <p><a href="#">Экшн-камеры</a></p>
           </li>
 
           <li class="goods__item goods__item--fitnes-bands">
-            <p>Фитнес-браслеты</p>
+            <p><a href="#">Фитнес-браслеты</a></p>
           </li>
 
           <li class="goods__item goods__item--smart-watch">
-            <p>Умные часы</p>
+            <p><a href="#">Умные часы</a></p>
           </li>
 
           <li class="goods__item goods__item--quadcopters">
-            <p>Квадрокоптеры</p>
+            <p><a href="#">Квадрокоптеры</a></p>
           </li>
         </ul>
       </section>
@@ -171,9 +175,15 @@
         <div class="advantages__container container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages__list">
-            <li class="advantages__item advantages__item--delivery advantages__item--active">Доставка</li>
-            <li class="advantages__item advantages__item--warranty">Гарантия</li>
-            <li class="advantages__item advantages__item--credit">Кредит</li>
+            <li class="advantages__item advantages__item--delivery advantages__item--active">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="advantages__item advantages__item--warranty">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="advantages__item advantages__item--credit">
+              <a href="#">Кредит</a>
+            </li>     
           </ul>
 
           <div class="advantages__details details details--delivery details--current">
@@ -200,20 +210,20 @@
         <h2 class="visually-hidden">Партнеры</h2>
         <ul class="partners__list">
           <li class="partners__item">
-            <img class="partners__logo" src="files/logo-1-jpg.png" alt="Логотип компании-партнера dji" width="260" height="100">
+            <a href="#"><img class="partners__logo" src="files/logo-1-jpg.png" alt="Логотип компании-партнера dji" width="260" height="100"></a>
             <img class="partners__logo-hover" src="files/logo-1-jpg-hover.jpg" alt="Логотип компании-партнера dji" width="260" height="100">
           </li>
           <li class="partners__item">
-            <img class="partners__logo" src="files/logo-2-jpg.png" alt="Логотип компании-партнера sp-gadgets" width="260" height="100">
+            <a href="#"><img class="partners__logo" src="files/logo-2-jpg.png" alt="Логотип компании-партнера sp-gadgets" width="260" height="100"></a>
             <img class="partners__logo-hover" src="files/logo-2-jpg-hover.jpg" alt="Логотип компании-партнера dji" width="260" height="100">
           </li>
           <li class="partners__item">
-            <img class="partners__logo" src="files/logo-3-jpg.png" alt="Логотип компании-партнера go-pro" width="260" height="100">
+            <a href="#"><img class="partners__logo" src="files/logo-3-jpg.png" alt="Логотип компании-партнера go-pro" width="260" height="100"></a>
             <img class="partners__logo-hover" src="files/logo-3-jpg-hover.jpg" alt="Логотип компании-партнера dji" width="260" height="100">
           </li>
           <li class="partners__item">
-            <img class="partners__logo" src="files/logo-4-jpg.png" alt="Логотип компании-партнера vive" width="260" height="100">
-            <img class="partners__logo-hover" src="files/logo-4-jpg-hover.jpg" alt="Логотип компании-партнера dji" width="260" height="100">
+            <a href="#"><img class="partners__logo" src="files/logo-4-jpg.png" alt="Логотип компании-партнера vive" width="260" height="100"></a>
+            <img class="partners__logo-hover" src="files/logo-4-jpg-hover.jpg" alt="Логотип компании-партнера dji" width="260" height="100">       
           </li>
         </ul>
       </section>
@@ -275,6 +285,7 @@
 
       <div class="main__popup popup popup--map hidden">
         <button class="popup__button popup__button--close" type="button" title="Закрыть"></button>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abcb72403c5d9a9d3b862cc4b5666d2b0f1d06dd73fd27b963833ea68f5dee431&amp;source=constructor" width="960" height="559" frameborder="0"></iframe>
         <img src="files/map-big-jpg.jpg" width="960" height="559" alt="Увеличенная карта расположения магазина Device">
       </div>
     </main>

@@ -70,6 +70,10 @@
   top: 0;
 }
 
+.advantages__item a {
+  color: inherit;
+}
+
 li.advantages__item--active {
   color: $font-orange;
   background-color: $font-black;
