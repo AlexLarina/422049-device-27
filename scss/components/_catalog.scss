@@ -1,3 +1,17 @@
+.header__catalog-wrapper {
+  position: absolute;
+  background-color: $bg-header-catalog;
+  z-index: 1;
+  top: 50px;
+
+  display: none;
+  
+  width: 1160px;
+  min-height: 137px;
+  margin-left: -60px;
+  padding-left: 60px;
+}
+
 .header__catalog {
   margin: 0;
   padding: 0;

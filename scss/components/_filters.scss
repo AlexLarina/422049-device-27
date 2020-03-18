@@ -235,8 +235,8 @@ label.filter__checkbox::before {
 }
 
 .filter__item input:focus + label::before {      
-  box-shadow: 0 0 1pt 1pt #4D90FE;
-} 
+  box-shadow: 0 0 1pt 1pt $focus-outline;
+}   
 
 .filter__item input[type="checkbox"]:checked + label.filter__checkbox::before {
   content: "";

@@ -51,6 +51,8 @@
   @include font("Open Sans", normal, $font-black);
   @include font-size(15px, 2.4em);
   list-style: none;
+  text-transform: none;
+  letter-spacing: 0.15px;
 }
 
 .catalog__item {
@@ -191,15 +193,21 @@ a.user-menu__item::before {
   vertical-align: baseline;
 }
 
-.header__row:last-of-type {
-  position: absolute;
-  z-index: 1;
-  background-color: $bg-header-catalog;
-  margin: 0;
-  margin-top: 40px;
-  width: 100%;
-  padding: 0 60px 40px 60px;
-  left: 0;
+// .header__row:last-of-type {
+//   position: absolute;
+//   z-index: 1;
+//   background-color: $bg-header-catalog;
+//   margin: 0;
+//   margin-top: 40px;
+//   width: 100%;
+//   padding: 0 60px 40px 60px;
+//   left: 0;
+
+//   //display: none;
+// }
+
+span.navigation__open:hover + .header__catalog-wrapper  {
+  display: block;
 }
 
 .header__logo:hover,
@@ -233,6 +241,8 @@ a.user-menu__item::before {
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  position: relative;
 }
 
 .navigation__item--delivery {
