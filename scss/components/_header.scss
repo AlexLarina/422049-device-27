@@ -59,17 +59,11 @@
   cursor: pointer;
 }
 
-.catalog__item button {
-  background-color: inherit;
-  border: none;
-  padding: 0;
-}
-
-.catalog__item button:hover {
+.catalog__item:hover {
   color: $font-black-opacity-06;
 }
 
-.catalog__item button:active {
+.catalog__item:active {
   color: $font-black-opacity-03;
 }
 

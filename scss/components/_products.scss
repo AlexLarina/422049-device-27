@@ -81,7 +81,7 @@ button.hidden-buttons {
 }
 
 .products__item:hover .products__hidden-buttons,
-.products__item a:focus-within .products__hidden-buttons {
+.products__item:focus-within .products__hidden-buttons {
   display: block;
 }
 

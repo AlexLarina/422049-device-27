@@ -416,15 +416,10 @@ html {
 .catalog__item {
   cursor: pointer; }
 
-.catalog__item button {
-  background-color: inherit;
-  border: none;
-  padding: 0; }
-
-.catalog__item button:hover {
+.catalog__item:hover {
   color: rgba(0, 0, 0, 0.6); }
 
-.catalog__item button:active {
+.catalog__item:active {
   color: rgba(0, 0, 0, 0.3); }
 
 .header .log-out {
@@ -1406,6 +1401,9 @@ button.promo__slide--current {
 .popup__button--submit:active {
   color: rgba(0, 0, 0, 0.3); }
 
+.popup--map iframe {
+  border: none; }
+
 .catalog__title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
@@ -1913,7 +1911,7 @@ button.hidden-buttons {
   opacity: 0.3; }
 
 .products__item:hover .products__hidden-buttons,
-.products__item a:focus-within .products__hidden-buttons {
+.products__item:focus-within .products__hidden-buttons {
   display: block; }
 
 .products__description {
