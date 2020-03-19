@@ -1,11 +1,20 @@
 const gulp = require("gulp");
-var sass = require("gulp-sass");
+const sass = require("gulp-sass");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
 const browsersync = require("browser-sync").create();
+const csso = require("gulp-csso");
+const rename = require("gulp-rename");
 
 function style() {
   return gulp
       .src("./scss/style.scss")
       .pipe(sass())
+      .pipe(postcss([
+        autoprefixer()
+      ]))
+      .pipe(csso())
+      .pipe(rename("style.min.css"))
       .on("error", sass.logError)
       .pipe(gulp.dest("css/"))
       .pipe(browsersync.stream());

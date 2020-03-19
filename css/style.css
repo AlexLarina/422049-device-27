@@ -74,7 +74,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -380,6 +381,18 @@ html {
 .header .user-menu__item:active {
   color: rgba(0, 0, 0, 0.3); }
 
+.header__row.user-menu input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3); }
+
+.header__row.user-menu input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3); }
+
+.header__row.user-menu input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3); }
+
+.header__row.user-menu input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3); }
+
 .header__row.user-menu input::placeholder {
   color: rgba(0, 0, 0, 0.3); }
 
@@ -576,7 +589,8 @@ a.user-menu__item::before {
   height: 16px;
   margin-left: 12px;
   background: url("../img/plus.svg") no-repeat 100% 50%;
-  filter: opacity(0.3);
+  -webkit-filter: opacity(0.3);
+          filter: opacity(0.3);
   vertical-align: baseline; }
 
 .navigation__item--catalog:hover > .header__catalog-wrapper,
@@ -585,11 +599,13 @@ a.user-menu__item::before {
 
 .header__logo:hover,
 .header a.user-menu__item:hover {
-  filter: opacity(0.6); }
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6); }
 
 .header__logo:active,
 .header a.user-menu__item:active {
-  filter: opacity(0.3); }
+  -webkit-filter: opacity(0.3);
+          filter: opacity(0.3); }
 
 .user-menu__item--log-in .log-in {
   margin-right: 217px; }
@@ -656,7 +672,8 @@ a.user-menu__item::before {
   display: inline-block;
   width: 32px;
   height: 32px;
-  filter: opacity(0.3); }
+  -webkit-filter: opacity(0.3);
+          filter: opacity(0.3); }
 
 .footer__social {
   margin-right: 55px;
@@ -666,10 +683,12 @@ a.user-menu__item::before {
   margin-right: 20px; }
 
 .social a:hover {
-  filter: opacity(0.6); }
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6); }
 
 .social a:active {
-  filter: opacity(0.1); }
+  -webkit-filter: opacity(0.1);
+          filter: opacity(0.1); }
 
 .social__facebook {
   background: url("../img/fb.svg") no-repeat; }
@@ -682,21 +701,26 @@ a.user-menu__item::before {
 
 .footer .user-menu__item--logo,
 .footer .user-menu__item::before {
-  filter: invert(71%) sepia(58%) saturate(1088%) hue-rotate(359deg) brightness(103%) contrast(106%); }
+  -webkit-filter: invert(71%) sepia(58%) saturate(1088%) hue-rotate(359deg) brightness(103%) contrast(106%);
+          filter: invert(71%) sepia(58%) saturate(1088%) hue-rotate(359deg) brightness(103%) contrast(106%); }
 
 .footer .user-menu__item--logo:hover,
 .footer a.user-menu__item:hover::before {
-  filter: invert(71%) sepia(58%) saturate(1088%) hue-rotate(359deg) brightness(103%) contrast(106%) opacity(0.6); }
+  -webkit-filter: invert(71%) sepia(58%) saturate(1088%) hue-rotate(359deg) brightness(103%) contrast(106%) opacity(0.6);
+          filter: invert(71%) sepia(58%) saturate(1088%) hue-rotate(359deg) brightness(103%) contrast(106%) opacity(0.6); }
 
 .footer .user-menu__item--logo:active,
 .footer a.user-menu__item:active::before {
-  filter: invert(71%) sepia(58%) saturate(1088%) hue-rotate(359deg) brightness(103%) contrast(106%) opacity(0.3); }
+  -webkit-filter: invert(71%) sepia(58%) saturate(1088%) hue-rotate(359deg) brightness(103%) contrast(106%) opacity(0.3);
+          filter: invert(71%) sepia(58%) saturate(1088%) hue-rotate(359deg) brightness(103%) contrast(106%) opacity(0.3); }
 
 .footer__copyright img:hover {
-  filter: opacity(0.6); }
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6); }
 
 .footer__copyright img:active {
-  filter: opacity(0.3); }
+  -webkit-filter: opacity(0.3);
+          filter: opacity(0.3); }
 
 .footer__row.user-menu a:first-child {
   flex-grow: 1; }
@@ -1029,7 +1053,8 @@ img.promo__image--2 {
 .goods__item--smart-watch:active,
 .goods__item--quadcopters:active {
   background-color: rgba(240, 197, 46, 0.5);
-  filter: opacity(0.3); }
+  -webkit-filter: opacity(0.3);
+          filter: opacity(0.3); }
 
 .advantages {
   min-width: 1200px;
@@ -1324,13 +1349,16 @@ button.promo__slide--current {
   position: absolute;
   top: 22px;
   right: 22px;
-  filter: opacity(0.5); }
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5); }
 
 .popup__button--close:hover {
-  filter: opacity(1); }
+  -webkit-filter: opacity(1);
+          filter: opacity(1); }
 
 .popup__button--close:active {
-  filter: opacity(0.3);
+  -webkit-filter: opacity(0.3);
+          filter: opacity(0.3);
   outline: none; }
 
 .popup--feedback label {
@@ -1857,17 +1885,20 @@ label.filter__radio::before {
 
 label.filter__checkbox:hover::before,
 label.filter__radio:hover::before {
-  filter: opacity(0.6); }
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6); }
 
 label.filter__checkbox:active::before,
 label.filter__radio:active::before {
-  filter: opacity(1); }
+  -webkit-filter: opacity(1);
+          filter: opacity(1); }
 
 .filter__item input[type="checkbox"]:disabled + label.filter__checkbox::before,
 .filter__item input[type="radio"]:disabled + label.filter__radio::before,
 .filter__item input[type="checkbox"]:checked:disabled + label.filter__checkbox::before,
 .filter__item input[type="radio"]:checked:disabled + label.filter__radio::before {
-  filter: opacity(0.25); }
+  -webkit-filter: opacity(0.25);
+          filter: opacity(0.25); }
 
 .filter__item input[type="checkbox"]:disabled + label.filter__checkbox,
 .filter__item input[type="radio"]:disabled + label.filter__radio,
@@ -1885,13 +1916,16 @@ label.filter__radio:active::before {
   width: 11px;
   height: 10px;
   border: none;
-  filter: opacity(0.2); }
+  -webkit-filter: opacity(0.2);
+          filter: opacity(0.2); }
 
 .filter-direction button:hover {
-  filter: opacity(0.4); }
+  -webkit-filter: opacity(0.4);
+          filter: opacity(0.4); }
 
 .filter-direction button:active {
-  filter: opacity(1); }
+  -webkit-filter: opacity(1);
+          filter: opacity(1); }
 
 button.filter-direction__increase {
   background: url("../img/icon-up-dir.svg") no-repeat; }
@@ -1899,7 +1933,8 @@ button.filter-direction__increase {
 button.filter-direction__decrease {
   background: url("../img/icon-up-dir.svg") no-repeat;
   transform: rotate(180deg);
-  filter: opacity(1); }
+  -webkit-filter: opacity(1);
+          filter: opacity(1); }
 
 .content__products {
   list-style: none;
