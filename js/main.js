@@ -43,6 +43,8 @@ promoSliderElement.addEventListener('click', (evt) => {
 });
 
 advantagesListElement.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    console.log(evt);
     const clickedAdvantage = Array.from(evt.target.classList).find((item) => {
       return item.includes('advantages__item--');
     });
