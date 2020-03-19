@@ -45,7 +45,7 @@
 }
 
 .goods__item--action-cameras {
-  background: url("../img/popular-3.svg") no-repeat calc(50% + 5px) calc(50% + 3px);
+  background: url("../img/popular-3.svg") no-repeat 50% calc(50% + 3px);
   background-color: $bg-orange;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .goods__item--smart-watch {
-  background: url("../img/popular-5.svg") no-repeat calc(50% + 3px) calc(50% + 3px);
+  background: url("../img/popular-5.svg") no-repeat 50% calc(50% + 3px);
   background-color: $bg-orange;
 }
 
