@@ -1,27 +1,3 @@
-.advantages__list {
-  list-style: none;
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(18px, 1.33em);
-}
-
-.advantages__details .details__title {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(47px, 1.2em);
-}
-
-.advantages__details .details__description {
-  @include font("Open Sans", normal, $font-dark-grey);
-  @include font-size(15px, 2em);
-}
-
-.advantages__item {
-  text-transform: uppercase;
-  letter-spacing: 3.6px;
-}
-
-// layout
-
-
 .advantages {
   min-width: 1200px;
   min-height: 288px;

@@ -1,0 +1,32 @@
+.promo__item .info__title {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(47px, 1.2em);
+  letter-spacing: 0.47px;
+}
+
+.promo__item .info__description {
+  @include font("Open Sans", normal, $font-dark-grey);
+  @include font-size(15px, 2em);
+}
+
+.promo__item .info__more {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(18px, 1.33em);
+  letter-spacing: 3.6px;
+}
+
+.promo__item .details__value {
+  @include font("Gilroy", normal, $font-black);
+  @include font-size(36px, 1.33em);
+}
+
+.promo__item .details__name {
+  @include font("Open Sans", normal, $font-dark-grey);
+  @include font-size(13px, 1.5em);
+}
+
+.promo__item .info__counter {
+  @include font("Gilroy", bold, $font-white);
+  @include font-size(179px, 1em);
+  letter-spacing: 1.79px;
+}

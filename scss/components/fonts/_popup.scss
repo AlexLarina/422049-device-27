@@ -1,0 +1,16 @@
+.popup--feedback label {
+    @include font("Gilroy", bold, $font-black);
+    @include font-size(18px, 1.33em);
+}
+
+.popup--feedback input[placeholder],
+.popup--feedback textarea[placeholder] {
+    @include font("OpenSans", normal, $font-dark-grey);
+    @include font-size(14px, 1.3em);
+}
+
+.popup--feedback .popup__button--submit {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(18px, 1.33em);
+  letter-spacing: 3.6px;
+}

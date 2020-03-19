@@ -1,91 +1,16 @@
-// typography
-
 .filters {
   background-color: $bg-grey;
-}
-
-.filters__title {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(16px, 1.5em);
-  text-transform: uppercase;
-  letter-spacing: 3.2px;
-
-  background-color: $bg-filter;
-}
-
-.content__title {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(16px, 1.5em);
-  text-transform: uppercase;
-  letter-spacing: 3.2px;
-
-  background-color: $bg-grey;
-}
-
-legend.filter__title {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(18px, 1.33em);
+  width: 327px;
 }
 
 .filter__list {
   list-style: none;
 }
 
-.filters__button {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(18px, 1.33em);
-  letter-spacing: 3.6px;
-}
-
-.filter__item label {
-  @include font("Open Sans", normal, $font-black);
-  @include font-size(14px, 2.8em);
-}
-
-.range__item label,
-.range__item input[type="number"] {
-  @include font("Gilroy", normal, $font-black-opacity-02);
-  @include font-size(14px, 1.33em);
-}
-
-/* пока легче добавить label класс disabled */
-
-label.disabled {
-  color: $font-light-grey;
-}
-
 .content__filter {
   list-style: none;
   background-color: $bg-grey;
   flex-grow: 1;
-}
-
-.content__filter a {
-  @include font("Open Sans", normal, $font-black-opacity-03);
-  @include font-size(14px, 1.29em);
-}
-
-.content__filter a:hover {
-  color: $font-black-opacity-06;
-}
-
-.content__filter a:active {
-  color: $font-black;
-}
-
-.content__filter .filter__item--active {
-  color: $font-black;
-}
-
-.filter__item--active a {
-  color: inherit;
-}
-
-
-// layout
-
-.filters {
-  width: 327px;
 }
 
 .filters__title {

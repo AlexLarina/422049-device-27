@@ -1,0 +1,6 @@
+.goods {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(18px, 1.33em);
+  letter-spacing: 0.18px;
+}
+

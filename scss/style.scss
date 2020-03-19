@@ -4,22 +4,41 @@
 @import "_fonts-params.scss";
 
 // common components
-@import "components/_header.scss";
-@import "components/_footer.scss";
+// fonts
+@import "components/fonts/_header.scss";
+@import "components/fonts/_footer.scss";
+// layout
+@import "components/layout/_header.scss";
+@import "components/layout/_footer.scss";
+
 
 // index page components
-@import "components/_promo.scss";
-@import "components/_goods.scss";
-@import "components/_advantages.scss";
-@import "components/_about-us.scss";
-@import "components/_slider.scss";
-@import "components/_partners.scss";
-@import "components/_popup.scss";
+// fonts
+@import "components/fonts/_promo.scss";
+@import "components/fonts/_goods.scss";
+@import "components/fonts/_advantages.scss";
+@import "components/fonts/_about-us.scss";
+@import "components/fonts/_popup.scss";
+// layout
+@import "components/layout/_promo.scss";
+@import "components/layout/_goods.scss";
+@import "components/layout/_advantages.scss";
+@import "components/layout/_about-us.scss";
+@import "components/layout/_slider.scss";
+@import "components/layout/_partners.scss";
+@import "components/layout/_popup.scss";
+
 
 // catalog page components
-@import "components/_breadcrumbs.scss";
-@import "components/_catalog.scss";
-@import "components/_catalog-content.scss";
-@import "components/_filters.scss";
-@import "components/_products.scss";
-@import "components/_pagination.scss";
+// fonts
+@import "components/fonts/_breadcrumbs.scss";
+@import "components/fonts/_filters.scss";
+@import "components/fonts/_products.scss";
+@import "components/fonts/_pagination.scss";
+// layout
+@import "components/layout/_breadcrumbs.scss";
+@import "components/layout/_catalog.scss";
+@import "components/layout/_catalog-content.scss";
+@import "components/layout/_filters.scss";
+@import "components/layout/_products.scss";
+@import "components/layout/_pagination.scss";
