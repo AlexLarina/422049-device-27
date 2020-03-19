@@ -41,7 +41,7 @@
   cursor: pointer;
   padding: 21px 125px 20px 37px;
 
-  background: url("../../img/search.svg") no-repeat 4px 50%;
+  background: url("../img/search.svg") no-repeat 4px 50%;
   vertical-align: middle;
 }
 
@@ -88,17 +88,17 @@ a.user-menu__item::before {
 
 .user-menu__item--log-in::before {
   margin-right: 8px;
-  background: url("../../img/user.svg") no-repeat 0% 50%;
+  background: url("../img/user.svg") no-repeat 0% 50%;
 }
 
 .user-menu__item--compare::before {
   margin-right: 8px;
-  background: url("../../img/compare.svg") no-repeat 0% 50%;
+  background: url("../img/compare.svg") no-repeat 0% 50%;
 }
 
 .user-menu__item--basket::before {
   margin-right: 8px;
-  background: url("../../img/cart.svg") no-repeat 0% 50%;
+  background: url("../img/cart.svg") no-repeat 0% 50%;
 }
 
 .navigation__item--catalog::after {
@@ -107,7 +107,7 @@ a.user-menu__item::before {
   width: 16px;
   height: 16px;
   margin-left: 12px;
-  background: url("../../img/plus.svg") no-repeat 100% 50%;
+  background: url("../img/plus.svg") no-repeat 100% 50%;
   filter: opacity(0.3);
   vertical-align: baseline;
 }

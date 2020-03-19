@@ -520,7 +520,7 @@ html {
   background-color: inherit;
   cursor: pointer;
   padding: 21px 125px 20px 37px;
-  background: url("../../img/search.svg") no-repeat 4px 50%;
+  background: url("../img/search.svg") no-repeat 4px 50%;
   vertical-align: middle; }
 
 .header__row.user-menu input[type="search"]:focus {
@@ -559,15 +559,15 @@ a.user-menu__item::before {
 
 .user-menu__item--log-in::before {
   margin-right: 8px;
-  background: url("../../img/user.svg") no-repeat 0% 50%; }
+  background: url("../img/user.svg") no-repeat 0% 50%; }
 
 .user-menu__item--compare::before {
   margin-right: 8px;
-  background: url("../../img/compare.svg") no-repeat 0% 50%; }
+  background: url("../img/compare.svg") no-repeat 0% 50%; }
 
 .user-menu__item--basket::before {
   margin-right: 8px;
-  background: url("../../img/cart.svg") no-repeat 0% 50%; }
+  background: url("../img/cart.svg") no-repeat 0% 50%; }
 
 .navigation__item--catalog::after {
   content: "";
@@ -575,7 +575,7 @@ a.user-menu__item::before {
   width: 16px;
   height: 16px;
   margin-left: 12px;
-  background: url("../../img/plus.svg") no-repeat 100% 50%;
+  background: url("../img/plus.svg") no-repeat 100% 50%;
   filter: opacity(0.3);
   vertical-align: baseline; }
 
@@ -672,13 +672,13 @@ a.user-menu__item::before {
   filter: opacity(0.1); }
 
 .social__facebook {
-  background: url("../../img/fb.svg") no-repeat; }
+  background: url("../img/fb.svg") no-repeat; }
 
 .social__instagram {
-  background: url("../../img/instagram.svg") no-repeat; }
+  background: url("../img/instagram.svg") no-repeat; }
 
 .social__twitter {
-  background: url("../../img/twitter.svg") no-repeat; }
+  background: url("../img/twitter.svg") no-repeat; }
 
 .footer .user-menu__item--logo,
 .footer .user-menu__item::before {
@@ -990,28 +990,28 @@ img.promo__image--2 {
   color: rgba(0, 0, 0, 0.3); }
 
 .goods__item--virtual-reality {
-  background: url("../../img/popular-1.svg") no-repeat 50% 50%;
+  background: url("../img/popular-1.svg") no-repeat 50% 50%;
   background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--selfie-monopods {
-  background: url("../../img/popular-2.svg") no-repeat 50% calc(100% - 2px);
+  background: url("../img/popular-2.svg") no-repeat 50% calc(100% - 2px);
   background-color: rgba(240, 197, 46, 0.5);
   padding-right: 50px; }
 
 .goods__item--action-cameras {
-  background: url("../../img/popular-3.svg") no-repeat calc(50% + 5px) calc(50% + 3px);
+  background: url("../img/popular-3.svg") no-repeat calc(50% + 5px) calc(50% + 3px);
   background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--fitnes-bands {
-  background: url("../../img/popular-4.svg") no-repeat 50% calc(50% + 3px);
+  background: url("../img/popular-4.svg") no-repeat 50% calc(50% + 3px);
   background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--smart-watch {
-  background: url("../../img/popular-5.svg") no-repeat calc(50% + 3px) calc(50% + 3px);
+  background: url("../img/popular-5.svg") no-repeat calc(50% + 3px) calc(50% + 3px);
   background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--quadcopters {
-  background: url("../../img/popular-6.svg") no-repeat 50% calc(50% + 4px);
+  background: url("../img/popular-6.svg") no-repeat 50% calc(50% + 4px);
   background-color: rgba(240, 197, 46, 0.5); }
 
 .goods__item--virtual-reality:hover,
@@ -1114,7 +1114,7 @@ li.advantages__item--active {
   display: inline-block;
   width: 136px;
   height: 164px;
-  background: url("../../img/delivery.svg") no-repeat;
+  background: url("../img/delivery.svg") no-repeat;
   position: absolute;
   right: 85px;
   top: -15px; }
@@ -1124,7 +1124,7 @@ li.advantages__item--active {
   display: inline-block;
   width: 171px;
   height: 194px;
-  background: url("../../img/warranty.svg") no-repeat;
+  background: url("../img/warranty.svg") no-repeat;
   position: absolute;
   right: 0;
   top: -15px; }
@@ -1134,7 +1134,7 @@ li.advantages__item--active {
   display: inline-block;
   width: 156px;
   height: 186px;
-  background: url("../../img/credit.svg") no-repeat;
+  background: url("../img/credit.svg") no-repeat;
   position: absolute;
   right: 0;
   top: -15px; }
@@ -1254,7 +1254,7 @@ li.advantages__item--active {
   align-items: stretch; }
 
 button.promo__slide {
-  background: url("../../img/slider-button-empty.svg") no-repeat;
+  background: url("../img/slider-button-empty.svg") no-repeat;
   background-size: 12px 12px;
   width: 12px;
   height: 12px;
@@ -1269,7 +1269,7 @@ button.promo__slide:active {
   outline: none; }
 
 button.promo__slide--current {
-  background: url("../../img/slider-button.svg") no-repeat;
+  background: url("../img/slider-button.svg") no-repeat;
   background-size: 12px 12px; }
 
 .partners {
@@ -1320,7 +1320,7 @@ button.promo__slide--current {
   width: 55px;
   height: 55px;
   border: none;
-  background: url("../../img/modal-close.svg") no-repeat;
+  background: url("../img/modal-close.svg") no-repeat;
   position: absolute;
   top: 22px;
   right: 22px;
@@ -1584,7 +1584,7 @@ label.disabled {
   display: inline-block;
   width: 4px;
   height: 7px;
-  background: url("../../img/nav-arrow.svg") no-repeat 0% 50%;
+  background: url("../img/nav-arrow.svg") no-repeat 0% 50%;
   margin: 0px 16px 0px 14px; }
 
 .header__catalog-wrapper {
@@ -1823,7 +1823,7 @@ label.filter__checkbox::before {
   left: 0;
   width: 27px;
   height: 23px;
-  background: url("../../img/checkbox-off.svg") no-repeat; }
+  background: url("../img/checkbox-off.svg") no-repeat; }
 
 .filter__item input:focus + label::before {
   box-shadow: 0 0 1pt 1pt #4D90FE; }
@@ -1835,7 +1835,7 @@ label.filter__checkbox::before {
   left: 0;
   width: 27px;
   height: 23px;
-  background: url("../../img/checkbox-on.svg") no-repeat; }
+  background: url("../img/checkbox-on.svg") no-repeat; }
 
 label.filter__radio::before {
   content: "";
@@ -1844,7 +1844,7 @@ label.filter__radio::before {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/radio-off.svg") no-repeat; }
+  background: url("../img/radio-off.svg") no-repeat; }
 
 .filter__item input[type="radio"]:checked + label.filter__radio::before {
   content: "";
@@ -1853,7 +1853,7 @@ label.filter__radio::before {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/radio-on.svg") no-repeat; }
+  background: url("../img/radio-on.svg") no-repeat; }
 
 label.filter__checkbox:hover::before,
 label.filter__radio:hover::before {
@@ -1894,10 +1894,10 @@ label.filter__radio:active::before {
   filter: opacity(1); }
 
 button.filter-direction__increase {
-  background: url("../../img/icon-up-dir.svg") no-repeat; }
+  background: url("../img/icon-up-dir.svg") no-repeat; }
 
 button.filter-direction__decrease {
-  background: url("../../img/icon-up-dir.svg") no-repeat;
+  background: url("../img/icon-up-dir.svg") no-repeat;
   transform: rotate(180deg);
   filter: opacity(1); }
 
