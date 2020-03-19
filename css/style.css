@@ -416,10 +416,15 @@ html {
 .catalog__item {
   cursor: pointer; }
 
-.catalog__item:hover {
+.catalog__item button {
+  background-color: inherit;
+  border: none;
+  padding: 0; }
+
+.catalog__item button:hover {
   color: rgba(0, 0, 0, 0.6); }
 
-.catalog__item:active {
+.catalog__item button:active {
   color: rgba(0, 0, 0, 0.3); }
 
 .header .log-out {
@@ -521,7 +526,8 @@ a.user-menu__item::before {
   margin-right: 8px;
   background: url("../../img/cart.svg") no-repeat 0% 50%; }
 
-.navigation__open {
+.navigation__item--catalog::after {
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -530,8 +536,8 @@ a.user-menu__item::before {
   filter: opacity(0.3);
   vertical-align: baseline; }
 
-.navigation__open:hover + .header__catalog-wrapper,
-.navigation__open input:focus + .header__catalog-wrapper {
+.navigation__item--catalog:hover > .header__catalog-wrapper,
+.navigation__item--catalog:focus-within > .header__catalog-wrapper {
   display: block; }
 
 .header__logo:hover,
@@ -1445,10 +1451,12 @@ button.promo__slide--current {
   z-index: 1;
   top: 50px;
   display: none;
+  top: 20px;
   width: 1160px;
-  min-height: 137px;
+  min-height: 167px;
   margin-left: -60px;
-  padding-left: 60px; }
+  padding-left: 60px;
+  padding-top: 20px; }
 
 .header__catalog {
   margin: 0;

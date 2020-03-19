@@ -59,11 +59,17 @@
   cursor: pointer;
 }
 
-.catalog__item:hover {
+.catalog__item button {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+}
+
+.catalog__item button:hover {
   color: $font-black-opacity-06;
 }
 
-.catalog__item:active {
+.catalog__item button:active {
   color: $font-black-opacity-03;
 }
 
@@ -183,7 +189,8 @@ a.user-menu__item::before {
   background: url("../../img/cart.svg") no-repeat 0% 50%;
 }
 
-.navigation__open {
+.navigation__item--catalog::after {
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -193,8 +200,8 @@ a.user-menu__item::before {
   vertical-align: baseline;
 }
 
-.navigation__open:hover + .header__catalog-wrapper,
-.navigation__open input:focus + .header__catalog-wrapper  {
+.navigation__item--catalog:hover > .header__catalog-wrapper,
+.navigation__item--catalog:focus-within > .header__catalog-wrapper  {
   display: block;
 }
 
