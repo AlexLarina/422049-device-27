@@ -80,5 +80,5 @@
 .goods__item--smart-watch:active,
 .goods__item--quadcopters:active {
   background-color: $bg-orange;
-  filter: opacity(0.3);
+  opacity: 0.3;
 }

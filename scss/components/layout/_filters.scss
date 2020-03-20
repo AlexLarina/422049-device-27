@@ -195,19 +195,19 @@ label.filter__radio::before {
 
 label.filter__checkbox:hover::before,
 label.filter__radio:hover::before {
-  filter: opacity(0.6);
+  opacity: 0.6;
 }
 
 label.filter__checkbox:active::before,
 label.filter__radio:active::before  {
-  filter: opacity(1);
+  opacity: 1;
 }
 
 .filter__item input[type="checkbox"]:disabled + label.filter__checkbox::before,
 .filter__item input[type="radio"]:disabled + label.filter__radio::before,
 .filter__item input[type="checkbox"]:checked:disabled + label.filter__checkbox::before,
 .filter__item input[type="radio"]:checked:disabled + label.filter__radio::before {
-  filter: opacity(0.25);
+  opacity: 0.25;
 }
 
 .filter__item input[type="checkbox"]:disabled + label.filter__checkbox,
@@ -228,15 +228,15 @@ label.filter__radio:active::before  {
   width: 11px;
   height: 10px;
   border: none;
-  filter: opacity(0.2);
+  opacity: 0.2;
 }
 
 .filter-direction button:hover {
-  filter: opacity(0.4);
+  opacity: 0.4;
 }
 
 .filter-direction button:active {
-  filter: opacity(1);
+  opacity: 1;
 }
 
 button.filter-direction__increase {
@@ -246,5 +246,5 @@ button.filter-direction__increase {
 button.filter-direction__decrease {
   background: url("../img/icon-up-dir.svg") no-repeat;
   transform: rotate(180deg);
-  filter: opacity(1);
+  opacity: 1;
 }

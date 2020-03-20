@@ -108,7 +108,7 @@ a.user-menu__item::before {
   height: 16px;
   margin-left: 12px;
   background: url("../img/plus.svg") no-repeat 100% 50%;
-  filter: opacity(0.3);
+  opacity: 0.3;
   vertical-align: baseline;
 }
 
@@ -119,12 +119,12 @@ a.user-menu__item::before {
 
 .header__logo:hover,     
 .header a.user-menu__item:hover {
-  filter: opacity(0.6);
+  opacity: 0.6;
 }
 
 .header__logo:active,
 .header a.user-menu__item:active {
-  filter: opacity(0.3);
+  opacity: 0.3;
 }
 
 .user-menu__item--log-in .log-in {
