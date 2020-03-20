@@ -60,7 +60,11 @@ button.hidden-buttons {
 
 .products__name {
   display: inline-block;
-  max-width: 70%;
+  max-width: 75%;
+}
+
+.products__item:nth-child(2) .products__name {
+  max-width: 55%;
 }
 
 .products__item:nth-of-type(2n):not(:last-of-type) {
