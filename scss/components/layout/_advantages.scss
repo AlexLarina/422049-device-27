@@ -12,6 +12,7 @@
   padding: 80px 0px 70px 20px;
   margin: 0;
   display: inline-block;
+  vertical-align: middle;
 
   position: absolute;
   left: 0;
@@ -82,6 +83,7 @@ li.advantages__item--active {
 .details--delivery::after {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 136px;
   height: 164px;
   background: url("../img/delivery.svg") no-repeat;
@@ -93,6 +95,7 @@ li.advantages__item--active {
 .details--warranty::after {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 171px;
   height: 194px;
   background: url("../img/warranty.svg") no-repeat;
@@ -104,6 +107,7 @@ li.advantages__item--active {
 .details--credit::after {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 156px;
   height: 186px;
   background: url("../img/credit.svg") no-repeat;

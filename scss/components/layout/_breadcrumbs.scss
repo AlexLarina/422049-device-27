@@ -10,6 +10,7 @@
 .breadcrumbs__item:not(:last-child)::after {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 4px;
   height: 7px;
   background: url("../img/nav-arrow.svg") no-repeat 0% 50%;

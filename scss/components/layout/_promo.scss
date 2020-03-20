@@ -45,6 +45,7 @@ img.promo__image--2 {
 .promo__info::after {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   position: absolute;
   top: 39px;
   width: 100px;
