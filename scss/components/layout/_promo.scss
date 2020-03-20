@@ -67,8 +67,21 @@ img.promo__image--2 {
    white-space: nowrap;
 }
 
+.promo__item--3 .info__title {
+  max-width: 510px;
+  white-space: pre-wrap;
+}
+
 .promo__item .info__description {
   margin: 0;
+}
+
+.promo__item--2 .info__description {
+  max-width: 450px;
+}
+
+.promo__item--2 .info__description {
+  max-width: 470px;
 }
 
 .promo__item .info__buttons {
