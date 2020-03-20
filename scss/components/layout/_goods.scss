@@ -1,6 +1,6 @@
 .goods {
   margin-top: 107px;
-  margin-bottom: 263px;
+  margin-bottom: 182px;
 }
 
 .goods__list {
@@ -16,12 +16,19 @@
 .goods__item {
   cursor: pointer;
   width: 160px;
+}
+
+.goods__item::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 160px;
   height: 160px;
 }
 
 .goods__item p {
   margin: 0;
-  margin-top: 195px;
+  margin-top: 35px;
 }
 
 .goods__item a {
@@ -32,53 +39,55 @@
   color: $font-black-opacity-03;
 }
 
-.goods__item--virtual-reality {
+.goods__item--virtual-reality::before {
   background: url("../img/popular-1.svg") no-repeat 50% 50%;
   background-color: $bg-orange;
 }
 
-.goods__item--selfie-monopods {
+.goods__item--selfie-monopods::before {
   background: url("../img/popular-2.svg") no-repeat 50% calc(100% - 2px);
   background-color: $bg-orange;
+}
 
+.goods__item--selfie-monopods {
   padding-right: 50px;
 }
 
-.goods__item--action-cameras {
+.goods__item--action-cameras::before {
   background: url("../img/popular-3.svg") no-repeat 50% calc(50% + 3px);
   background-color: $bg-orange;
 }
 
-.goods__item--fitnes-bands {
+.goods__item--fitnes-bands::before {
   background: url("../img/popular-4.svg") no-repeat 50% calc(50% + 3px);
   background-color: $bg-orange;
 }
 
-.goods__item--smart-watch {
+.goods__item--smart-watch::before {
   background: url("../img/popular-5.svg") no-repeat 50% calc(50% + 3px);
   background-color: $bg-orange;
 }
 
-.goods__item--quadcopters {
+.goods__item--quadcopters::before {
   background: url("../img/popular-6.svg") no-repeat 50% calc(50% + 4px);
   background-color: $bg-orange;
 }
 
-.goods__item--virtual-reality:hover,
-.goods__item--selfie-monopods:hover,
-.goods__item--action-cameras:hover,
-.goods__item--fitnes-bands:hover,
-.goods__item--smart-watch:hover,
-.goods__item--quadcopters:hover {
+.goods__item--virtual-reality:hover::before,
+.goods__item--selfie-monopods:hover::before,
+.goods__item--action-cameras:hover::before,
+.goods__item--fitnes-bands:hover::before,
+.goods__item--smart-watch:hover::before,
+.goods__item--quadcopters:hover::before {
   background-color: $bg-orange-hover;
 }
 
-.goods__item--virtual-reality:active,
-.goods__item--selfie-monopods:active,
-.goods__item--action-cameras:active,
-.goods__item--fitnes-bands:active,
-.goods__item--smart-watch:active,
-.goods__item--quadcopters:active {
+.goods__item--virtual-reality:active::before,
+.goods__item--selfie-monopods:active::before,
+.goods__item--action-cameras:active::before,
+.goods__item--fitnes-bands:active::before,
+.goods__item--smart-watch:active::before,
+.goods__item--quadcopters:active::before {
   background-color: $bg-orange;
   opacity: 0.3;
 }
