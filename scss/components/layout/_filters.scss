@@ -66,7 +66,7 @@
 .range__bar {
   height: 2px;
   background-color: $bg-scale-bar;
-  width: 52%;
+  width: 55%;
 }
 
 .range__toggle {
@@ -85,6 +85,10 @@
 .range__toggle:active {
   top: -11px;
   border: 10px solid #ffffff;
+}
+
+.range__toggle:focus {
+  outline: 1px solid $focus-outline;
 }
 
 .range__toggle--min {
