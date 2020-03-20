@@ -9,7 +9,8 @@
   flex-direction: row;
   align-items: stretch;
 }
-button.promo__slide {
+
+.promo__slide {
   background: url("../img/slider-button-empty.svg") no-repeat;
   background-size: 12px 12px;
   width: 12px;
@@ -19,15 +20,15 @@ button.promo__slide {
   cursor: pointer;
 }
 
-button.promo__slide:not(:last-child) {
+.promo__slide:not(:last-child) {
   padding-right: 33px;
 }
 
-button.promo__slide:active {
+.promo__slide:active {
   outline: none;
 }
 
-button.promo__slide--current {
+.promo__slide--current {
   background: url("../img/slider-button.svg") no-repeat;
   background-size: 12px 12px;
 }

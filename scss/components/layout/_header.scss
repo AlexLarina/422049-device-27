@@ -79,7 +79,7 @@
   color: $font-white-opacity-03;
 }
 
-a.user-menu__item::before {
+.user-menu__item::before {
   content: "";
   display: inline-block;
   vertical-align: middle;
