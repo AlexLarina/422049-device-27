@@ -21,6 +21,13 @@ function style() {
       .pipe(browsersync.stream());
 }
 
+function minjs() {
+  return gulp
+    .src("./js/main.js")
+    .pipe(minify())
+    .pipe(gulp.dest("js/"))
+}
+
 function watch() {
   browsersync.init({
     server: {
@@ -31,13 +38,7 @@ function watch() {
   gulp.watch("./scss/**/*.scss", style);
   gulp.watch("./*.html").on('change', browsersync.reload);
   gulp.watch("./js/**/*.js").on('change', browsersync.reload);
-}
-
-function minjs() {
-  return gulp
-    .src("./js/main.js")
-    .pipe(minify())
-    .pipe(gulp.dest("js/"))
+  gulp.watch("./js/**/*.js").on('change', minjs);
 }
 
 exports.style = style;

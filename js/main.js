@@ -18,6 +18,19 @@ feedbackShowButtonElement.addEventListener('click', function(evt) {
 closeFeedbackButtonElement.addEventListener('click', function() {
     popupFeedbackElement.classList.add('hidden');
     popupFeedbackElement.classList.remove('popup--show');
+    popupFeedbackElement.classList.remove('popup--shake');
+});
+
+popupFeedbackElement.addEventListener('submit', function(evt) {
+    evt.preventDefault();
+    var nameField = popupFeedbackElement.querySelector('.popup__name');
+    var emailField = popupFeedbackElement.querySelector('.popup__email');
+
+    if (!nameField.value || !emailField.value) {
+        popupFeedbackElement.classList.remove('popup--shake');
+        popupFeedbackElement.offsetWidth = popupFeedbackElement.offsetWidth;
+        popupFeedbackElement.classList.add('popup--shake');
+    } 
 });
 
 mapOpenElement.addEventListener('click', function (evt) {
