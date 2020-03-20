@@ -1,36 +1,35 @@
-const feedbackShowButtonElement = document.querySelector('.about-us__contacts  .info__button');
-const popupFeedbackElement = document.querySelector('.popup--feedback');
-const closeFeedbackButtonElement = document.querySelector('.popup--feedback .popup__button--close');
+var feedbackShowButtonElement = document.querySelector('.about-us__contacts  .info__button');
+var popupFeedbackElement = document.querySelector('.popup--feedback');
+var closeFeedbackButtonElement = document.querySelector('.popup--feedback .popup__button--close');
 
-const mapOpenElement = document.querySelector('.info__map');
-const mapElement = document.querySelector('.popup--map');
-const closeMapButtonElement = document.querySelector('.popup--map .popup__button--close');
+var mapOpenElement = document.querySelector('.info__map');
+var mapElement = document.querySelector('.popup--map');
+var closeMapButtonElement = document.querySelector('.popup--map .popup__button--close');
 
-const promoSliderElement = document.querySelector('.promo__slider');
-const advantagesListElement = document.querySelector('.advantages__list');
+var promoSliderElement = document.querySelector('.promo__slider');
+var advantagesListElement = document.querySelector('.advantages__list');
 
-feedbackShowButtonElement.addEventListener('click', () => {
+feedbackShowButtonElement.addEventListener('click', function() {
     popupFeedbackElement.classList.remove('hidden');
 });
 
-closeFeedbackButtonElement.addEventListener('click', () => {
+closeFeedbackButtonElement.addEventListener('click', function() {
     popupFeedbackElement.classList.add('hidden');
 });
 
-mapOpenElement.addEventListener('click', (evt) => {
+mapOpenElement.addEventListener('click', function (evt) {
     evt.preventDefault();
     mapElement.classList.remove('hidden');
 });
 
-closeMapButtonElement.addEventListener('click', () => {
+closeMapButtonElement.addEventListener('click', function () {
     mapElement.classList.add('hidden');
 });
 
-promoSliderElement.addEventListener('click', (evt) => {
+promoSliderElement.addEventListener('click', function (evt) {
     const currentPromoSlide = document.querySelector('.promo__item--current');
     const currentButton = document.querySelector('.promo__slide--current');
 
-    console.log(evt);
     const clickedSlide = document.querySelector('.' + evt.target.value);
     currentPromoSlide.classList.remove('promo__item--current');
     currentPromoSlide.classList.add('hidden');
@@ -42,16 +41,15 @@ promoSliderElement.addEventListener('click', (evt) => {
     evt.target.classList.add('promo__slide--current');
 });
 
-advantagesListElement.addEventListener('click', (evt) => {
+advantagesListElement.addEventListener('click', function (evt) {
     evt.preventDefault();
-    console.log(evt);
-    const clickedAdvantage = Array.from(evt.target.classList).find((item) => {
+    var clickedAdvantage = Array.from(evt.target.classList).find((item) => {
       return item.includes('advantages__item--');
     });
 
-    const currentAdvantagesItem = document.querySelector('.details--current');
-    const clickedAdvantageItem =  document.querySelector('.advantages__details.details--' + clickedAdvantage.split("--")[1]);
-    const currentAdvantagesButton = document.querySelector('.advantages__item--active');
+    var currentAdvantagesItem = document.querySelector('.details--current');
+    var clickedAdvantageItem =  document.querySelector('.advantages__details.details--' + clickedAdvantage.split("--")[1]);
+    var currentAdvantagesButton = document.querySelector('.advantages__item--active');
 
     currentAdvantagesItem.classList.add('hidden');
     currentAdvantagesItem.classList.remove('details--current');

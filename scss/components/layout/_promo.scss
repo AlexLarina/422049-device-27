@@ -81,6 +81,7 @@ img.promo__image--2 {
 
 .promo .info__more {
   @include device-button(220px);
+  background: none;
 }
 
 .promo .info__more::before {

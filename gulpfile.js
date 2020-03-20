@@ -5,6 +5,7 @@ const autoprefixer = require("autoprefixer");
 const browsersync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
+const minify = require('gulp-minify');
 
 function style() {
   return gulp
@@ -32,5 +33,13 @@ function watch() {
   gulp.watch("./js/**/*.js").on('change', browsersync.reload);
 }
 
+function minjs() {
+  return gulp
+    .src("./js/main.js")
+    .pipe(minify())
+    .pipe(gulp.dest("js/"))
+}
+
 exports.style = style;
 exports.watch = watch;
+exports.minjs = minjs;
