@@ -43,9 +43,9 @@ promoSliderElement.addEventListener('click', function (evt) {
 
 advantagesListElement.addEventListener('click', function (evt) {
     evt.preventDefault();
-    var clickedAdvantage = Array.from(evt.target.classList).find((item) => {
-      return item.includes('advantages__item--');
-    });
+    var clickedAdvantage = Array.prototype.slice.call(evt.target.classList).filter(function (item) {
+      return item.indexOf('advantages__item--') !== -1;
+    })[0];
 
     var currentAdvantagesItem = document.querySelector('.details--current');
     var clickedAdvantageItem =  document.querySelector('.advantages__details.details--' + clickedAdvantage.split("--")[1]);
