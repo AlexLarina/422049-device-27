@@ -112,8 +112,8 @@ a.user-menu__item::before {
   vertical-align: baseline;
 }
 
-.navigation__item--catalog:hover > .header__catalog-wrapper,
-.navigation__item--catalog:focus-within > .header__catalog-wrapper  {
+.navigation__item--catalog:hover .header__catalog-wrapper,
+.navigation__item--catalog:focus-within .header__catalog-wrapper  {
   display: block;
 }
 
