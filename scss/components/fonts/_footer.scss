@@ -1,0 +1,49 @@
+.footer {
+  background-color: $bg-dark-grey;
+}
+
+.footer .user-menu {
+  @include font("Open Sans", normal, $font-white-opacity-07);
+  @include font-size(15px, 2.4em);
+}
+
+.footer .user-menu__item {
+  color: inherit;
+}
+
+.footer .user-menu__item:hover {
+  color: $font-white;
+}
+
+.footer .user-menu__item:active {
+  color: $font-white-opacity-03;
+}
+
+.footer .navigation {
+  @include font("Gilroy", bold, $font-white);
+  @include font-size(18px, 1.33em);
+  text-transform: uppercase;
+}
+
+.footer .navigation__item {
+  color: inherit;
+}
+
+.footer .navigation__item:hover {
+  color: $font-white-opacity-07;
+}
+
+.footer .navigation__item:active {
+  color: $font-white-opacity-03;
+}
+
+.footer__contacts,
+.footer__contacts a {
+  @include font("Open Sans", normal, $font-white);
+  @include font-size(15px, 2em);
+}
+
+.footer .log-out {
+  @include font("Open Sans", normal, $font-white-opacity-03);
+  @include font-size(15px, 2em);
+}

@@ -1,8 +1,6 @@
-// layout
-
 .catalog__content {
   flex-grow: 1;
-  margin-bottom: 77px;
+  margin-bottom: 78px;
 }
 
 .content__title {
@@ -40,6 +38,12 @@
   width: 33%;
   height: 100%;
   z-index: -2;
+  top: 0;
+  left: 0;
+
+  @media (max-width: 1485px) {
+    width: 347px;
+  }
 }
 
 .catalog__decoration::after {

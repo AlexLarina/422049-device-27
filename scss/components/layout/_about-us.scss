@@ -1,54 +1,44 @@
-// typography
-
-.about-us .info__title {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(47px, 1em);
-}
-
-.about-us .info__description {
-  @include font("Open Sans", normal, $font-dark-grey);
-  @include font-size(15px, 2em);
-}
-
-.about-us .info__button {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(18px, 1.33em);
-  letter-spacing: 3.6px;
-}
-
-.about-us .info__company-list {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(16px, 2.5em);
-  list-style: none;
-}
-
-// layout
-
 .about-us {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
 
-  margin-bottom: 90px;
+  margin-bottom: 88px;
+}
+
+.about-us__info {
+  margin-right: 65px;
 }
 
 .about-us__info,
 .about-us__contacts {
   position: relative;
+  padding-bottom: 20px;
 }
 
-/* добавить в normalize */
+.about-us__contacts {
+  margin-left: 41px;
+}
+
+.about-us__info .info__description {
+  margin: 30px auto;
+}
+
+.about-us__contacts .info__description {
+  margin: 30px auto 40px auto;
+}
+
 .about-us .info__title {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 42px;
 }
 
 .about-us__info::before,
 .about-us__contacts::before {
   content: "";
   display: inline-block;
-  margin-bottom: 50px;
+  margin-bottom: 42px;
   width: 80px;
   height: 7px;
   background-color: $font-black;
@@ -58,6 +48,7 @@
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+  padding-top: 37px;
 }
 
 .about-us .info__button-wrapper {
@@ -67,6 +58,7 @@
 
 .about-us .info__button {
   @include device-button(260px);
+  background: none;
 }
 
 .about-us .info__button::before {
@@ -79,7 +71,7 @@
 }
 
 .about-us .info__button:active {
-  color: $font-opacity-black;
+  color: $font-black-opacity-03;
 }
 
 .about-us__contacts .info__map {
@@ -89,7 +81,7 @@
 
 .about-us .info__company-item {
   position: relative;
-  padding-left: 30px;
+  padding-left: 35px;
 }
 
 .about-us .info__company-item::before {

@@ -1,0 +1,26 @@
+.pagination {
+  margin-left: 75px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination__item:not(:last-child):not(.pagination__item--back):not(.pagination__item--forward) {
+  margin-right: 30px;
+}
+
+.pagination__item--back,
+.pagination__item--forward {
+  padding: 25px 30px 20px 30px;
+}
+
+.pagination__item--back {
+  margin-right: auto;
+}
+
+.pagination__item--forward {
+  margin-left: auto;
+  text-align: right;
+}

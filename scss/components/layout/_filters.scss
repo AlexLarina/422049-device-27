@@ -1,57 +1,10 @@
-// typography
-
 .filters {
   background-color: $bg-grey;
-}
-
-.filters__title {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(16px, 1.5em);
-  text-transform: uppercase;
-  letter-spacing: 3.2px;
-
-  background-color: $bg-filter;
-}
-
-.content__title {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(16px, 1.5em);
-  text-transform: uppercase;
-  letter-spacing: 3.2px;
-
-  background-color: $bg-grey;
-}
-
-legend.filter__title {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(18px, 1.33em);
+  width: 327px;
 }
 
 .filter__list {
   list-style: none;
-}
-
-.filters__button {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(18px, 1.33em);
-  letter-spacing: 3.6px;
-}
-
-.filter__item label {
-  @include font("Open Sans", normal, $font-black);
-  @include font-size(14px, 2.8em);
-}
-
-.range__item label,
-.range__item input[type="number"] {
-  @include font("Gilroy", normal, $font-black-new);
-  @include font-size(14px, 1.33em);
-}
-
-/* пока легче добавить label класс disabled */
-
-label.disabled {
-  color: $font-disabled;
 }
 
 .content__filter {
@@ -60,37 +13,9 @@ label.disabled {
   flex-grow: 1;
 }
 
-.content__filter a {
-  @include font("Open Sans", normal, $font-opacity-black);
-  @include font-size(14px, 1.29em);
-}
-
-.content__filter a:hover {
-  color: $font-black-hover;
-}
-
-.content__filter a:active {
-  color: $font-black;
-}
-
-.content__filter .filter__item--active {
-  color: $font-black;
-}
-
-.filter__item--active a {
-  color: inherit;
-}
-
-
-// layout
-
-.filters {
-  width: 327px;
-}
-
 .filters__title {
   margin: 0;
-  padding-left: 60px;
+  padding-left: 63px;
   height: 70px;
   display: flex;
   flex-direction: row;
@@ -110,13 +35,13 @@ label.disabled {
   margin: 0;
   padding: 0;
 
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 .filter__title {
   width: 100%;
-  margin-bottom: 20px;
-  padding-top: 15px;
+  margin-bottom: 10px;
+  padding-top: 12px;
   border-top: 2px solid $font-black;
 }
 
@@ -159,29 +84,29 @@ label.disabled {
 }
 
 .range__toggle--min {
-  left: 0;
+  left: -5px;
 }
 
 .range__toggle--min:active {
-  left: -2px;
+  left: -7px;
 }
 
 .range__toggle--max {
-  left: 95px;
+  left: 108px;
 }
 
 .range__toggle--max:active {
-  left: 93px;
+  left: 106px;
 }
 
 .range__item input[type="number"] {
-  width: 55px;
+  width: 70px;
   border: none;
-  background-color: inherit;
+  background-color: $bg-grey;
 }
 
 .range__price-controls {
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .catalog__filters .filters__button {
@@ -199,7 +124,7 @@ label.disabled {
 }
 
 .catalog__filters .filters__button:active {
-  color: $font-opacity-black;
+  color: $font-black-opacity-03;
 }
 
 .catalog__filters .filters__button--disabled {
@@ -210,6 +135,12 @@ label.disabled {
 .catalog__filters .filter__list {
   padding: 0;
   margin: 0;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.catalog__filters .filter__list--checkbox {
+  margin-top: 8px;
 }
 
 .filter__checkbox,
@@ -225,8 +156,12 @@ label.filter__checkbox::before {
   left: 0;
   width: 27px;
   height: 23px;
-  background: url("../../img/checkbox-off.svg") no-repeat;
+  background: url("../img/checkbox-off.svg") no-repeat;
 }
+
+.filter__item input:focus + label::before {      
+  box-shadow: 0 0 1pt 1pt $focus-outline;
+}   
 
 .filter__item input[type="checkbox"]:checked + label.filter__checkbox::before {
   content: "";
@@ -235,7 +170,7 @@ label.filter__checkbox::before {
   left: 0;
   width: 27px;
   height: 23px;
-  background: url("../../img/checkbox-on.svg") no-repeat;
+  background: url("../img/checkbox-on.svg") no-repeat;
 }
 
 label.filter__radio::before {
@@ -245,7 +180,7 @@ label.filter__radio::before {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/radio-off.svg") no-repeat;
+  background: url("../img/radio-off.svg") no-repeat;
 }
 
 .filter__item input[type="radio"]:checked + label.filter__radio::before {
@@ -255,54 +190,61 @@ label.filter__radio::before {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/radio-on.svg") no-repeat;
+  background: url("../img/radio-on.svg") no-repeat;
 }
 
 label.filter__checkbox:hover::before,
 label.filter__radio:hover::before {
-  filter: opacity(0.6);
+  opacity: 0.6;
 }
 
 label.filter__checkbox:active::before,
 label.filter__radio:active::before  {
-  filter: opacity(1);
+  opacity: 1;
 }
 
 .filter__item input[type="checkbox"]:disabled + label.filter__checkbox::before,
 .filter__item input[type="radio"]:disabled + label.filter__radio::before,
 .filter__item input[type="checkbox"]:checked:disabled + label.filter__checkbox::before,
 .filter__item input[type="radio"]:checked:disabled + label.filter__radio::before {
-  filter: opacity(0.25);
+  opacity: 0.25;
 }
 
 .filter__item input[type="checkbox"]:disabled + label.filter__checkbox,
 .filter__item input[type="radio"]:disabled + label.filter__radio,
 .filter__item input[type="checkbox"]:checked:disabled + label.filter__checkbox,
 .filter__item input[type="radio"]:checked:disabled + label.filter__radio {
-  color: $font-disabled;
+  color: $font-light-grey;
+}
+
+.content__filter-direction {
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .filter-direction button {
   width: 11px;
   height: 10px;
   border: none;
-  filter: opacity(0.2);
+  opacity: 0.2;
 }
 
 .filter-direction button:hover {
-  filter: opacity(0.4);
+  opacity: 0.4;
 }
 
 .filter-direction button:active {
-  filter: opacity(1);
+  opacity: 1;
 }
 
 button.filter-direction__increase {
-  background: url("../../img/icon-up-dir.svg") no-repeat;
+  background: url("../img/icon-up-dir.svg") no-repeat;
 }
 
 button.filter-direction__decrease {
-  background: url("../../img/icon-up-dir.svg") no-repeat;
+  background: url("../img/icon-up-dir.svg") no-repeat;
   transform: rotate(180deg);
-  margin-left: 20px;
+  opacity: 1;
 }

@@ -1,48 +1,19 @@
-// typography
-
-.promo__item .info__title {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(47px, 1.2em);
-}
-
-.promo__item .info__description {
-  @include font("Open Sans", normal, $font-dark-grey);
-  @include font-size(15px, 2em);
-}
-
-.promo__item .info__more {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(18px, 1.33em);
-  letter-spacing: 3.6px;
-}
-
-.promo__item .details__value {
-  @include font("Gilroy", normal, $font-black);
-  @include font-size(36px, 1.33em);
-}
-
-.promo__item .details__name {
-  @include font("Open Sans", normal, $font-dark-grey);
-  @include font-size(13px, 1.5em);
-}
-
-.promo__item .info__counter {
-  @include font("Gilroy", bold, $font-white);
-  @include font-size(179px, 1em);
-}
-
-// layout
 .promo {
   position: relative;
   width: 1160px;
+  min-height: 486px;
 }
 
 .promo__item {
   position: relative;
 }
 
+.promo__item--3 table {
+  max-width: 275px;
+}
+
 .promo__wrapper {
-  padding: 0px 60px 0px 0px;
+  padding: 0px 50px 0px 0px;
 
   display: flex;
   flex-direction: row;
@@ -53,7 +24,7 @@
 
 img.promo__image--1,
 img.promo__image--2 {
-  margin-left: 60px;
+  margin-left: 70px;
 }
 
 .main__promo::before {
@@ -61,7 +32,7 @@ img.promo__image--2 {
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 110px;
+  height: 113px;
   background-color: $bg-header-catalog;
 
   left: 0;
@@ -75,8 +46,7 @@ img.promo__image--2 {
   content: "";
   display: inline-block;
   position: absolute;
-  top: 40px;
-  //left: 0;
+  top: 39px;
   width: 100px;
   height: 7px;
   background-color: $font-white;
@@ -84,16 +54,15 @@ img.promo__image--2 {
 
 .promo__item .info__counter {
   position: absolute;
-  //right: 0;
-  top: -15px;
-  right: 30px;
+  top: -13px;
+  right: 25px;
   z-index: -1;
 }
 
 .promo__item .info__title {
    margin: 0;
    margin-top: 80px;
-   margin-bottom: 30px;
+   margin-bottom: 19px;
 
    white-space: nowrap;
 }
@@ -103,7 +72,7 @@ img.promo__image--2 {
 }
 
 .promo__item .info__buttons {
-  margin: 65px 0px;
+  margin: 50px 0px;
 }
 
 .promo__item table {
@@ -112,6 +81,7 @@ img.promo__image--2 {
 
 .promo .info__more {
   @include device-button(220px);
+  background: none;
 }
 
 .promo .info__more::before {
@@ -124,5 +94,23 @@ img.promo__image--2 {
 }
 
 .promo .info__more:active {
-  color: $font-opacity-black;
+  color: $font-black-opacity-03;
+}
+
+.details__value td {
+  padding-top: 5px;
+}
+
+.details__name td {
+  padding-top: 8px;
+}
+
+.details__value td:first-child,
+.details__name td:first-child {
+  width: 155px;
+}
+
+.details__value td:nth-child(2),
+.details__name td:nth-child(2) {
+  width: 135px;
 }

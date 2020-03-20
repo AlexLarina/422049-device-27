@@ -2,16 +2,15 @@
   position: absolute;
   z-index: 1;
 
-  // fix it
-  top: 350px;
-  right: 80px;
+  top: 328px;
+  right: 83px;
 
   display: flex;
   flex-direction: row;
   align-items: stretch;
 }
 button.promo__slide {
-  background: url("../../img/slider-button-empty.svg") no-repeat;
+  background: url("../img/slider-button-empty.svg") no-repeat;
   background-size: 12px 12px;
   width: 12px;
   height: 12px;
@@ -24,12 +23,11 @@ button.promo__slide:not(:last-child) {
   padding-right: 33px;
 }
 
-button.promo__slide:active,
-button.promo__slide:focus {
+button.promo__slide:active {
   outline: none;
 }
 
 button.promo__slide--current {
-  background: url("../../img/slider-button.svg") no-repeat;
+  background: url("../img/slider-button.svg") no-repeat;
   background-size: 12px 12px;
 }

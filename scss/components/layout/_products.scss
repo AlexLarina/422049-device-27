@@ -1,48 +1,13 @@
-// typography
-
-.products__name {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(18px, 1.33em);
-}
-
-.products__cost {
-  @include font("Gilroy", normal, $font-dark-grey);
-  @include font-size(16px, 1.5em);
-}
-
-.hidden-buttons--to-basket {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(18px, 1.33em);
-  text-transform: uppercase;
-  letter-spacing: 3.6px;
-}
-
-
-.hidden-buttons--compare {
-  @include font("Open Sans", normal, $font-button-opacity-black);
-  @include font-size(13px, 2.77em);
-}
-
-.hidden-buttons--compare:hover {
-  @include font("Open Sans", normal, $font-black);
-  @include font-size(13px, 2.77em);
-}
-
-.hidden-buttons--compare:active {
-  @include font("Open Sans", normal, $font-black-new);
-  @include font-size(13px, 2.77em);
-}
-
-// layout
-
 .content__products {
   list-style: none;
 
   margin: 0;
   padding: 0;
 
+  width: 830px;
+
   margin-top: 70px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 
   padding-left: 75px;
 
@@ -80,7 +45,8 @@ button.hidden-buttons {
   opacity: 0.3;
 }
 
-.products__item:hover .products__hidden-buttons {
+.products__item:hover .products__hidden-buttons,
+.products__item:focus-within .products__hidden-buttons {
   display: block;
 }
 
@@ -89,6 +55,7 @@ button.hidden-buttons {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: 20px;
 }
 
 .products__name {
@@ -105,7 +72,7 @@ button.hidden-buttons {
   position: absolute;
   top: 28px;
   right: 28px;
-  background-color: $font-black-new;
+  background-color: $font-black-opacity-02;
   width: 61px;
   height: 61px;
   border-radius: 50%;
@@ -113,7 +80,7 @@ button.hidden-buttons {
 
 .products__item--new::after {
   content: "NEW";
-  color: $font-black-new;
+  color: $font-black-opacity-02;
   position: absolute;
   top: 30px;
   right: 30px;
@@ -144,5 +111,5 @@ button.hidden-buttons {
 }
 
 .hidden-buttons--to-basket:active {
-  color: $font-opacity-black;
+  color: $font-black-opacity-03;
 }

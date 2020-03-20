@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
     <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
     <title>HTML Academy: Девайс</title>
@@ -10,7 +10,9 @@
   <body>
     <header class="header">
       <div class="container">
-        <a href="index.html"><img class="header__logo" src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина гаджетов Device"></a>
+        <a href="index.html" class="header__logo">
+          <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина гаджетов Device">
+        </a>
         <div class="header__row user-menu">
           <form action="https://echo.htmlacademy.ru" autocomplete="off">
             <label for="header-search"></label>
@@ -28,23 +30,26 @@
 
         <div class="header__row">
           <nav class="header__navigation navigation">
-            <a href="catalog.html" class="navigation__item navigation__item--catalog">Каталог товаров<span class="navigation__open"></span></a>
+            <a href="catalog.html" class="navigation__item navigation__item--catalog">
+              Каталог товаров
+
+              <div class="header__catalog-wrapper">
+                <ul class="header__catalog catalog">
+                  <li class="catalog__item">Виртуальная реальность</li>
+                  <li class="catalog__item">Моноподы для селфи</li>
+                  <li class="catalog__item">Экшн-камеры</li>
+      
+                  <li class="catalog__item">Фитнес-браслеты</li>
+                  <li class="catalog__item">Умные часы</li>
+      
+                  <li class="catalog__item">Квадрокоптеры</li>
+                </ul>
+              </div>
+            </a>
             <a href="#" class="navigation__item navigation__item--delivery">Доставка</a>
             <a href="#" class="navigation__item navigation__item--warranty">Гарантия</a>
             <a href="#" class="navigation__item">Контакты</a>
           </nav>
-        </div>
-        <div class="header__row hidden">
-          <ul class="header__catalog catalog">
-            <li class="catalog__item">Виртуальная реальность</li>
-            <li class="catalog__item">Моноподы для селфи</li>
-            <li class="catalog__item">Экшн-камеры</li>
-
-            <li class="catalog__item">Фитнес-браслеты</li>
-            <li class="catalog__item">Умные часы</li>
-
-            <li class="catalog__item">Квадрокоптеры</li>
-          </ul>
         </div>
       </div>
     </header>
@@ -54,11 +59,11 @@
 
         <div class="catalog__navigation container">
           <h1 class="catalog__title">Моноподы для селфи</h1>
-          <nav class="catalog__breadcrumbs breadcrumbs">
+          <div class="catalog__breadcrumbs breadcrumbs">
             <a href="#" class="breadcrumbs__item">Главная</a>
             <a href="#" class="breadcrumbs__item">Каталог товаров</a>
             <a href="#" class="breadcrumbs__item">Моноподы для селфи</a>
-          </nav>
+          </div>
         </div>
 
         <div class="catalog__decoration">
@@ -66,7 +71,7 @@
             <div class="catalog__wrapper container">
           <aside class="catalog__filters filters">
             <h2 class="filters__title">Фильтр:</h2>
-            <form сlass="filters__form" action="https://echo.htmlacademy.ru" method="get">
+            <form action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filters__item filter">
                 <legend class="filter__title">Стоимость</legend>
                 <div class="filter__range range">
@@ -91,7 +96,7 @@
               </fieldset>
               <fieldset class="filters__item filter">
                 <legend class="filter__title">Цвет</legend>
-                <ul class="filter__list">
+                <ul class="filter__list filter__list--checkbox">
                   <li class="filter__item">
                     <input class="visually-hidden" type="checkbox" name="color--black" value="black" id="color--black" checked>
                     <label for="color--black" class="filter__checkbox">Черный</label>
@@ -145,7 +150,7 @@
             </div>
             <h2 class="visually-hidden">Список отфильтрованных товаров</h2>
             <ul class="content__products products">
-              <li class="products__item">
+              <li class="products__item" tabindex="0">
                 <img src="files/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка">
                 <div class="products__hidden-buttons hidden-buttons">
                   <button class="hidden-buttons hidden-buttons--to-basket">В корзину</button>
@@ -157,7 +162,7 @@
                 </div>
               </li>
 
-              <li class="products__item">
+              <li class="products__item" tabindex="0">
                 <img src="files/item-2-jpg.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                 <div class="products__hidden-buttons hidden-buttons">
                   <button class="hidden-buttons hidden-buttons--to-basket">В корзину</button>
@@ -169,7 +174,7 @@
                 </div>
               </li>
 
-              <li class="products__item">
+              <li class="products__item" tabindex="0">
                 <img src="files/item-3-jpg.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 <div class="products__hidden-buttons hidden-buttons">
                   <button class="hidden-buttons hidden-buttons--to-basket">В корзину</button>
@@ -178,10 +183,10 @@
                 <div class="products__description">
                   <span class="products__name">Непотопляемая селфи-палка</span>
                   <span class="products__cost">2500 руб.</span>
-                </div>
+                </div> 
               </li>
 
-              <li class="products__item products__item--new">
+              <li class="products__item products__item--new" tabindex="0">
                 <img src="files/item-4-jpg.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 <div class="products__hidden-buttons hidden-buttons">
                   <button class="hidden-buttons hidden-buttons--to-basket">В корзину</button>
@@ -190,7 +195,7 @@
                 <div class="products__description">
                   <span class="products__name">Селфи-палка «Следуй за мной»</span>
                   <span class="products__cost">4900 руб.</span>
-                </div>
+                </div> 
               </li>
             </ul>
             <div class="content__pagination pagination">
@@ -242,7 +247,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="js/main.js"></script>
   </body>
 </html>

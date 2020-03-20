@@ -1,0 +1,21 @@
+.about-us .info__title {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(47px, 1em);
+}
+
+.about-us .info__description {
+  @include font("Open Sans", normal, $font-dark-grey);
+  @include font-size(15px, 2em);
+}
+
+.about-us .info__button {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(18px, 1.33em);
+  letter-spacing: 3.6px;
+}
+
+.about-us .info__company-list {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(16px, 2.5em);
+  list-style: none;
+}

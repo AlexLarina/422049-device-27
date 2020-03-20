@@ -1,30 +1,6 @@
-.advantages__list {
-  list-style: none;
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(18px, 1.33em);
-}
-
-.advantages__details .details__title {
-  @include font("Gilroy", bold, $font-black);
-  @include font-size(47px, 1.2em);
-}
-
-.advantages__details .details__description {
-  @include font("Open Sans", normal, $font-dark-grey);
-  @include font-size(15px, 2em);
-}
-
-.advantages__item {
-  text-transform: uppercase;
-  letter-spacing: 3.6px;
-}
-
-// layout
-
-
 .advantages {
   min-width: 1200px;
-  min-height: 290px;
+  min-height: 288px;
   background-color: $bg-advantages;
 }
 
@@ -33,8 +9,7 @@
 }
 
 .advantages__list {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 0px 70px 20px;
   margin: 0;
   display: inline-block;
 
@@ -46,7 +21,7 @@
 }
 
 .advantages__details {
-  padding-left: 400px;
+  padding-left: 402px;
 }
 
 .advantages__item {
@@ -71,6 +46,10 @@
   top: 0;
 }
 
+.advantages__item a {
+  color: inherit;
+}
+
 li.advantages__item--active {
   color: $font-orange;
   background-color: $font-black;
@@ -85,7 +64,7 @@ li.advantages__item--active {
 }
 
 .advantages__item:not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .advantages__details .details__title {
@@ -96,7 +75,7 @@ li.advantages__item--active {
 
 .advantages__details .details__description {
   margin: 0;
-  padding-top: 60px;
+  padding-top: 52px;
   max-width: 436px;
 }
 
@@ -105,9 +84,9 @@ li.advantages__item--active {
   display: inline-block;
   width: 136px;
   height: 164px;
-  background: url("../../img/delivery.svg") no-repeat;
+  background: url("../img/delivery.svg") no-repeat;
   position: absolute;
-  right: 0;
+  right: 85px;
   top: -15px;
 }
 
@@ -116,7 +95,7 @@ li.advantages__item--active {
   display: inline-block;
   width: 171px;
   height: 194px;
-  background: url("../../img/warranty.svg") no-repeat;
+  background: url("../img/warranty.svg") no-repeat;
   position: absolute;
   right: 0;
   top: -15px;
@@ -127,7 +106,7 @@ li.advantages__item--active {
   display: inline-block;
   width: 156px;
   height: 186px;
-  background: url("../../img/credit.svg") no-repeat;
+  background: url("../img/credit.svg") no-repeat;
   position: absolute;
   right: 0;
   top: -15px;

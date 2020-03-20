@@ -1,0 +1,74 @@
+.header .container{
+  background-color: $bg-orange;
+}
+
+.header .user-menu {
+  @include font("Open Sans", normal, $font-black);
+  @include font-size(15px, 2em);
+}
+
+.header .user-menu__item {
+  color: inherit;
+}
+
+.header .user-menu__item:hover,
+.header__row.user-menu input[placeholder]:hover {
+  color: $font-black-opacity-06;
+}
+
+.header .user-menu__item:active {
+  color: $font-black-opacity-03;
+}
+
+.header__row.user-menu input::placeholder {
+  color: $font-black-opacity-03;
+}
+
+.header .navigation {
+  @include font("Gilroy", bold, $font-black);
+  @include font-size(18px, 1.33em);
+  text-transform: uppercase;
+}
+
+.navigation__item {
+  color: inherit;
+  letter-spacing: 3.6px;
+}
+
+.navigation__item:hover {
+  color: $font-black-opacity-06;
+}
+
+.navigation__item:active {
+  color: $font-black-opacity-03;
+}
+
+.catalog {
+  @include font("Open Sans", normal, $font-black);
+  @include font-size(15px, 2.4em);
+  list-style: none;
+  text-transform: none;
+  letter-spacing: 0.15px;
+}
+
+.catalog__item {
+  cursor: pointer;
+}
+
+.catalog__item:hover {
+  color: $font-black-opacity-06;
+}
+
+.catalog__item:active {
+  color: $font-black-opacity-03;
+}
+
+.header .log-out {
+  @include font("Open Sans", normal, $font-black-opacity-03);
+  @include font-size(15px, 2em);
+}
+
+.user-menu__item--search-submit {
+  @include font("Open Sans", normal, $font-black-opacity-03);
+  @include font-size(15px, 2em);
+}
