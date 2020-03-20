@@ -60,6 +60,7 @@
 .about-us .info__button {
   @include device-button(260px);
   background: none;
+  display: block;
 }
 
 .about-us .info__button::before {
