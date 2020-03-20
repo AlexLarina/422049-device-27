@@ -115,6 +115,7 @@
 
 .catalog__filters .filters__button {
   @include device-button(200px);
+  background: none;
   z-index: 2;
 }
 
@@ -228,7 +229,8 @@ label.filter__radio:active::before  {
   justify-content: space-between;
 }
 
-.filter-direction button {
+.filter-direction .filter-direction__increase,
+.filter-direction .filter-direction__decrease {
   width: 11px;
   height: 10px;
   border: none;
@@ -243,11 +245,11 @@ label.filter__radio:active::before  {
   opacity: 1;
 }
 
-button.filter-direction__increase {
+.filter-direction .filter-direction__increase {
   background: url("../img/icon-up-dir.svg") no-repeat;
 }
 
-button.filter-direction__decrease {
+.filter-direction .filter-direction__decrease {
   background: url("../img/icon-up-dir.svg") no-repeat;
   transform: rotate(180deg);
   opacity: 1;
