@@ -38,6 +38,10 @@
   margin-bottom: 28px;
 }
 
+.filters fieldset:nth-of-type(2) {
+  margin-bottom: 25px;
+}
+
 .filter__title {
   width: 100%;
   margin-bottom: 10px;
@@ -62,7 +66,7 @@
 .range__bar {
   height: 2px;
   background-color: $bg-scale-bar;
-  width: 52%;
+  width: 55%;
 }
 
 .range__toggle {
@@ -81,6 +85,10 @@
 .range__toggle:active {
   top: -11px;
   border: 10px solid #ffffff;
+}
+
+.range__toggle:focus {
+  outline: 1px solid $focus-outline;
 }
 
 .range__toggle--min {
@@ -111,6 +119,7 @@
 
 .catalog__filters .filters__button {
   @include device-button(200px);
+  background: none;
   z-index: 2;
 }
 
@@ -135,7 +144,7 @@
 .catalog__filters .filter__list {
   padding: 0;
   margin: 0;
-  margin-top: 3px;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 
@@ -224,7 +233,8 @@ label.filter__radio:active::before  {
   justify-content: space-between;
 }
 
-.filter-direction button {
+.filter-direction .filter-direction__increase,
+.filter-direction .filter-direction__decrease {
   width: 11px;
   height: 10px;
   border: none;
@@ -239,11 +249,11 @@ label.filter__radio:active::before  {
   opacity: 1;
 }
 
-button.filter-direction__increase {
+.filter-direction .filter-direction__increase {
   background: url("../img/icon-up-dir.svg") no-repeat;
 }
 
-button.filter-direction__decrease {
+.filter-direction .filter-direction__decrease {
   background: url("../img/icon-up-dir.svg") no-repeat;
   transform: rotate(180deg);
   opacity: 1;

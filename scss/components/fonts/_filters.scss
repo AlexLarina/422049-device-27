@@ -43,7 +43,7 @@ legend.filter__title {
   @include font-size(14px, 1.29em);
 }
 
-label.disabled {
+.disabled {
   color: $font-light-grey;
 }
 

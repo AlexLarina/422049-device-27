@@ -9,21 +9,39 @@ var closeMapButtonElement = document.querySelector('.popup--map .popup__button--
 var promoSliderElement = document.querySelector('.promo__slider');
 var advantagesListElement = document.querySelector('.advantages__list');
 
-feedbackShowButtonElement.addEventListener('click', function() {
+feedbackShowButtonElement.addEventListener('click', function(evt) {
+    evt.preventDefault();
     popupFeedbackElement.classList.remove('hidden');
+    popupFeedbackElement.classList.add('popup--show');
 });
 
 closeFeedbackButtonElement.addEventListener('click', function() {
     popupFeedbackElement.classList.add('hidden');
+    popupFeedbackElement.classList.remove('popup--show');
+    popupFeedbackElement.classList.remove('popup--shake');
+});
+
+popupFeedbackElement.addEventListener('submit', function(evt) {
+    evt.preventDefault();
+    var nameField = popupFeedbackElement.querySelector('.popup__name');
+    var emailField = popupFeedbackElement.querySelector('.popup__email');
+
+    if (!nameField.value || !emailField.value) {
+        popupFeedbackElement.classList.remove('popup--shake');
+        popupFeedbackElement.offsetWidth = popupFeedbackElement.offsetWidth;
+        popupFeedbackElement.classList.add('popup--shake');
+    } 
 });
 
 mapOpenElement.addEventListener('click', function (evt) {
     evt.preventDefault();
     mapElement.classList.remove('hidden');
+    mapElement.classList.add('popup--show');
 });
 
 closeMapButtonElement.addEventListener('click', function () {
     mapElement.classList.add('hidden');
+    mapElement.classList.remove('popup--show');
 });
 
 promoSliderElement.addEventListener('click', function (evt) {
