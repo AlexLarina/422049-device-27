@@ -79,7 +79,7 @@
   color: $font-white-opacity-03;
 }
 
-.user-menu__item::before {
+.user-menu__item:not(.user-menu__item--search-submit)::before {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -122,7 +122,7 @@
   display: block;
 }
 
-.header__logo:hover,     
+.header__logo:hover,
 .header a.user-menu__item:hover {
   opacity: 0.6;
 }
