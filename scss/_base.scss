@@ -123,6 +123,7 @@ html {
   100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+            left: calc(50% - 480px);
   }
 
   10%,
@@ -132,6 +133,7 @@ html {
   90% {
     -webkit-transform: translateX(-10px);
             transform: translateX(-10px);
+            left: calc(50% - 480px);
   }
 
   20%,
@@ -140,6 +142,7 @@ html {
   80% {
     -webkit-transform: translateX(10px);
             transform: translateX(10px);
+            left: calc(50% - 480px);
   }
 }
 
@@ -148,6 +151,7 @@ html {
   100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+            left: calc(50% - 480px);
   }
 
   10%,
@@ -157,6 +161,7 @@ html {
   90% {
     -webkit-transform: translateX(-10px);
             transform: translateX(-10px);
+            left: calc(50% - 480px);
   }
 
   20%,
@@ -165,5 +170,6 @@ html {
   80% {
     -webkit-transform: translateX(10px);
             transform: translateX(10px);
+            left: calc(50% - 480px);
   }
 }
